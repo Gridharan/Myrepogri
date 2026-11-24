@@ -26,7 +26,7 @@ Visual Studio edition.
 | Parity matrix v0 | `docs/parity-matrix.md` |
 | Risk register | `docs/risk-register.md` |
 | Effort estimate | `docs/effort-estimate.md` |
-| Tooling with unit tests (150 tests) | `tools/` |
+| Tooling with unit tests (156 tests) | `tools/` |
 | Configuration reference | `docs/CONFIG.md` |
 
 ## 3. Evidence
@@ -42,7 +42,7 @@ the originals in `logs/` are not committed).
 | Ledger built | `python3 -m tools.ledger.build_ledger …` | 177 rows: 89 allow, 88 needs-review, 0 reject | `build-ledger-20261124T213621Z-4c5fd59a.jsonl` |
 | Ledger gate fails, as it must while rows are open | `python3 -m tools.ledger.check_ledger` | exit 8 | — |
 | Baseline fidelity run | `python3 -m tools.fidelity.run_fidelity --engine-home <dir> --upstream-tree <tree> --label baseline` | 114 files: 89 pass, 25 partial, 0 fail; pass rate 0.7807; exit 0 | `fidelity-20261124T212654Z-a01b9301.jsonl`, `reports/fidelity.json` |
-| Unit tests, including one engine integration test | `SUITE_ENGINE_HOME=<dir> python3 -m pytest tools/tests -q` | 150 passed | console output only (no log file kept) |
+| Unit tests, including one engine integration test | `SUITE_ENGINE_HOME=<dir> python3 -m pytest tools/tests -q` | 156 passed | console output only (no log file kept) |
 
 Not verified, stated as such:
 
