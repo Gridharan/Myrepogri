@@ -1,0 +1,8 @@
+﻿Seed plain text (UTF-8 with byte order mark)
+
+ASCII line: The quick brown fox jumps over the lazy dog.
+Latin: café naïve façade Zürich
+Greek: αβγδε  Cyrillic: Привет  Tamil: வணக்கம்
+Symbols: € £ ¥ © ™ → ✓
+	A line that starts with a tab.
+Last line without a trailing newline.

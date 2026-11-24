@@ -1,0 +1,16 @@
+{
+ "schema_version": 1,
+ "sections": {
+  "fidelity_baseline": {
+   "duration_ms": 123805,
+   "engine_buildid": "861effc5289d539f15c4c18d1ba8579ffd78728b",
+   "fail": 0,
+   "files": 114,
+   "partial": 23,
+   "pass": 91,
+   "pass_rate": 0.7982,
+   "run_id": "20261124T210805Z-25bc9901",
+   "updated_at": "2026-11-24T21:10:09+00:00"
+  }
+ }
+}

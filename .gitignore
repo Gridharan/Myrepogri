@@ -1,0 +1,14 @@
+# Run logs are JSON lines, never committed (see docs/CONFIG.md).
+/logs/
+# Local work areas: upstream checkout, downloads, extracted trees, harness output.
+/work/
+/.work/
+__pycache__/
+*.pyc
+.pytest_cache/
+# Secrets must come from the environment only; never commit key material.
+*.pfx
+*.p12
+*.pem
+*.key
+.env

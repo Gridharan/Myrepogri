@@ -1,0 +1,1503 @@
+{
+ "algorithm": "greedy-feature-cover/2",
+ "cover": 2,
+ "files": [
+  {
+   "app": "impress",
+   "bytes": 33620,
+   "evidence": "package-xml",
+   "features": [
+    "many-layouts",
+    "math",
+    "proprietary-fonts"
+   ],
+   "format": "pptx",
+   "path": "oox/qa/unit/data/import-characters.pptx",
+   "producer": "Microsoft Office PowerPoint"
+  },
+  {
+   "app": "impress",
+   "bytes": 33763,
+   "evidence": "package-xml",
+   "features": [
+    "alternate-content",
+    "many-layouts",
+    "math",
+    "proprietary-fonts"
+   ],
+   "format": "pptx",
+   "path": "oox/qa/unit/data/import-mce.pptx",
+   "producer": "Microsoft Office PowerPoint"
+  },
+  {
+   "app": "writer",
+   "bytes": 10127,
+   "evidence": "package-xml",
+   "features": [
+    "connectors",
+    "groups",
+    "proprietary-fonts"
+   ],
+   "format": "odt",
+   "path": "oox/qa/unit/data/tdf141786_PolylineConnectorInGroup.odt",
+   "producer": "Daily9July/7.3.0.0.alpha0$Windows_X86_64 LibreOffice_project/7a58221f800e215934cbcb2d3907c35b44981611"
+  },
+  {
+   "app": "impress",
+   "bytes": 39389,
+   "evidence": "package-xml",
+   "features": [
+    "connectors",
+    "many-layouts",
+    "proprietary-fonts"
+   ],
+   "format": "potx",
+   "path": "oox/qa/unit/data/tdf165180_standardConnectorsECMA.potx",
+   "producer": "Microsoft Office PowerPoint"
+  },
+  {
+   "app": "impress",
+   "bytes": 39394,
+   "evidence": "package-xml",
+   "features": [
+    "connectors",
+    "many-layouts",
+    "proprietary-fonts"
+   ],
+   "format": "potx",
+   "path": "oox/qa/unit/data/tdf165180_standardConnectorsISO29500.potx",
+   "producer": "Microsoft Office PowerPoint"
+  },
+  {
+   "app": "impress",
+   "bytes": 67477,
+   "evidence": "package-xml",
+   "features": [
+    "embedded-fonts",
+    "many-layouts",
+    "proprietary-fonts"
+   ],
+   "format": "pptx",
+   "path": "sd/qa/unit/data/BoldonseFontEmbedded.pptx",
+   "producer": "Microsoft Office PowerPoint"
+  },
+  {
+   "app": "impress",
+   "bytes": 18335,
+   "evidence": "package-xml",
+   "features": [
+    "groups",
+    "images",
+    "notes",
+    "ole",
+    "proprietary-fonts",
+    "tables"
+   ],
+   "format": "odp",
+   "path": "sd/qa/unit/data/odp/tdf119223.odp",
+   "producer": "LibreOffice/6.4.0.3$Windows_X86_64 LibreOffice_project/b0a288ab3d2d4774cb44b62f04d5d28733ac6df8"
+  },
+  {
+   "app": "impress",
+   "bytes": 9395,
+   "evidence": "package-xml",
+   "features": [
+    "hyperlinks",
+    "notes",
+    "proprietary-fonts"
+   ],
+   "format": "odp",
+   "path": "sd/qa/unit/data/odp/tdf148966-withoutflag.odp",
+   "producer": ""
+  },
+  {
+   "app": "impress",
+   "bytes": 22852,
+   "evidence": "package-xml",
+   "features": [
+    "animations",
+    "images",
+    "lists",
+    "multi-master",
+    "notes",
+    "tables"
+   ],
+   "format": "odp",
+   "path": "sd/qa/unit/data/odp/tdf154754.odp",
+   "producer": "LibreOfficeDev/7.6.0.0.alpha0$Linux_X86_64 LibreOffice_project/1155def95bfe5b43f2b68e6c85632716df87bcf8"
+  },
+  {
+   "app": "impress",
+   "bytes": 7758,
+   "evidence": "package-xml",
+   "features": [
+    "lists",
+    "multi-master",
+    "multi-slide",
+    "notes",
+    "proprietary-fonts"
+   ],
+   "format": "odp",
+   "path": "sd/qa/unit/data/odp/tdf96708.odp",
+   "producer": ""
+  },
+  {
+   "app": "impress",
+   "bytes": 23612,
+   "evidence": "package-xml",
+   "features": [
+    "animations",
+    "many-layouts",
+    "proprietary-fonts"
+   ],
+   "format": "ppsx",
+   "path": "sd/qa/unit/data/ppsx/tdf114443-6.ppsx",
+   "producer": "WPS Presentation"
+  },
+  {
+   "app": "impress",
+   "bytes": 19968,
+   "evidence": "file-name",
+   "features": [],
+   "format": "ppt",
+   "path": "sd/qa/unit/data/ppt/FillPatterns.ppt",
+   "producer": ""
+  },
+  {
+   "app": "impress",
+   "bytes": 139264,
+   "evidence": "file-name",
+   "features": [
+    "lists"
+   ],
+   "format": "ppt",
+   "path": "sd/qa/unit/data/ppt/ppt-indentation-bullets.ppt",
+   "producer": ""
+  },
+  {
+   "app": "impress",
+   "bytes": 8192,
+   "evidence": "file-name",
+   "features": [],
+   "format": "ppt",
+   "path": "sd/qa/unit/data/ppt/tdf122899_Arc_90_to_91_clockwise.ppt",
+   "producer": ""
+  },
+  {
+   "app": "impress",
+   "bytes": 68608,
+   "evidence": "file-name",
+   "features": [
+    "lists"
+   ],
+   "format": "ppt",
+   "path": "sd/qa/unit/data/ppt/tdf143315-WordartWithoutBullet.ppt",
+   "producer": ""
+  },
+  {
+   "app": "impress",
+   "bytes": 16896,
+   "evidence": "file-name",
+   "features": [],
+   "format": "ppt",
+   "path": "sd/qa/unit/data/ppt/tdf168736-1.ppt",
+   "producer": ""
+  },
+  {
+   "app": "impress",
+   "bytes": 51712,
+   "evidence": "file-name",
+   "features": [],
+   "format": "ppt",
+   "path": "sd/qa/unit/data/ppt/tdf168786.ppt",
+   "producer": ""
+  },
+  {
+   "app": "impress",
+   "bytes": 18944,
+   "evidence": "file-name",
+   "features": [],
+   "format": "ppt",
+   "path": "sd/qa/unit/data/ppt/tdf48083.ppt",
+   "producer": ""
+  },
+  {
+   "app": "impress",
+   "bytes": 14336,
+   "evidence": "file-name",
+   "features": [],
+   "format": "ppt",
+   "path": "sd/qa/unit/data/ppt/tdf49561.ppt",
+   "producer": ""
+  },
+  {
+   "app": "impress",
+   "bytes": 35129,
+   "evidence": "package-xml",
+   "features": [
+    "animations",
+    "hyperlinks",
+    "many-layouts",
+    "proprietary-fonts",
+    "vba"
+   ],
+   "format": "pptm",
+   "path": "sd/qa/unit/data/pptm/macro.pptm",
+   "producer": "Microsoft Office PowerPoint"
+  },
+  {
+   "app": "impress",
+   "bytes": 34591,
+   "evidence": "package-xml",
+   "features": [
+    "animations",
+    "hyperlinks",
+    "images",
+    "many-layouts",
+    "media",
+    "proprietary-fonts"
+   ],
+   "format": "pptx",
+   "path": "sd/qa/unit/data/pptx/bnc591147.pptx",
+   "producer": "Microsoft Office PowerPoint"
+  },
+  {
+   "app": "impress",
+   "bytes": 31934,
+   "evidence": "package-xml",
+   "features": [
+    "charts",
+    "ole",
+    "proprietary-fonts"
+   ],
+   "format": "pptx",
+   "path": "sd/qa/unit/data/pptx/chart_pt_color_bg1.pptx",
+   "producer": "Microsoft Office PowerPoint"
+  },
+  {
+   "app": "impress",
+   "bytes": 89206,
+   "evidence": "package-xml",
+   "features": [
+    "custom-xml",
+    "embedded-fonts",
+    "proprietary-fonts"
+   ],
+   "format": "pptx",
+   "path": "sd/qa/unit/data/pptx/multiplelayoutfooter.pptx",
+   "producer": "Microsoft Office PowerPoint"
+  },
+  {
+   "app": "impress",
+   "bytes": 30952,
+   "evidence": "package-xml",
+   "features": [
+    "animations",
+    "hyperlinks",
+    "images",
+    "media",
+    "proprietary-fonts"
+   ],
+   "format": "pptx",
+   "path": "sd/qa/unit/data/pptx/narration-non-media-shape.pptx",
+   "producer": "Microsoft Office PowerPoint"
+  },
+  {
+   "app": "impress",
+   "bytes": 82099,
+   "evidence": "package-xml",
+   "features": [
+    "alternate-content",
+    "animations",
+    "hyperlinks",
+    "images",
+    "many-layouts",
+    "media",
+    "proprietary-fonts",
+    "transitions"
+   ],
+   "format": "pptx",
+   "path": "sd/qa/unit/data/pptx/narration.pptx",
+   "producer": "Microsoft Office PowerPoint"
+  },
+  {
+   "app": "impress",
+   "bytes": 4888,
+   "evidence": "package-xml",
+   "features": [
+    "comments",
+    "proprietary-fonts"
+   ],
+   "format": "pptx",
+   "path": "sd/qa/unit/data/pptx/pass/tdf173266.pptx",
+   "producer": ""
+  },
+  {
+   "app": "impress",
+   "bytes": 108164,
+   "evidence": "package-xml",
+   "features": [
+    "alternate-content",
+    "groups",
+    "many-layouts",
+    "multi-master",
+    "multi-slide",
+    "proprietary-fonts",
+    "transitions"
+   ],
+   "format": "pptx",
+   "path": "sd/qa/unit/data/pptx/slide-section-test.pptx",
+   "producer": ""
+  },
+  {
+   "app": "impress",
+   "bytes": 138108,
+   "evidence": "package-xml",
+   "features": [
+    "groups",
+    "hyperlinks",
+    "multi-master",
+    "multi-slide",
+    "notes",
+    "proprietary-fonts"
+   ],
+   "format": "pptx",
+   "path": "sd/qa/unit/data/pptx/slide-sections.pptx",
+   "producer": "Microsoft Office PowerPoint"
+  },
+  {
+   "app": "impress",
+   "bytes": 23250,
+   "evidence": "package-xml",
+   "features": [
+    "proprietary-fonts",
+    "smartart"
+   ],
+   "format": "pptx",
+   "path": "sd/qa/unit/data/pptx/smartart-composite-infer-right.pptx",
+   "producer": "Microsoft Office PowerPoint"
+  },
+  {
+   "app": "impress",
+   "bytes": 44606,
+   "evidence": "package-xml",
+   "features": [
+    "alternate-content",
+    "custom-xml",
+    "notes",
+    "ole",
+    "proprietary-fonts",
+    "tables",
+    "transitions"
+   ],
+   "format": "pptx",
+   "path": "sd/qa/unit/data/pptx/tablescale.pptx",
+   "producer": "Microsoft Office PowerPoint"
+  },
+  {
+   "app": "impress",
+   "bytes": 64312,
+   "evidence": "package-xml",
+   "features": [
+    "alternate-content",
+    "animations",
+    "connectors",
+    "groups",
+    "images",
+    "many-layouts",
+    "ole",
+    "proprietary-fonts"
+   ],
+   "format": "pptx",
+   "path": "sd/qa/unit/data/pptx/tdf103477.pptx",
+   "producer": "Microsoft Office PowerPoint"
+  },
+  {
+   "app": "impress",
+   "bytes": 82873,
+   "evidence": "package-xml",
+   "features": [
+    "animations",
+    "groups",
+    "images",
+    "many-layouts",
+    "multi-slide",
+    "notes",
+    "proprietary-fonts"
+   ],
+   "format": "pptx",
+   "path": "sd/qa/unit/data/pptx/tdf104788.pptx",
+   "producer": "Microsoft Office PowerPoint"
+  },
+  {
+   "app": "impress",
+   "bytes": 44937,
+   "evidence": "package-xml",
+   "features": [
+    "alternate-content",
+    "animations",
+    "images",
+    "many-layouts",
+    "notes",
+    "proprietary-fonts",
+    "transitions"
+   ],
+   "format": "pptx",
+   "path": "sd/qa/unit/data/pptx/tdf113163.pptx",
+   "producer": "Microsoft Office PowerPoint"
+  },
+  {
+   "app": "impress",
+   "bytes": 11652,
+   "evidence": "package-xml",
+   "features": [
+    "proprietary-fonts",
+    "tables"
+   ],
+   "format": "pptx",
+   "path": "sd/qa/unit/data/pptx/tdf119015.pptx",
+   "producer": "Microsoft Office PowerPoint"
+  },
+  {
+   "app": "impress",
+   "bytes": 28384,
+   "evidence": "package-xml",
+   "features": [
+    "alternate-content",
+    "animations",
+    "images",
+    "notes",
+    "proprietary-fonts",
+    "transitions"
+   ],
+   "format": "pptx",
+   "path": "sd/qa/unit/data/pptx/tdf140714.pptx",
+   "producer": "Microsoft Office PowerPoint"
+  },
+  {
+   "app": "impress",
+   "bytes": 62621,
+   "evidence": "package-xml",
+   "features": [
+    "animations",
+    "connectors",
+    "groups",
+    "images",
+    "many-layouts",
+    "proprietary-fonts",
+    "smartart"
+   ],
+   "format": "pptx",
+   "path": "sd/qa/unit/data/pptx/tdf141058-1.pptx",
+   "producer": "Microsoft Office PowerPoint"
+  },
+  {
+   "app": "impress",
+   "bytes": 37210,
+   "evidence": "package-xml",
+   "features": [
+    "connectors",
+    "custom-xml",
+    "notes",
+    "proprietary-fonts",
+    "transitions"
+   ],
+   "format": "pptx",
+   "path": "sd/qa/unit/data/pptx/tdf146223.pptx",
+   "producer": "Microsoft Office PowerPoint"
+  },
+  {
+   "app": "impress",
+   "bytes": 65346,
+   "evidence": "package-xml",
+   "features": [
+    "alternate-content",
+    "custom-xml",
+    "groups",
+    "many-layouts",
+    "newer-transitions",
+    "proprietary-fonts",
+    "transitions"
+   ],
+   "format": "pptx",
+   "path": "sd/qa/unit/data/pptx/tdf149588_transparentSolidFill.pptx",
+   "producer": "Microsoft Office PowerPoint"
+  },
+  {
+   "app": "impress",
+   "bytes": 46047,
+   "evidence": "package-xml",
+   "features": [
+    "alternate-content",
+    "groups",
+    "hyperlinks",
+    "many-layouts",
+    "multi-slide",
+    "proprietary-fonts",
+    "transitions"
+   ],
+   "format": "pptx",
+   "path": "sd/qa/unit/data/pptx/tdf150770.pptx",
+   "producer": "Microsoft Office PowerPoint"
+  },
+  {
+   "app": "impress",
+   "bytes": 32273,
+   "evidence": "package-xml",
+   "features": [
+    "alternate-content",
+    "connectors",
+    "groups",
+    "many-layouts",
+    "proprietary-fonts",
+    "smartart",
+    "transitions"
+   ],
+   "format": "pptx",
+   "path": "sd/qa/unit/data/pptx/tdf152606.pptx",
+   "producer": ""
+  },
+  {
+   "app": "impress",
+   "bytes": 19449,
+   "evidence": "package-xml",
+   "features": [
+    "alternate-content",
+    "images",
+    "newer-transitions",
+    "proprietary-fonts",
+    "transitions"
+   ],
+   "format": "pptx",
+   "path": "sd/qa/unit/data/pptx/tdf156808.pptx",
+   "producer": "Microsoft Office PowerPoint"
+  },
+  {
+   "app": "impress",
+   "bytes": 343241,
+   "evidence": "package-xml",
+   "features": [
+    "alternate-content",
+    "animations",
+    "charts",
+    "images",
+    "multi-master",
+    "notes",
+    "ole",
+    "proprietary-fonts",
+    "smartart"
+   ],
+   "format": "pptx",
+   "path": "sd/qa/unit/data/pptx/tdf169781.pptx",
+   "producer": "Microsoft Office PowerPoint"
+  },
+  {
+   "app": "impress",
+   "bytes": 23274,
+   "evidence": "package-xml",
+   "features": [
+    "animations",
+    "comments",
+    "notes",
+    "proprietary-fonts",
+    "transitions"
+   ],
+   "format": "pptx",
+   "path": "sd/qa/unit/data/pptx/tdf91060.pptx",
+   "producer": "Microsoft Office PowerPoint"
+  },
+  {
+   "app": "impress",
+   "bytes": 13151,
+   "evidence": "package-xml",
+   "features": [
+    "animations",
+    "multi-slide",
+    "notes",
+    "transitions"
+   ],
+   "format": "odp",
+   "path": "sd/qa/unit/tiledrendering/data/PresentationInfoTest.odp",
+   "producer": "Collabora_OfficeDev/24.04.4.2$Linux_X86_64 LibreOffice_project/cefe556b9198b5dba18256d30ddcfcfda03f18c8"
+  },
+  {
+   "app": "impress",
+   "bytes": 15162,
+   "evidence": "package-xml",
+   "features": [
+    "animations",
+    "groups",
+    "notes",
+    "transitions"
+   ],
+   "format": "odp",
+   "path": "sd/qa/unit/tiledrendering/data/SlideRenderingTest_Animated_Groups.odp",
+   "producer": "LibreOffice/7.6.4.1$Linux_X86_64 LibreOffice_project/60$Build-1"
+  },
+  {
+   "app": "impress",
+   "bytes": 32452,
+   "evidence": "package-xml",
+   "features": [
+    "many-layouts",
+    "proprietary-fonts"
+   ],
+   "format": "ppsx",
+   "path": "sd/qa/unit/tiledrendering/data/test.ppsx",
+   "producer": "Microsoft Office PowerPoint"
+  },
+  {
+   "app": "writer",
+   "bytes": 32113,
+   "evidence": "package-xml",
+   "features": [
+    "bookmarks",
+    "content-controls",
+    "custom-xml",
+    "fields",
+    "headers-footers",
+    "images",
+    "ole",
+    "proprietary-fonts",
+    "sections",
+    "vba"
+   ],
+   "format": "docm",
+   "path": "sw/qa/core/data/docm/testModernVBADelete.docm",
+   "producer": "Microsoft Office Word"
+  },
+  {
+   "app": "writer",
+   "bytes": 27711,
+   "evidence": "package-xml",
+   "features": [
+    "proprietary-fonts",
+    "tables",
+    "vba"
+   ],
+   "format": "docm",
+   "path": "sw/qa/core/data/docm/testTables.docm",
+   "producer": "Microsoft Office Word"
+  },
+  {
+   "app": "writer",
+   "bytes": 24576,
+   "evidence": "file-name",
+   "features": [
+    "endnotes",
+    "notes"
+   ],
+   "format": "doc",
+   "path": "sw/qa/core/layout/data/continuous-endnotes-move-backwards.doc",
+   "producer": ""
+  },
+  {
+   "app": "writer",
+   "bytes": 24576,
+   "evidence": "file-name",
+   "features": [
+    "endnotes",
+    "footnotes"
+   ],
+   "format": "doc",
+   "path": "sw/qa/core/layout/data/inline-endnote-and-footnote.doc",
+   "producer": ""
+  },
+  {
+   "app": "writer",
+   "bytes": 19141,
+   "evidence": "package-xml",
+   "features": [
+    "alternate-content",
+    "bookmarks",
+    "content-controls",
+    "custom-xml",
+    "fields",
+    "headers-footers",
+    "hyperlinks",
+    "lists",
+    "proprietary-fonts",
+    "tables",
+    "textboxes",
+    "toc"
+   ],
+   "format": "docx",
+   "path": "sw/qa/extras/docbookexport/data/tdf91095.docx",
+   "producer": ""
+  },
+  {
+   "app": "writer",
+   "bytes": 35840,
+   "evidence": "file-name",
+   "features": [
+    "images",
+    "ole"
+   ],
+   "format": "doc",
+   "path": "sw/qa/extras/htmlexport/data/skipimage-embedded.doc",
+   "producer": ""
+  },
+  {
+   "app": "writer",
+   "bytes": 46831,
+   "evidence": "package-xml",
+   "features": [
+    "alternate-content",
+    "bookmarks",
+    "content-controls",
+    "custom-xml",
+    "fields",
+    "headers-footers",
+    "hyperlinks",
+    "proprietary-fonts",
+    "textboxes",
+    "toc"
+   ],
+   "format": "docx",
+   "path": "sw/qa/extras/layout/data/tdf164905.docx",
+   "producer": "Microsoft Office Word"
+  },
+  {
+   "app": "writer",
+   "bytes": 39541,
+   "evidence": "package-xml",
+   "features": [
+    "bookmarks",
+    "charts",
+    "math",
+    "ole",
+    "proprietary-fonts"
+   ],
+   "format": "docx",
+   "path": "sw/qa/extras/odfexport/data/tdf134987.docx",
+   "producer": "Microsoft Office Word"
+  },
+  {
+   "app": "writer",
+   "bytes": 10981,
+   "evidence": "package-xml",
+   "features": [
+    "bookmarks",
+    "comments",
+    "footnotes",
+    "hyperlinks",
+    "textboxes",
+    "tracked-changes"
+   ],
+   "format": "odt",
+   "path": "sw/qa/extras/odfexport/data/whitespace.odt",
+   "producer": "LibreOfficeDev/5.3.3.0.0$Linux_X86_64 LibreOffice_project/75c1af593e94c049972fd929c810a9b0be23cb20"
+  },
+  {
+   "app": "writer",
+   "bytes": 37560,
+   "evidence": "package-xml",
+   "features": [
+    "alternate-content",
+    "bookmarks",
+    "content-controls",
+    "custom-xml",
+    "fields",
+    "headers-footers",
+    "images",
+    "lists",
+    "proprietary-fonts",
+    "tables",
+    "textboxes"
+   ],
+   "format": "docx",
+   "path": "sw/qa/extras/ooxmlexport/data/FDO76312.docx",
+   "producer": "Microsoft Office Word"
+  },
+  {
+   "app": "writer",
+   "bytes": 12424,
+   "evidence": "package-xml",
+   "features": [
+    "comments",
+    "custom-xml",
+    "proprietary-fonts"
+   ],
+   "format": "docx",
+   "path": "sw/qa/extras/ooxmlexport/data/fdo38244.docx",
+   "producer": "Microsoft Office Word"
+  },
+  {
+   "app": "writer",
+   "bytes": 79411,
+   "evidence": "package-xml",
+   "features": [
+    "bookmarks",
+    "charts",
+    "fields",
+    "hyperlinks",
+    "images",
+    "lists",
+    "ole",
+    "proprietary-fonts",
+    "sections",
+    "tables"
+   ],
+   "format": "docx",
+   "path": "sw/qa/extras/ooxmlexport/data/fdo76098.docx",
+   "producer": "Microsoft Macintosh Word"
+  },
+  {
+   "app": "writer",
+   "bytes": 454703,
+   "evidence": "package-xml",
+   "features": [
+    "alternate-content",
+    "bookmarks",
+    "content-controls",
+    "custom-xml",
+    "fields",
+    "headers-footers",
+    "images",
+    "lists",
+    "proprietary-fonts",
+    "tables",
+    "textboxes"
+   ],
+   "format": "docx",
+   "path": "sw/qa/extras/ooxmlexport/data/fdo78420.docx",
+   "producer": "Microsoft Office Word"
+  },
+  {
+   "app": "writer",
+   "bytes": 289270,
+   "evidence": "package-xml",
+   "features": [
+    "groups",
+    "hyperlinks",
+    "images",
+    "lists",
+    "multi-master",
+    "proprietary-fonts",
+    "sections",
+    "tables",
+    "textboxes",
+    "toc",
+    "tracked-changes"
+   ],
+   "format": "odt",
+   "path": "sw/qa/extras/ooxmlexport/data/ooo96040-2.odt",
+   "producer": "OpenOffice.org/2.4$Linux OpenOffice.org_project/680m17$Build-9310"
+  },
+  {
+   "app": "writer",
+   "bytes": 11338,
+   "evidence": "package-xml",
+   "features": [
+    "bookmarks",
+    "proprietary-fonts"
+   ],
+   "format": "dotx",
+   "path": "sw/qa/extras/ooxmlexport/data/sample.dotx",
+   "producer": "Microsoft Office Word"
+  },
+  {
+   "app": "writer",
+   "bytes": 18661,
+   "evidence": "package-xml",
+   "features": [
+    "proprietary-fonts",
+    "smartart"
+   ],
+   "format": "docx",
+   "path": "sw/qa/extras/ooxmlexport/data/strict-smartart.docx",
+   "producer": "Microsoft Office Word"
+  },
+  {
+   "app": "writer",
+   "bytes": 25636,
+   "evidence": "package-xml",
+   "features": [
+    "charts",
+    "headers-footers",
+    "images",
+    "math",
+    "proprietary-fonts",
+    "smartart"
+   ],
+   "format": "docx",
+   "path": "sw/qa/extras/ooxmlexport/data/strict.docx",
+   "producer": "Microsoft Office Word"
+  },
+  {
+   "app": "writer",
+   "bytes": 101162,
+   "evidence": "package-xml",
+   "features": [
+    "alternate-content",
+    "bookmarks",
+    "custom-xml",
+    "fields",
+    "headers-footers",
+    "hyperlinks",
+    "images",
+    "lists",
+    "proprietary-fonts",
+    "sections",
+    "tables",
+    "textboxes",
+    "toc"
+   ],
+   "format": "docx",
+   "path": "sw/qa/extras/ooxmlexport/data/tdf102466.docx",
+   "producer": ""
+  },
+  {
+   "app": "writer",
+   "bytes": 5937,
+   "evidence": "package-xml",
+   "features": [
+    "endnotes",
+    "footnotes",
+    "proprietary-fonts",
+    "tracked-changes"
+   ],
+   "format": "docx",
+   "path": "sw/qa/extras/ooxmlexport/data/tdf121784.docx",
+   "producer": ""
+  },
+  {
+   "app": "writer",
+   "bytes": 49292,
+   "evidence": "package-xml",
+   "features": [
+    "bookmarks",
+    "content-controls",
+    "custom-xml",
+    "fields",
+    "headers-footers",
+    "hyperlinks",
+    "lists",
+    "proprietary-fonts",
+    "tables",
+    "tracked-changes"
+   ],
+   "format": "docx",
+   "path": "sw/qa/extras/ooxmlexport/data/tdf123705.docx",
+   "producer": "Microsoft Macintosh Word"
+  },
+  {
+   "app": "writer",
+   "bytes": 21535,
+   "evidence": "package-xml",
+   "features": [
+    "bookmarks",
+    "content-controls",
+    "fields",
+    "footnotes",
+    "headers-footers",
+    "hyperlinks",
+    "lists",
+    "proprietary-fonts",
+    "sections",
+    "toc"
+   ],
+   "format": "docx",
+   "path": "sw/qa/extras/ooxmlexport/data/tdf124637_sectionMargin.docx",
+   "producer": "Microsoft Office Word"
+  },
+  {
+   "app": "writer",
+   "bytes": 77189,
+   "evidence": "package-xml",
+   "features": [
+    "bookmarks",
+    "footnotes",
+    "hyperlinks",
+    "lists",
+    "multi-master",
+    "ole",
+    "proprietary-fonts",
+    "tables",
+    "textboxes",
+    "toc"
+   ],
+   "format": "odt",
+   "path": "sw/qa/extras/ooxmlexport/data/tdf146955.odt",
+   "producer": "LibreOffice/6.0.7.3$Linux_X86_64 LibreOffice_project/00m0$Build-3"
+  },
+  {
+   "app": "writer",
+   "bytes": 47797,
+   "evidence": "package-xml",
+   "features": [
+    "bookmarks",
+    "content-controls",
+    "custom-xml",
+    "fields",
+    "headers-footers",
+    "images",
+    "ole",
+    "proprietary-fonts",
+    "sections",
+    "vba"
+   ],
+   "format": "docm",
+   "path": "sw/qa/extras/ooxmlexport/data/tdf151548_activeContentDemo.docm",
+   "producer": "Microsoft Office Word"
+  },
+  {
+   "app": "writer",
+   "bytes": 46878,
+   "evidence": "package-xml",
+   "features": [
+    "alternate-content",
+    "bookmarks",
+    "comments",
+    "content-controls",
+    "custom-xml",
+    "fields",
+    "hyperlinks",
+    "proprietary-fonts",
+    "textboxes",
+    "toc",
+    "tracked-changes"
+   ],
+   "format": "docx",
+   "path": "sw/qa/extras/ooxmlexport/data/tdf154478.docx",
+   "producer": "Microsoft Office Word"
+  },
+  {
+   "app": "writer",
+   "bytes": 46878,
+   "evidence": "package-xml",
+   "features": [
+    "alternate-content",
+    "bookmarks",
+    "comments",
+    "content-controls",
+    "custom-xml",
+    "fields",
+    "hyperlinks",
+    "proprietary-fonts",
+    "textboxes",
+    "toc",
+    "tracked-changes"
+   ],
+   "format": "docx",
+   "path": "sw/qa/extras/ooxmlexport/data/tdf154481.docx",
+   "producer": "Microsoft Office Word"
+  },
+  {
+   "app": "writer",
+   "bytes": 64457,
+   "evidence": "package-xml",
+   "features": [
+    "alternate-content",
+    "bookmarks",
+    "content-controls",
+    "custom-xml",
+    "fields",
+    "headers-footers",
+    "images",
+    "proprietary-fonts",
+    "sections",
+    "textboxes"
+   ],
+   "format": "docx",
+   "path": "sw/qa/extras/ooxmlexport/data/tdf167527_title_letters_cut_from_below.docx",
+   "producer": "Microsoft Office Word"
+  },
+  {
+   "app": "writer",
+   "bytes": 32736,
+   "evidence": "package-xml",
+   "features": [
+    "bookmarks",
+    "content-controls",
+    "custom-xml",
+    "fields",
+    "headers-footers",
+    "hyperlinks",
+    "lists",
+    "proprietary-fonts",
+    "sections",
+    "toc"
+   ],
+   "format": "docx",
+   "path": "sw/qa/extras/ooxmlexport/data/tdf170602_exportContext.docx",
+   "producer": "Microsoft Office Word"
+  },
+  {
+   "app": "writer",
+   "bytes": 10768,
+   "evidence": "package-xml",
+   "features": [
+    "multi-master",
+    "proprietary-fonts"
+   ],
+   "format": "docx",
+   "path": "sw/qa/extras/ooxmlexport/data/tdf171025_pageAfter.docx",
+   "producer": "LibreOfficeDev/26.8.0.0.alpha0$Linux_X86_64 LibreOffice_project/88ca7b67e039fab6d03fe03be8c4a34ab1b812f2"
+  },
+  {
+   "app": "writer",
+   "bytes": 55619,
+   "evidence": "package-xml",
+   "features": [
+    "alternate-content",
+    "bookmarks",
+    "content-controls",
+    "custom-xml",
+    "fields",
+    "headers-footers",
+    "lists",
+    "proprietary-fonts",
+    "tables",
+    "textboxes"
+   ],
+   "format": "docx",
+   "path": "sw/qa/extras/ooxmlexport/data/test_segfault_while_save.docx",
+   "producer": "Microsoft Office Word"
+  },
+  {
+   "app": "writer",
+   "bytes": 105566,
+   "evidence": "package-xml",
+   "features": [
+    "alternate-content",
+    "bookmarks",
+    "comments",
+    "custom-xml",
+    "fields",
+    "headers-footers",
+    "hyperlinks",
+    "images",
+    "proprietary-fonts",
+    "tables",
+    "textboxes",
+    "toc"
+   ],
+   "format": "docx",
+   "path": "sw/qa/extras/ooxmlexport/data/wDateValueFormat.docx",
+   "producer": "Microsoft Office Word"
+  },
+  {
+   "app": "writer",
+   "bytes": 9360,
+   "evidence": "package-xml",
+   "features": [
+    "ole",
+    "proprietary-fonts"
+   ],
+   "format": "docx",
+   "path": "sw/qa/extras/ooxmlimport/data/n777345.docx",
+   "producer": "Microsoft Office Word"
+  },
+  {
+   "app": "writer",
+   "bytes": 3402,
+   "evidence": "file-name",
+   "features": [
+    "images",
+    "ole"
+   ],
+   "format": "rtf",
+   "path": "sw/qa/extras/rtfexport/data/graphic-object-fliph.rtf",
+   "producer": ""
+  },
+  {
+   "app": "writer",
+   "bytes": 788,
+   "evidence": "file-name",
+   "features": [
+    "lists"
+   ],
+   "format": "rtf",
+   "path": "sw/qa/extras/rtfexport/data/listWithLgl.rtf",
+   "producer": ""
+  },
+  {
+   "app": "writer",
+   "bytes": 733,
+   "evidence": "file-name",
+   "features": [
+    "math"
+   ],
+   "format": "rtf",
+   "path": "sw/qa/extras/rtfexport/data/math-sepchr.rtf",
+   "producer": ""
+  },
+  {
+   "app": "writer",
+   "bytes": 814,
+   "evidence": "file-name",
+   "features": [
+    "toc"
+   ],
+   "format": "rtf",
+   "path": "sw/qa/extras/rtfexport/data/tdf134614_toc_indent.rtf",
+   "producer": ""
+  },
+  {
+   "app": "writer",
+   "bytes": 750,
+   "evidence": "file-name",
+   "features": [
+    "groups",
+    "textboxes"
+   ],
+   "format": "rtf",
+   "path": "sw/qa/extras/rtfimport/data/groupshape-rotation.rtf",
+   "producer": ""
+  },
+  {
+   "app": "writer",
+   "bytes": 690,
+   "evidence": "file-name",
+   "features": [
+    "groups",
+    "textboxes"
+   ],
+   "format": "rtf",
+   "path": "sw/qa/extras/rtfimport/data/groupshape.rtf",
+   "producer": ""
+  },
+  {
+   "app": "writer",
+   "bytes": 16611,
+   "evidence": "package-xml",
+   "features": [
+    "multi-master",
+    "signature",
+    "vba"
+   ],
+   "format": "odt",
+   "path": "sw/qa/extras/tiledrendering/data/signed-doc.odt",
+   "producer": "LibreOfficeDev/25.2.0.0.alpha0$Linux_X86_64 LibreOffice_project/c91d262abf4e86ec75a19aa96bfddc3d4315db3c"
+  },
+  {
+   "app": "writer",
+   "bytes": 11390,
+   "evidence": "package-xml",
+   "features": [
+    "bookmarks",
+    "proprietary-fonts"
+   ],
+   "format": "dotx",
+   "path": "sw/qa/extras/uiwriter/data/autotext-empty.dotx",
+   "producer": "Microsoft Office Word"
+  },
+  {
+   "app": "writer",
+   "bytes": 11062,
+   "evidence": "package-xml",
+   "features": [
+    "bookmarks",
+    "multi-master",
+    "proprietary-fonts"
+   ],
+   "format": "docx",
+   "path": "sw/qa/extras/uiwriter/data/tdf132596.docx",
+   "producer": "LibreOfficeDev/6.4.0.0.alpha1$Linux_X86_64 LibreOffice_project/9bc848cf0d301aa57eabcffa101a1cf87bad6470"
+  },
+  {
+   "app": "writer",
+   "bytes": 60272,
+   "evidence": "package-xml",
+   "features": [
+    "alternate-content",
+    "bookmarks",
+    "content-controls",
+    "custom-xml",
+    "fields",
+    "headers-footers",
+    "hyperlinks",
+    "images",
+    "lists",
+    "proprietary-fonts",
+    "sections",
+    "tables",
+    "toc"
+   ],
+   "format": "docx",
+   "path": "sw/qa/extras/uiwriter/data/tdf157131.docx",
+   "producer": "Microsoft Office Word"
+  },
+  {
+   "app": "writer",
+   "bytes": 10244,
+   "evidence": "package-xml",
+   "features": [
+    "comments",
+    "images",
+    "proprietary-fonts"
+   ],
+   "format": "odt",
+   "path": "sw/qa/extras/unowriter/data/image-comment-at-char.odt",
+   "producer": "LibreOfficeDev/6.4.0.0.alpha0$Linux_X86_64 LibreOffice_project/711ccfbac1ef28fdf03ceea820be8d3e9f8a4009"
+  },
+  {
+   "app": "writer",
+   "bytes": 27136,
+   "evidence": "file-name",
+   "features": [
+    "comments",
+    "tables"
+   ],
+   "format": "doc",
+   "path": "sw/qa/extras/ww8export/data/commented-table.doc",
+   "producer": ""
+  },
+  {
+   "app": "writer",
+   "bytes": 24064,
+   "evidence": "file-name",
+   "features": [
+    "comments",
+    "images"
+   ],
+   "format": "doc",
+   "path": "sw/qa/extras/ww8export/data/image-comment-at-char.doc",
+   "producer": ""
+  },
+  {
+   "app": "writer",
+   "bytes": 23040,
+   "evidence": "file-name",
+   "features": [
+    "lists",
+    "ole"
+   ],
+   "format": "doc",
+   "path": "sw/qa/extras/ww8export/data/list-nolevel.doc",
+   "producer": ""
+  },
+  {
+   "app": "writer",
+   "bytes": 17408,
+   "evidence": "file-name",
+   "features": [
+    "lists",
+    "tables"
+   ],
+   "format": "doc",
+   "path": "sw/qa/extras/ww8export/data/tdf49102_mergedCellNumbering.doc",
+   "producer": ""
+  },
+  {
+   "app": "writer",
+   "bytes": 13312,
+   "evidence": "file-name",
+   "features": [
+    "footnotes",
+    "tracked-changes"
+   ],
+   "format": "doc",
+   "path": "sw/qa/extras/ww8import/data/changes-in-footnote.doc",
+   "producer": ""
+  },
+  {
+   "app": "writer",
+   "bytes": 36987,
+   "evidence": "package-xml",
+   "features": [
+    "embedded-fonts",
+    "proprietary-fonts"
+   ],
+   "format": "docx",
+   "path": "sw/qa/writerfilter/dmapper/data/subsetted-embedded-font.docx",
+   "producer": "Microsoft Office Word"
+  },
+  {
+   "app": "writer",
+   "bytes": 85639,
+   "evidence": "package-xml",
+   "features": [
+    "embedded-fonts",
+    "proprietary-fonts"
+   ],
+   "format": "docx",
+   "path": "sw/qa/writerfilter/dmapper/data/subsetted-full-embedded-font.docx",
+   "producer": "Microsoft Office Word"
+  },
+  {
+   "app": "writer",
+   "bytes": 15863,
+   "evidence": "package-xml",
+   "features": [
+    "bookmarks",
+    "custom-xml",
+    "endnotes",
+    "footnotes",
+    "proprietary-fonts"
+   ],
+   "format": "docx",
+   "path": "sw/qa/writerfilter/filter/data/inline-endnote-and-footnote.docx",
+   "producer": "Microsoft Office Word"
+  }
+ ],
+ "max_bytes": 1500000,
+ "roots": [
+  "sw/qa",
+  "sd/qa",
+  "oox/qa"
+ ],
+ "stats": {
+  "doc": {
+   "candidates": 249,
+   "quota": 8,
+   "selected": 8
+  },
+  "docm": {
+   "candidates": 16,
+   "quota": 3,
+   "selected": 3
+  },
+  "docx": {
+   "candidates": 2130,
+   "quota": 26,
+   "selected": 26
+  },
+  "dotx": {
+   "candidates": 4,
+   "quota": 2,
+   "selected": 2
+  },
+  "odp": {
+   "candidates": 245,
+   "quota": 6,
+   "selected": 6
+  },
+  "odt": {
+   "candidates": 1123,
+   "quota": 6,
+   "selected": 6
+  },
+  "potx": {
+   "candidates": 4,
+   "quota": 2,
+   "selected": 2
+  },
+  "ppsx": {
+   "candidates": 2,
+   "quota": 2,
+   "selected": 2
+  },
+  "ppt": {
+   "candidates": 33,
+   "quota": 8,
+   "selected": 8
+  },
+  "pptm": {
+   "candidates": 1,
+   "quota": 2,
+   "selected": 1
+  },
+  "pptx": {
+   "candidates": 486,
+   "quota": 26,
+   "selected": 26
+  },
+  "rtf": {
+   "candidates": 288,
+   "quota": 6,
+   "selected": 6
+  }
+ }
+}

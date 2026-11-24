@@ -1,0 +1,44 @@
+{
+ "files": [
+  {
+   "app": "writer",
+   "engine": "LibreOffice 26.8.3.1 861effc5289d539f15c4c18d1ba8579ffd78728b",
+   "features": "styles;lists;tables;merged-cells;hyperlinks;bookmarks;sections;columns",
+   "filter": "MS Word 97",
+   "name": "seed-basic.from-docx.doc",
+   "sha256": "365b93840543e469f40585670bc79f076de91221b5324c04598db3c9ee413699",
+   "source_id": "self-seed-basic-docx",
+   "source_sha256": "a16345af381ea65bfafed828d524d33f34d865136b263eb76797e89ffb4a2c04"
+  },
+  {
+   "app": "writer",
+   "engine": "LibreOffice 26.8.3.1 861effc5289d539f15c4c18d1ba8579ffd78728b",
+   "features": "headers-footers;footnotes;endnotes;toc;fields",
+   "filter": "MS Word 97",
+   "name": "seed-notes-headers.from-docx.doc",
+   "sha256": "99e3b7c523299d82d6c673a5f567582356926f46fa416655836dba9d78ac221f",
+   "source_id": "self-seed-notes-headers-docx",
+   "source_sha256": "1b47405abfd91d11dd331215bb6eff3573ff9c7f32231b04a4756b23e5c64656"
+  },
+  {
+   "app": "writer",
+   "engine": "LibreOffice 26.8.3.1 861effc5289d539f15c4c18d1ba8579ffd78728b",
+   "features": "tracked-changes;comments",
+   "filter": "MS Word 97",
+   "name": "seed-review.from-docx.doc",
+   "sha256": "f0a57aab7bb359d090275e87358c7a46cb38b42fe123625fe49663ba5a182b0a",
+   "source_id": "self-seed-review-docx",
+   "source_sha256": "1fce25db54d8983d497dca64cfce3eb37adabe7e8cb9fd2829732029e4b98c9b"
+  },
+  {
+   "app": "impress",
+   "engine": "LibreOffice 26.8.3.1 861effc5289d539f15c4c18d1ba8579ffd78728b",
+   "features": "masters-layouts;notes;transitions;animations;tables;images;hidden-slides",
+   "filter": "MS PowerPoint 97",
+   "name": "seed-basic.from-pptx.ppt",
+   "sha256": "f36f26a56ae7542ffd0d218c0fa406e65080d2596659a2955db0731366050611",
+   "source_id": "self-seed-basic-pptx",
+   "source_sha256": "aeb8367042b0a256301a95a7a44de2d831370bc0dae4a1df1e032dec36d6f55e"
+  }
+ ]
+}
