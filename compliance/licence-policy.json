@@ -15,7 +15,7 @@
   ],
   "ask_first_prefixes": ["GPL-", "AGPL-"],
   "obligations": {
-    "MPL-2.0": "keep notices; make source of every modified MPL file available under MPL-2.0 and tell recipients where; ship licence text",
+    "MPL-2.0": "keep notices; when distributing in executable form, make the Source Code Form of the MPL-covered software (including our modifications) available and tell recipients how to get it; ship licence text (wording to be confirmed by legal review)",
     "LGPL-2.0-only": "ship licence text; provide library source incl. modifications; let users replace/relink the library; keep notices",
     "LGPL-2.0-or-later": "ship licence text; provide library source incl. modifications; let users replace/relink the library; keep notices",
     "LGPL-2.1-only": "ship licence text; provide library source incl. modifications; let users replace/relink the library; keep notices",

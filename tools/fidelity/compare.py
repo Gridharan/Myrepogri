@@ -3,9 +3,10 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 """Turn one probe result into a verdict: ``pass`` / ``partial`` / ``fail``.
 
-Rules (version 3; docs/fidelity-method.md has the history of versions 1
-and 2, which were replaced after trial runs showed false alarms and a
-missed loss; the recorded baseline uses version 3):
+Rules (version 4; docs/fidelity-method.md has the history of versions
+1 to 3, which were replaced after trial runs and an independent review
+showed false alarms and missed losses; the recorded baseline uses
+version 4):
 
 ``fail``     the document did not open, the PDF export failed, the
              round-trip save failed, the saved copy did not reopen, the
@@ -13,9 +14,11 @@ missed loss; the recorded baseline uses version 3):
 ``partial``  everything ran, but the page/slide count changed, a
              *critical* model metric changed, a critical kind of package
              part disappeared completely, user content counted in the
-             package (comments, notes, header text ...) was lost, a slide
-             transition effect named in the file is gone after saving, or
-             the PDF page count does not match the document.
+             package (comments, notes, formulas, header text ...) was
+             lost, an amount of content (words, characters, shapes ...)
+             shrank by more than 5 %, a slide transition effect named in
+             the file is gone after saving, or the PDF page count does not
+             match the document or could not be read.
 ``pass``     none of the above.
 
 Non-critical differences are kept as information and never change the
@@ -50,7 +53,30 @@ FAIL_STEPS = (
     ("remeasure", "remeasure-failed"),
 )
 STATUSES = ("pass", "partial", "fail")
-CRITERIA_VERSION = 3
+CRITERIA_VERSION = 4
+#: Amounts of content.  A drop of more than SHRINK_TOLERANCE (and at least one
+#: unit) between the first and the second reading is a loss, whatever the kind.
+SHRINK_KEYS = {
+    "writer": ("word_count", "character_count", "paragraphs", "text_frames", "draw_shapes",
+               "hyperlink_portions", "list_paragraphs", "bookmarks", "sections"),
+    "impress": ("text_chars", "notes_chars", "shapes", "paragraphs", "hyperlink_portions",
+                "animation_nodes"),
+}
+SHRINK_KEYS["writer-web"] = SHRINK_KEYS["writer-global"] = SHRINK_KEYS["writer"]
+SHRINK_KEYS["draw"] = SHRINK_KEYS["impress"]
+SHRINK_TOLERANCE = 0.05
+
+
+def shrunk(before: Dict[str, Any], after: Dict[str, Any], kind: str) -> List[str]:
+    """Content metrics that dropped by more than the tolerance."""
+    lost = []
+    for key in SHRINK_KEYS.get(kind, ()):
+        old, new = before.get(key), after.get(key)
+        if not isinstance(old, (int, float)) or not isinstance(new, (int, float)) or old <= 0:
+            continue
+        if new < old and (old - new) >= max(1.0, old * SHRINK_TOLERANCE):
+            lost.append(key)
+    return lost
 
 
 def flatten(metrics: Dict[str, Any], prefix: str = "") -> Dict[str, Any]:
@@ -144,10 +170,12 @@ def classify(worker: Optional[Dict[str, Any]], package_diff: Optional[Dict[str, 
     critical_diffs, info_diffs = metric_diffs(
         before.get("metrics", {}), after.get("metrics", {}), critical_keys)
     partial.extend(f"critical-metric-changed:{key}" for key in critical_diffs)
+    partial.extend(f"content-shrank:{key}" for key in shrunk(
+        before.get("metrics", {}), after.get("metrics", {}), before.get("kind", "")))
 
     expected = expected_pdf_pages(before)
     if pdf_pages is None:
-        info.append("pdf-page-count-unknown")
+        partial.append("pdf-page-count-unknown")   # the page criterion could not be checked
     elif expected is not None and pdf_pages != expected:
         partial.append("pdf-page-mismatch")
 

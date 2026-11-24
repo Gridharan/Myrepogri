@@ -56,6 +56,8 @@ SIGNATURES: Tuple[Signature, ...] = (
     # mentions the Lesser and Affero licences, so looser phrases confuse them.
     Signature("AGPL-3.0", ("gnu affero general public license version 3, 19 november 2007",)),
     Signature("GPL-3.0", ("gnu general public license version 3, 29 june 2007",)),
+    Signature("GPL-1.0", ("gnu general public license version 1, february 1989",)),
+    Signature("Artistic-1.0", ("the \"artistic license\"", "preamble")),
     Signature("GPL-2.0", ("gnu general public license version 2, june 1991",)),
     Signature("LGPL-3.0", ("gnu lesser general public license version 3, 29 june 2007",)),
     Signature("LGPL-2.1", ("gnu lesser general public license version 2.1, february 1999",)),
@@ -129,6 +131,17 @@ SIGNATURES: Tuple[Signature, ...] = (
                "mozilla public license", "apache license")),
 )
 
+#: Wording that adds a restriction to an otherwise permissive text.  A text that
+#: carries one is NOT the plain licence its other sentences suggest, so it is
+#: reported with an extra identifier that no policy pre-approves.
+RESTRICTION_MARKERS = (
+    "non-commercial", "noncommercial", "not for commercial", "may not be used for commercial",
+    "commons clause", "the right to sell the software", "good, not evil",
+    "for evaluation purposes only", "this product includes software developed by",
+    "must display the following acknowledg", "must include the following acknowledg",
+)
+RESTRICTED = "LicenseRef-additional-restriction"
+
 #: Licence *notices* as they appear in source-file headers and READMEs.  Weaker than
 #: a full licence text, so they are only used where no licence file settles it.
 NOTICES: Tuple[Signature, ...] = (
@@ -146,14 +159,25 @@ NOTICES: Tuple[Signature, ...] = (
 # would let one of them hide the other.
 _GPL_NOTICE = re.compile(
     r"(?<!lesser )(?<!library )(?<!affero )gnu general public license[^.]{0,200}?"
-    r"version (\d)(?!\.\d)")
+    r"(?:version |v)(\d)(?:\.0)?(?!\.\d)")
 _LGPL_NOTICE = re.compile(
-    r"gnu (?:lesser|library) general public license[^.]{0,200}?version (\d(?:\.\d)?)")
-_AGPL_NOTICE = re.compile(r"gnu affero general public license[^.]{0,200}?version (\d)")
-_TAG_NOTICE = re.compile(r"\blicen[cs]e: (a?l?gpl)-(\d(?:\.\d)?)")
-_GNU_VERSIONS = {("gpl", "2"): "GPL-2.0", ("gpl", "3"): "GPL-3.0", ("lgpl", "2"): "LGPL-2.0",
-                 ("lgpl", "2.0"): "LGPL-2.0", ("lgpl", "2.1"): "LGPL-2.1",
-                 ("lgpl", "3"): "LGPL-3.0", ("agpl", "3"): "AGPL-3.0"}
+    r"gnu (?:lesser|library) general public license[^.]{0,200}?(?:version |v)(\d(?:\.\d)?)")
+_AGPL_NOTICE = re.compile(
+    r"gnu affero general public license[^.]{0,200}?(?:version |v)(\d)")
+# "version 2 of the GNU General Public License", "version 2.1 of the GNU Lesser ..."
+_VERSION_FIRST = re.compile(
+    r"version (\d(?:\.\d)?)(?: or later)? of the gnu (lesser |library |affero )?general public")
+# "License: GPL-2+", "GPLv3", "LGPL-2.1", "AGPL-3.0", "GNU GPL v2"
+_TAG_NOTICE = re.compile(
+    r"(?<![a-z0-9])(agpl|lgpl|gpl)[ -]?v?(\d(?:\.\d)?)(?![0-9])")
+_GNU_VERSIONS = {
+    ("gpl", "1"): "GPL-1.0", ("gpl", "1.0"): "GPL-1.0", ("gpl", "2"): "GPL-2.0",
+    ("gpl", "2.0"): "GPL-2.0", ("gpl", "3"): "GPL-3.0", ("gpl", "3.0"): "GPL-3.0",
+    ("lgpl", "2"): "LGPL-2.0", ("lgpl", "2.0"): "LGPL-2.0", ("lgpl", "2.1"): "LGPL-2.1",
+    ("lgpl", "3"): "LGPL-3.0", ("lgpl", "3.0"): "LGPL-3.0",
+    ("agpl", "3"): "AGPL-3.0", ("agpl", "3.0"): "AGPL-3.0",
+}
+_FAMILY_WORD = {"lesser ": "lgpl", "library ": "lgpl", "affero ": "agpl", None: "gpl", "": "gpl"}
 
 
 def gnu_notices(flat: str) -> List[Tuple[str, str]]:
@@ -165,6 +189,10 @@ def gnu_notices(flat: str) -> List[Tuple[str, str]]:
             spdx = _GNU_VERSIONS.get((family, match.group(1)))
             if spdx:
                 found.append((spdx, match.group(0)))
+    for match in _VERSION_FIRST.finditer(flat):
+        spdx = _GNU_VERSIONS.get((_FAMILY_WORD.get(match.group(2), "gpl"), match.group(1)))
+        if spdx:
+            found.append((spdx, match.group(0)))
     for match in _TAG_NOTICE.finditer(flat):
         spdx = _GNU_VERSIONS.get((match.group(1), match.group(2)))
         if spdx:
@@ -183,7 +211,7 @@ CHOICE_PHRASES = ("dual licensed", "dual-licensed", "tri-licensed", "triple lice
                   "you may choose", "either of the following licenses", "under either",
                   "is licensed under your choice", "any of the following licenses")
 _SPDX_TAG = re.compile(r"SPDX-License-Identifier:\s*([A-Za-z0-9.+()\- ]{2,120})")
-GNU_IDS = ("GPL-2.0", "GPL-3.0", "LGPL-2.0", "LGPL-2.1", "LGPL-3.0", "AGPL-3.0")
+GNU_IDS = ("GPL-1.0", "GPL-2.0", "GPL-3.0", "LGPL-2.0", "LGPL-2.1", "LGPL-3.0", "AGPL-3.0")
 
 
 @dataclass(frozen=True)
@@ -223,6 +251,10 @@ def detect(text: str, notices: bool = False) -> List[Detection]:
         for spdx, phrase in gnu_notices(flat):
             if spdx not in found:
                 found[spdx] = Detection(spdx, _evidence_line(text, phrase))
+    for marker in RESTRICTION_MARKERS:
+        if marker in flat:
+            found[RESTRICTED] = Detection(RESTRICTED, _evidence_line(text, marker))
+            break
     # A file that contains a specific licence text is not also "public domain".
     if len(found) > 1:
         found.pop("LicenseRef-public-domain", None)
@@ -257,6 +289,27 @@ def spdx_tags(text: str) -> List[str]:
         if value and value not in values:
             values.append(value)
     return values
+
+
+_SPDX_ID = re.compile(r"[A-Za-z0-9][A-Za-z0-9.+-]*")
+
+
+def spdx_ids(expression: str) -> List[str]:
+    """Identifiers named in an SPDX expression (operators and exceptions dropped)."""
+    ids: List[str] = []
+    skip = False
+    for token in _SPDX_ID.findall(expression):
+        if token.upper() in ("AND", "OR"):
+            continue
+        if token.upper() == "WITH":
+            skip = True       # the next token is an exception name, not a licence
+            continue
+        if skip:
+            skip = False
+            continue
+        if token not in ids:
+            ids.append(token)
+    return ids
 
 
 def gnu_suffix(spdx: str, or_later: bool) -> str:

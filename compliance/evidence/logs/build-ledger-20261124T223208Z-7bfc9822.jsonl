@@ -1,0 +1,2 @@
+{"ts": "2026-11-24T22:32:20.530+00:00", "level": "INFO", "run_id": "20261124T223208Z-7bfc9822", "phase": "phase0", "step": "scan_externals", "duration_ms": 11629, "result": "ok", "count": 153, "rows": 153}
+{"ts": "2026-11-24T22:32:20.536+00:00", "level": "INFO", "run_id": "20261124T223208Z-7bfc9822", "phase": "phase0", "step": "finish", "duration_ms": 0, "result": "ok", "rows": 184, "by_verdict": {"allow": 76, "needs-review": 108, "reject": 0}, "usage_entries_verified": 26}

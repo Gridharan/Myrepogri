@@ -31,6 +31,7 @@ import fnmatch
 import hashlib
 import json
 import re
+import shutil
 import struct
 import sys
 import tarfile
@@ -51,7 +52,7 @@ EXIT_CHECKSUM = 5
 REPO_ROOT = Path(__file__).resolve().parents[2]
 
 MAX_FILE_BYTES = 2 * 1024 * 1024
-MAX_COPY_DEPTH = 3          # path components below the archive root directory
+MAX_COPY_DEPTH = 64         # no practical depth limit; the per-archive cap bounds the work
 MAX_COPIED_PER_ARCHIVE = 400
 MAX_FONT_BYTES = 40 * 1024 * 1024
 MAX_FONTS_PER_ARCHIVE = 8
@@ -65,6 +66,7 @@ LICENCE_PATTERNS = (
     "notice*", "unlicense*", "patents*", "legal*", "ofl*", "authors*", "third*party*",
     "ftl.txt", "gpl*", "lgpl*", "mpl*", "apache*", "bsd*", "mit*", "cc0*", "cc-by*",
     "eula*", "fontlog*", "credits*", "trademark*", "license.terms", "*_lic.*",
+    "agpl*", "gnu-*", "gnu_*", "*gpl*", "artistic*", "epl*", "cddl*",
 )
 # Directories whose direct children are always treated as licence files.
 LICENCE_DIRS = ("licenses", "licences", "license", "licence", "legal", "copyright")
@@ -84,7 +86,8 @@ CODE_SUFFIXES = (
 )
 #: Names that are licence documents even with an unusual suffix (COPYING.LIB).
 STRONG_PREFIXES = ("copying", "license", "licence", "notice", "copyright", "unlicense",
-                   "patents", "ofl")
+                   "patents", "ofl", "gpl", "lgpl", "agpl", "gnu-", "gnu_", "mpl", "apache",
+                   "bsd", "mit", "cc0", "cc-by", "artistic", "epl", "cddl")
 SOURCE_SUFFIXES = (
     ".c", ".cc", ".cpp", ".cxx", ".h", ".hh", ".hpp", ".hxx", ".java", ".py", ".js", ".ts",
     ".go", ".rs", ".cs", ".php", ".rb", ".pl", ".pm", ".sh", ".bat", ".cmake", ".m4", ".mk",
@@ -279,6 +282,11 @@ def process_archive(item: External, tarballs: Path, dest: Path) -> dict:
     kind = archive_kind(item.filename)
     inventory["archive_kind"] = kind
     out_dir.mkdir(parents=True, exist_ok=True)
+    # Never mix evidence of two archive versions: drop what an earlier run left.
+    if dest.resolve() in files_dir.resolve().parents and files_dir.is_dir():
+        shutil.rmtree(files_dir)
+    for stale in ("_fonts.json", "_font_name_table.json"):
+        (out_dir / stale).unlink(missing_ok=True)
 
     if kind == "font":
         records = font_name_records(archive.read_bytes())

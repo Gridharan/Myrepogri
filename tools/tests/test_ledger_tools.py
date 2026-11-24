@@ -108,6 +108,10 @@ def test_normalise_member(name, expected):
     ("pkg/NOTICE", "licence"), ("pkg/OFL.txt", "licence"), ("pkg/LICENSES/MIT.txt", "licence"),
     ("pkg/README.md", "readme"), ("pkg/sub/README.md", None), ("pkg/src/license.cpp", None),
     ("pkg/src/main.c", None), ("pkg/legal/terms.html", "licence"),
+    # regression: these licence names were skipped
+    ("pkg/GNU-GPL", "licence"), ("pkg/LGPL-2.1", "licence"), ("pkg/AGPL-3.0.txt", "licence"),
+    ("pkg/Artistic", "licence"), ("pkg/doc/hsqldb_lic.txt", "licence"),
+    ("pkg/a/b/c/d/e/COPYING", "licence"), ("pkg/src/gplutil.c", None),
 ])
 def test_classify(path, role):
     assert extract_licences.classify(PurePosixPath(path), 1) == role
@@ -137,14 +141,20 @@ def test_process_tar_copies_only_licence_files_and_ignores_hostile_members(tmp_p
     assert inventory["status"] == "ok" and inventory["root_dir"] == "pkg-1.0"
     assert inventory["hostile_names_skipped"] == 1
     copied = {c["member"]: c for c in inventory["candidates"] if c["copied"]}
-    assert set(copied) == {"pkg-1.0/LICENSE", "pkg-1.0/README"}
+    assert set(copied) == {"pkg-1.0/LICENSE", "pkg-1.0/README", "pkg-1.0/a/b/c/d/COPYING"}
     licence = dest / "PKG" / copied["pkg-1.0/LICENSE"]["local"]
     assert licence.read_bytes().startswith(b"MIT License")
     assert copied["pkg-1.0/LICENSE"]["sha256"] == hashlib.sha256(licence.read_bytes()).hexdigest()
     deep = [c for c in inventory["candidates"] if c["member"].endswith("d/COPYING")]
-    assert deep and deep[0]["copied"] is False  # listed, but too deep to copy
+    assert deep and deep[0]["copied"] is True   # depth no longer hides a licence file
     written = {p.relative_to(dest).as_posix() for p in dest.rglob("*") if p.is_file()}
-    assert written == {"PKG/files/pkg-1.0/LICENSE", "PKG/files/pkg-1.0/README"}
+    assert written == {"PKG/files/pkg-1.0/LICENSE", "PKG/files/pkg-1.0/README",
+                       "PKG/files/pkg-1.0/a/b/c/d/COPYING"}
+    # a second run for another archive version leaves no file of the first behind
+    newer = _external(tmp_path, "pkg-2.0.tar.gz", _tar([("pkg-2.0/COPYING", b"x", "file")]))
+    extract_licences.process_archive(newer, tmp_path / "tarballs", dest)
+    written = {p.relative_to(dest).as_posix() for p in dest.rglob("*") if p.is_file()}
+    assert written == {"PKG/files/pkg-2.0/COPYING"}
     assert not (tmp_path / "escape").exists()
 
 

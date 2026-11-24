@@ -52,7 +52,7 @@ def test_generated_packages_contain_the_features_they_claim(tmp_path):
     for name, data in files.items():
         (tmp_path / name).write_bytes(data)
     review = pkgdiff.inspect_package(tmp_path / "seed-review.docx")
-    assert review["content_counts"] == {"comments": 2}
+    assert review["content_counts"] == {"comments": 2, "tracked-changes": 4}
     assert review["element_counts"]["w:ins"] == 3 and review["element_counts"]["w:del"] == 1
     notes = pkgdiff.inspect_package(tmp_path / "seed-notes-headers.docx")
     assert notes["content_counts"] == {"endnotes": 1, "footers-with-text": 1, "footnotes": 2,
@@ -172,6 +172,10 @@ def test_pdf_page_count(tmp_path):
     pdf.write_bytes(b"%PDF-1.7\n1 0 obj\n<</Type/Pages/Kids[2 0 R]/Count 3>>\nendobj\n"
                     b"2 0 obj\n<</Type/Page/Parent 1 0 R>>\nendobj\n%%EOF\n")
     assert pkgdiff.pdf_page_count(pdf) == 3
+    kids = b" ".join(b"%d 0 R" % number for number in range(3, 503))   # a long page list
+    pdf.write_bytes(b"%PDF-1.7\n1 0 obj\n<</Type/Pages\n/Resources 2 0 R\n/Kids[ " + kids
+                    + b" ]\n/Count 500>>\nendobj\n%%EOF\n")
+    assert pkgdiff.pdf_page_count(pdf) == 500       # regression: was None above ~45 pages
     pdf.write_bytes(b"%PDF-1.7\n(no plain page tree)\n")
     assert pkgdiff.pdf_page_count(pdf) is None
     pdf.write_bytes(b"not a pdf")
@@ -202,7 +206,8 @@ def test_classify_pass_partial_fail():
     assert pages["reasons"] == ["unit-count-changed"]
     assert compare.classify(_worker(same, same), None, 5, True)["reasons"] == ["pdf-page-mismatch"]
     unknown = compare.classify(_worker(same, same), None, None, True)
-    assert unknown["status"] == "pass" and "pdf-page-count-unknown" in unknown["info"]
+    assert unknown["status"] == "partial"           # the page criterion was not checkable
+    assert unknown["reasons"] == ["pdf-page-count-unknown"]
     assert compare.classify(_worker(same, same), None, 2, False)["reasons"] == ["pdf-invalid"]
 
 
@@ -230,6 +235,73 @@ def test_classify_uses_package_findings_and_hidden_slides():
              "transitions_lost": ["morph"], "transitions_changed": True}
     assert compare.classify(worker, morph, 4, True)["reasons"] == ["transition-lost:morph"]
     assert "part-kind-lost:theme" in verdict["info"]
+
+
+def test_content_shrink_is_a_loss():
+    # regression: a document that lost all its words used to "pass"
+    before = {"page_count": 1, "word_count": 420, "character_count": 2600, "text_frames": 4}
+    after = {"page_count": 1, "word_count": 0, "character_count": 0, "text_frames": 0}
+    verdict = compare.classify(_worker(before, after, units=(1, 1)), None, 1, True)
+    assert verdict["status"] == "partial"
+    assert verdict["reasons"] == ["content-shrank:word_count", "content-shrank:character_count",
+                                  "content-shrank:text_frames"]
+    small = {**before, "word_count": 410}            # 2.4 % is inside the tolerance
+    assert compare.classify(_worker(before, small, units=(1, 1)), None, 1, True)["status"] == "pass"
+    deck = {"slide_count": 2, "text_chars": 5000, "shapes": 30, "notes_chars": 900}
+    lost = {"slide_count": 2, "text_chars": 0, "shapes": 3, "notes_chars": 3}
+    assert compare.classify(_worker(deck, lost, kind="impress"), None, 2, True)["reasons"] == [
+        "content-shrank:text_chars", "content-shrank:notes_chars", "content-shrank:shapes"]
+    assert compare.shrunk({"word_count": 0}, {"word_count": 0}, "writer") == []
+    assert compare.shrunk({"word_count": 5}, {"word_count": 9}, "writer") == []   # growth is fine
+
+
+def test_package_counters_cover_formulas_and_odf(tmp_path):
+    m = pkgdiff.NS["m"]
+    with_math = _zip(tmp_path / "m.pptx", {
+        "[Content_Types].xml": "<Types/>",
+        "ppt/slides/slide1.xml": f'<p:sld xmlns:p="{pkgdiff.NS["p"]}" xmlns:m="{m}"><m:oMath/>'
+                                 "</p:sld>"})
+    without = _zip(tmp_path / "n.pptx", {"[Content_Types].xml": "<Types/>",
+                                         "ppt/slides/slide1.xml": f'<p:sld xmlns:p="{pkgdiff.NS["p"]}"/>'})
+    diff = pkgdiff.diff_inventories(pkgdiff.inspect_package(with_math),
+                                    pkgdiff.inspect_package(without))
+    assert diff["content_lost"] == ["formulas"]      # regression: formula loss went unseen
+    text, office = pkgdiff.NS["text"], pkgdiff.NS["office"]
+    odt = _zip(tmp_path / "o.odt", {
+        "mimetype": "application/vnd.oasis.opendocument.text",
+        "content.xml": f'<office:document-content xmlns:office="{office}" xmlns:text="{text}">'
+                       '<office:annotation/><office:annotation/>'
+                       '<text:note text:note-class="footnote"/>'
+                       '<text:note text:note-class="endnote"/><text:changed-region/>'
+                       "</office:document-content>"})
+    assert pkgdiff.inspect_package(odt)["content_counts"] == {
+        "comments": 2, "endnotes": 1, "footnotes": 1, "tracked-changes": 1}
+
+
+def test_xml_guard_is_independent_of_offset_and_encoding():
+    late = b'<?xml version="1.0"?><!--' + b"x" * 5000 + b'--><!DOCTYPE a [<!ENTITY e "b">]><a>&e;</a>'
+    assert pkgdiff.scan_xml(late) == {"skipped": "dtd-or-entity-declaration"}
+    wide = '<?xml version="1.0" encoding="UTF-16"?><!DOCTYPE a [<!ENTITY e "b">]><a>&e;</a>'
+    assert pkgdiff.scan_xml(wide.encode("utf-16")) == {"skipped": "dtd-or-entity-declaration"}
+    odd = pkgdiff.scan_xml(b'<?xml version="1.0" encoding="Shift_JIS"?><a/>')
+    assert odd["skipped"].startswith("xml-unreadable")
+
+
+def test_run_isolated_kills_the_whole_process_group(tmp_path):
+    marker = tmp_path / "pid"
+    script = f"sleep 300 & echo $! > {marker}; wait"
+    with pytest.raises(subprocess.TimeoutExpired):
+        run_fidelity.run_isolated(["sh", "-c", script], timeout=1)
+    child = int(marker.read_text())
+    for _ in range(50):                               # give the kernel a moment to reap
+        if not Path(f"/proc/{child}").exists() or "Z" in Path(f"/proc/{child}/stat").read_text():
+            break
+        import time
+        time.sleep(0.1)
+    alive = Path(f"/proc/{child}").exists() and " Z " not in Path(f"/proc/{child}/stat").read_text()
+    assert not alive                                  # the grandchild did not survive
+    done = run_fidelity.run_isolated(["sh", "-c", "echo hi"], timeout=10)
+    assert done.returncode == 0 and done.stdout.strip() == "hi"
 
 
 def test_flatten_and_summarise():
@@ -418,7 +490,7 @@ def test_evaluate_builds_a_row_from_a_probe_result(tmp_path):
     source = _docx(tmp_path / "in.docx", "<w:p/><w:tbl/>")
     roundtrip = _docx(tmp_path / "rt.docx", "<w:p/>")
     pdf = tmp_path / "out.pdf"
-    pdf.write_bytes(b"%PDF-1.7\n<</Type/Pages/Count 2>>\n")
+    pdf.write_bytes(b"%PDF-1.7\n1 0 obj\n<</Type/Pages/Count 2>>\nendobj\n")
     metrics = {"page_count": 2, "tables": 1, "fonts": ["Calibri"]}
     worker = _worker(metrics, metrics)
     worker["outputs"] = {"pdf": str(pdf), "roundtrip": str(roundtrip)}

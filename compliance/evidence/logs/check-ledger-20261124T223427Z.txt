@@ -1,0 +1,4 @@
+# command: python3 -m tools.ledger.check_ledger --download-lst <tree>/download.lst
+# run at 20261124T223427Z (UTC)
+{"rows": 184, "by_verdict": {"allow": 76, "needs-review": 108, "reject": 0}, "not_allowed": 108, "problems": [], "clean": false}
+# exit code: 8

@@ -72,6 +72,8 @@ def _fetch_one(item: External, dest: Path, timeout: float, retries: int) -> dict
             row.update(status="checksum-mismatch", error=str(exc), actual_sha256=exc.actual)
         except FetchError as exc:
             row.update(status="network-error", error=str(exc))
+        except Exception as exc:  # noqa: BLE001 - one item must not abort the whole run
+            row.update(status="network-error", error=f"{type(exc).__name__}: {exc}")
     row["duration_ms"] = int((time.monotonic() - started) * 1000)
     return row
 

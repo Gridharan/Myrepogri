@@ -8,10 +8,13 @@ Checks, each one independent and recorded with the command that was run:
 
 1. the tag resolves to the pinned commit on the official repository;
 2. the read-only GitHub mirror resolves the same tag to the same commit;
-3. (optional) a local checkout's HEAD is the pinned commit;
-4. (optional) a downloaded release archive has the SHA-256 the
+3. the pinned release is the newest ``x.y.z`` directory in the official
+   stable listing, and the official source directory of that release
+   holds the archive named after the pinned tag;
+4. (optional) a local checkout's HEAD is the pinned commit;
+5. (optional) a downloaded release archive has the SHA-256 the
    publisher's own server reports for it;
-5. (optional) an unpacked release reports the pinned commit as build id.
+6. (optional) an unpacked release reports the pinned commit as build id.
 
 Network steps use ``git ls-remote`` and HTTPS GET with timeouts and
 bounded retries.  Writes the evidence as JSON; exit code 0 only when
@@ -22,6 +25,7 @@ from __future__ import annotations
 
 import argparse
 import datetime as dt
+import hashlib
 import json
 import re
 import subprocess
@@ -100,6 +104,34 @@ def ls_remote(repository: str, tag: str, timeout: float = 120.0, retries: int = 
     return {"command": " ".join(command), "commit": None, "error": last, "attempts": retries + 1}
 
 
+_STABLE_DIR = re.compile(r'href="(\d+)\.(\d+)\.(\d+)/"')
+MAX_LISTING_BYTES = 2 * 1024 * 1024
+
+
+def http_get(url: str, timeout: float = 60.0, retries: int = 3,
+             opener: Callable = urllib.request.urlopen,
+             sleep: Callable[[float], None] = time.sleep) -> Optional[bytes]:
+    """Body of a small page, or ``None`` after bounded retries."""
+    validate_url(url)
+    delays = backoff_delays(retries)
+    for attempt in range(retries + 1):
+        try:
+            with opener(urllib.request.Request(url, headers={"User-Agent": "build-fetch/1"}),
+                        timeout=timeout) as response:
+                return response.read(MAX_LISTING_BYTES)
+        except (urllib.error.URLError, TimeoutError, OSError):
+            if attempt < retries:
+                sleep(delays[attempt])
+    return None
+
+
+def newest_stable(listing: bytes) -> Optional[str]:
+    """Highest ``x.y.z/`` directory linked from a release listing page."""
+    versions = {tuple(int(part) for part in match)
+                for match in _STABLE_DIR.findall(listing.decode("utf-8", "replace"))}
+    return ".".join(str(part) for part in max(versions)) if versions else None
+
+
 def published_sha256(url: str, timeout: float = 60.0, retries: int = 3,
                      opener: Callable = urllib.request.urlopen,
                      sleep: Callable[[float], None] = time.sleep) -> Optional[str]:
@@ -150,6 +182,21 @@ def run(argv: Optional[Sequence[str]] = None) -> int:
                           ("mirror-tag", "mirror_repository")):
             result = ls_remote(pin[key], pin["tag"])
             record(name, result["commit"] == pin["commit"], repository=pin[key], **result)
+        if pin.get("stable_listing_url") and pin.get("release_version"):
+            body = http_get(pin["stable_listing_url"])
+            newest = newest_stable(body) if body else None
+            record("newest-stable-release", newest == pin["release_version"],
+                   url=pin["stable_listing_url"], newest_listed=newest,
+                   pinned_release=pin["release_version"],
+                   listing_sha256=hashlib.sha256(body).hexdigest() if body else None)
+        if pin.get("source_listing_url"):
+            body = http_get(pin["source_listing_url"])
+            wanted = pin["tag"].split("-", 1)[-1] + ".tar.xz"
+            wanted = "libreoffice-" + wanted
+            present = bool(body) and f'href="{wanted}"'.encode("ascii") in body
+            record("release-source-archive-name", present, url=pin["source_listing_url"],
+                   expected_file=wanted,
+                   listing_sha256=hashlib.sha256(body).hexdigest() if body else None)
     if args.checkout is not None:
         command = ["git", "-C", str(args.checkout), "rev-parse", "HEAD"]
         done = subprocess.run(command, capture_output=True, text=True, timeout=60)

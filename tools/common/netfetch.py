@@ -17,6 +17,7 @@ Rules implemented here (engineering standards):
 from __future__ import annotations
 
 import hashlib
+import http.client
 import os
 import re
 import time
@@ -148,7 +149,9 @@ def fetch_verified(
             # 4xx (except 408/429) will not get better by retrying.
             if 400 <= exc.code < 500 and exc.code not in (408, 429):
                 raise FetchError(f"HTTP {exc.code} for {url}") from exc
-        except (urllib.error.URLError, TimeoutError, ConnectionError, OSError, FetchError) as exc:
+        except (urllib.error.URLError, TimeoutError, ConnectionError, OSError, FetchError,
+                http.client.HTTPException) as exc:
+            # HTTPException covers a body cut short (IncompleteRead): retry it too.
             part.unlink(missing_ok=True)
             last_error = exc
         if attempt <= retries:

@@ -175,6 +175,44 @@ def test_fetch_does_not_retry_not_found(server, tmp_path):
     assert sleeps == [] and _Handler.hits == 1
 
 
+def test_fetch_retries_a_body_cut_short(tmp_path):
+    # regression: http.client.IncompleteRead escaped on the first attempt and left a .part file
+    import http.client
+
+    class Body:
+        status = 200
+
+        def __init__(self, fail):
+            self.fail, self.sent = fail, False
+
+        def read(self, _size):
+            if self.fail:
+                raise http.client.IncompleteRead(b"", 5000)
+            if self.sent:
+                return b""
+            self.sent = True
+            return _Handler.payload
+
+        def __enter__(self):
+            return self
+
+        def __exit__(self, *_exc):
+            return False
+
+    calls = []
+
+    def opener(_request, timeout=0):
+        calls.append(timeout)
+        return Body(fail=len(calls) == 1)
+
+    sleeps = []
+    dest = tmp_path / "f.bin"
+    result = netfetch.fetch_verified("https://example.invalid/x", dest, GOOD, retries=2,
+                                     backoff_base=1.0, sleep=sleeps.append, opener=opener)
+    assert result.attempts == 2 and sleeps == [1.0] and dest.read_bytes() == _Handler.payload
+    assert not dest.with_name("f.bin.part").exists()
+
+
 @pytest.mark.parametrize("url", ["http://example.org/x", "ftp://example.org/x", "file:///etc/passwd",
                                  "https://", "not a url"])
 def test_fetch_rejects_non_https_urls(url, tmp_path):

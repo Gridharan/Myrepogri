@@ -63,6 +63,33 @@ class EngineError(Exception):
     """The engine installation cannot be used."""
 
 
+def _kill_group(pid: int) -> None:
+    try:
+        os.killpg(pid, signal.SIGKILL)
+    except (ProcessLookupError, PermissionError):
+        pass
+
+
+def run_isolated(command: Sequence[str], timeout: float) -> "subprocess.CompletedProcess[str]":
+    """Run a command in its own session and always sweep its process group.
+
+    The engine's launcher starts the real program as a child; killing only
+    the launcher (what ``subprocess.run(timeout=...)`` does) would leave
+    that child running.  Raises ``subprocess.TimeoutExpired`` on timeout.
+    """
+    process = subprocess.Popen(list(command), stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                               stdin=subprocess.DEVNULL, text=True, start_new_session=True)
+    try:
+        stdout, stderr = process.communicate(timeout=timeout)
+    except subprocess.TimeoutExpired:
+        _kill_group(process.pid)
+        process.communicate()
+        raise
+    finally:
+        _kill_group(process.pid)
+    return subprocess.CompletedProcess(list(command), process.returncode, stdout, stderr)
+
+
 def engine_identity(engine_home: Path, scratch: Path) -> Dict[str, str]:
     """Describe the engine: executables, build id and reported version."""
     program = engine_home / "program"
@@ -79,10 +106,9 @@ def engine_identity(engine_home: Path, scratch: Path) -> Dict[str, str]:
     profile = scratch / "version-profile"
     profile.mkdir(parents=True, exist_ok=True)
     try:
-        completed = subprocess.run(
+        completed = run_isolated(
             [str(soffice), "--headless", f"-env:UserInstallation={profile.as_uri()}",
-             "--version"],
-            capture_output=True, text=True, timeout=120, stdin=subprocess.DEVNULL)
+             "--version"], timeout=120)
     except (OSError, subprocess.TimeoutExpired) as exc:
         raise EngineError(f"cannot run {soffice}: {exc}") from exc
     version_line = (completed.stdout or "").strip().splitlines()[:1]
@@ -129,10 +155,7 @@ def run_worker(engine: Dict[str, str], source: Path, workdir: Path, password: st
             timed_out = True
         finally:
             # The engine is a child of the worker: always sweep the whole group.
-            try:
-                os.killpg(process.pid, signal.SIGKILL)
-            except (ProcessLookupError, PermissionError):
-                pass
+            _kill_group(process.pid)
             if timed_out:
                 process.wait(timeout=30)
     worker: Optional[Dict[str, Any]] = None

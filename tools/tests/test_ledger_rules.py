@@ -103,6 +103,44 @@ def test_gnu_notices_do_not_hide_each_other():
     assert ids("This mentions the General Public License without a version.", notices=True) == []
 
 
+@pytest.mark.parametrize("text,expected", [
+    # regression: spellings the first version missed
+    ("License: GPL-2.0", ["GPL-2.0"]), ("License: AGPL-3.0", ["AGPL-3.0"]),
+    ("under the terms of version 2 of the GNU General Public License as published", ["GPL-2.0"]),
+    ("Licensed under the GNU General Public License v3.0.", ["GPL-3.0"]),
+    ("GPLv3 or later", ["GPL-3.0"]), ("released under LGPLv2.1", ["LGPL-2.1"]),
+    ("version 2.1 of the GNU Lesser General Public License", ["LGPL-2.1"]),
+    ("distributed under the terms of GNU General Public License version 2 (see file GNU-GPL)",
+     ["GPL-2.0"]),
+    ("a) the GNU General Public License as published by the Free Software Foundation; either "
+     "version 1, or (at your option) any later version", ["GPL-1.0"]),
+    ("words like gplots, algpl1 and xgpl2 are not licences", []),
+])
+def test_gnu_notice_spellings(text, expected):
+    assert ids(text, notices=True) == expected
+
+
+@pytest.mark.parametrize("addition", [
+    "The Software shall be used for Good, not Evil.",
+    "The Software may be used for non-commercial purposes only.",
+    "Commons Clause: the License does not grant to you the right to Sell the Software.",
+    "This product includes software developed by the Example Project.",
+])
+def test_added_restrictions_are_reported(addition):
+    # regression: a permissive text with an extra restriction was reported as plain MIT
+    found = ids(MIT + addition + "\n")
+    assert classify.RESTRICTED in found
+    verdict, reason = POLICY.verdict(found)
+    assert verdict == "needs-review" and classify.RESTRICTED in reason
+    assert classify.RESTRICTED not in ids(MIT)
+
+
+def test_spdx_expression_identifiers():
+    assert classify.spdx_ids("GPL-3.0-or-later WITH Classpath-exception-2.0 OR (MIT AND Zlib)") \
+        == ["GPL-3.0-or-later", "MIT", "Zlib"]
+    assert classify.spdx_ids("") == []
+
+
 def test_spdx_tags_and_choice_wording():
     text = "// SPDX-License-Identifier: MIT OR Apache-2.0 */\n// SPDX-License-Identifier: Zlib\n"
     assert classify.spdx_tags(text) == ["MIT OR Apache-2.0", "Zlib"]
@@ -240,6 +278,66 @@ def test_row_gpl_text_is_ask_first_and_nothing_found_is_noassertion(tmp_path):
     assert empty["spdx"] == "NOASSERTION" and empty["verdict"] == "needs-review"
 
 
+def test_unrecognised_licence_file_blocks_allow(tmp_path):
+    # regression: an archive whose own COPYING was not recognised got "allow" from a
+    # bundled sub-directory's MIT file
+    row = _row(tmp_path, "OLD", [("old-1.0/COPYING", "Licensed under the so-called Old Example terms.\n"),
+                                 ("old-1.0/src/part/LICENSE", MIT)])
+    assert row["spdx"] == "MIT" and row["verdict"] == "needs-review"
+    assert "not recognised: old-1.0/COPYING" in row["review_notes"]
+    # companions such as AUTHORS are not licence texts and do not block
+    fine = _row(tmp_path, "FINE", [("fine-1.0/LICENSE", MIT), ("fine-1.0/AUTHORS", "A. Person\n")])
+    assert fine["verdict"] == "allow"
+
+
+def test_licence_file_that_points_elsewhere_and_spdx_tags(tmp_path):
+    pointer = _row(tmp_path, "PTR", [("ptr-1.0/LICENSE", "This package is distributed under the "
+                                      "terms of GNU General Public License version 2 (see file "
+                                      "GNU-GPL)\n")])
+    assert pointer["spdx"] == "GPL-2.0-only" and "ask first" in pointer["review_notes"]
+    tagged = _row(tmp_path, "TAG", [("tag-1.0/LICENSE", MIT),
+                                    ("tag-1.0/src/a.c", "// SPDX-License-Identifier: GPL-3.0-or-later\n")])
+    assert tagged["verdict"] == "needs-review" and "GPL-3.0-or-later" in tagged["review_notes"]
+    ok = _row(tmp_path, "TAGOK", [("tagok-1.0/LICENSE", MIT),
+                                  ("tagok-1.0/src/a.c", "// SPDX-License-Identifier: MIT\n")])
+    assert ok["verdict"] == "allow"
+
+
+def test_stale_or_foreign_evidence_is_never_used(tmp_path):
+    # regression: evidence extracted from one archive version was applied to another
+    item = _archive(tmp_path, "LIB", [("lib-1.0/LICENSE", MIT)])
+    other = External(item.key, item.variable, item.kind, "lib-2.0.tar.gz", "9" * 64, item.url)
+    scan = build_ledger.scan_external(other, tmp_path / "lic", tmp_path / "tarballs")
+    row = build_ledger.external_row(other, scan, POLICY, {}, {})
+    assert scan["stale"] and row["spdx"] == "NOASSERTION" and row["verdict"] == "needs-review"
+    assert "missing or does not belong" in row["review_notes"]
+
+
+def test_usage_notes_are_reverified_against_the_tree(tmp_path):
+    tree = tmp_path / "tree"
+    (tree / "external").mkdir(parents=True)
+    (tree / "external" / "Module.mk").write_text("line one\n\tgb_Helper_optional,ZLIB,zlib\n")
+    good = {"path": "external/Module.mk", "line": 2, "quote": "gb_Helper_optional,ZLIB,zlib"}
+    usage = tmp_path / "usage.json"
+    usage.write_text(json.dumps({"entries": {
+        "ZLIB": {"category": "runtime-shipped", "windows_default": "on", "linkage": "static",
+                 "evidence": [good, {**good, "quote": "line one"}]},
+        "FAKE": {"category": "runtime-shipped", "evidence": [good, {**good, "quote": "invented"}]},
+        "ESCAPE": {"category": "x", "evidence": [{"path": "../usage.json", "line": 1,
+                                                  "quote": "entries"}] * 2}}}))
+    verified = build_ledger.verified_usage(usage, tree)
+    assert set(verified) == {"ZLIB"} and "2 of 2 quotes" in verified["ZLIB"]["summary"]
+    assert build_ledger.verified_usage(tmp_path / "absent.json", tree) == {}
+
+
+def test_primary_licence_names():
+    for name in ("x/LICENSE", "x/COPYING.LIB", "x/GNU-GPL", "x/LGPL-2.1", "x/licenses/zlib.txt",
+                 "x/OFL.txt", "x/doc/hsqldb_license.html"):
+        assert build_ledger.is_primary_licence_name(name), name
+    for name in ("x/AUTHORS", "x/NOTICE", "x/CREDITS", "x/FONTLOG.txt", "x/README.md"):
+        assert not build_ledger.is_primary_licence_name(name), name
+
+
 def test_write_ledger_rejects_duplicates_and_static_validation(tmp_path):
     row = {column: "x" for column in build_ledger.COLUMNS}
     row["verdict"] = "allow"
@@ -270,6 +368,19 @@ def test_check_ledger_findings():
     for fragment in ("empty spdx", "duplicate id a", "verdict 'bogus'", "required item zzz"):
         assert fragment in text
     assert check_ledger.check([{**base, "id": "a", "verdict": "allow"}])["clean"] is True
+    # regression: the gate passed on input that proves nothing
+    assert check_ledger.check([])["problems"] == ["the ledger has no rows"]
+    for spdx in ("NOASSERTION", "UNKNOWN", ""):
+        bad = check_ledger.check([{**base, "id": "a", "verdict": "allow", "spdx": spdx}])
+        assert not bad["clean"]
+    agpl = check_ledger.check([{**base, "id": "a", "verdict": "allow", "spdx": "AGPL-3.0-only"}],
+                              policy=POLICY)
+    assert "not pre-approved by the policy: AGPL-3.0-only" in agpl["problems"][0]
+    assert check_ledger.check([{**base, "id": "a", "verdict": "allow", "spdx": "MIT; MPL-2.0"}],
+                              policy=POLICY)["clean"]
+    sums = check_ledger.check([{**base, "id": "a", "verdict": "allow", "spdx": "MIT",
+                                "sha256": "1" * 64}], ["a"], POLICY, {"a": "2" * 64})
+    assert "sha256 differs from download.lst" in sums["problems"][0]
 
 
 def test_check_ledger_cli_exit_codes(tmp_path, capsys):
@@ -278,8 +389,11 @@ def test_check_ledger_cli_exit_codes(tmp_path, capsys):
     build_ledger.write_ledger(ledger, [{**base, "id": "a", "verdict": "needs-review"}])
     assert check_ledger.run(["--ledger", str(ledger)]) == 8
     assert check_ledger.run(["--ledger", str(ledger), "--report-only"]) == 0
-    build_ledger.write_ledger(ledger, [{**base, "id": "a", "verdict": "allow"}])
+    build_ledger.write_ledger(ledger, [{**base, "id": "a", "verdict": "allow", "spdx": "MIT"}])
     assert check_ledger.run(["--ledger", str(ledger)]) == 0
+    build_ledger.write_ledger(ledger, [{**base, "id": "a", "verdict": "allow",
+                                        "spdx": "GPL-3.0-only"}])
+    assert check_ledger.run(["--ledger", str(ledger)]) == 8   # allow outside the policy
     assert check_ledger.run(["--ledger", str(tmp_path / "none.csv")]) == 2
     ledger.write_text("wrong,header\n1,2\n")
     assert check_ledger.run(["--ledger", str(ledger)]) == 2
@@ -326,6 +440,13 @@ def test_load_pin_validation(tmp_path):
     path.write_text(json.dumps({**pin, "official_repository": "http://insecure.example/x"}))
     with pytest.raises(ValueError):
         verify_pin.load_pin(path)
+
+
+def test_newest_stable_listing():
+    page = b'<a href="25.8.7/">x</a> <a href="26.2.7/">x</a> <a href="26.8.3/">x</a> <a href="26.8.2/">x</a>'
+    assert verify_pin.newest_stable(page) == "26.8.3"
+    assert verify_pin.newest_stable(b'<a href="26.10.0/">x</a><a href="26.8.3/">x</a>') == "26.10.0"
+    assert verify_pin.newest_stable(b"no versions here") is None
 
 
 def test_verify_pin_offline_checks(tmp_path, capsys):

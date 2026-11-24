@@ -144,11 +144,18 @@ the tree wins. Lines used:
 - The page has sections on antivirus products interfering with the build
   and on a failing first `winget` run on a fresh Windows installation.
 
+Wiki page "Development/lode" (LibreOffice Development Environment),
+revision 886630 dated 2026-07-16, also unversioned:
+
+- "count 25 GB to be safe with one debug build environment... for a
+  Jenkins slave at least 100 GB should be provisioned."
+- "This may take 1 to 2 hours, or more depending on your machine."
+
 ## 7. Not stated by upstream in what was read (UNKNOWN)
 
 | Item | How to find out |
 |---|---|
-| Disk space, RAM and build time for a release build | measure in Phase 1 and record in `build/BUILDINFO.json` |
+| RAM, and disk space and build time for a *release* build (the LODE page quoted in section 6 gives only a debug-build disk figure and a rough time) | measure in Phase 1 and record in `build/BUILDINFO.json`; plan for well above 25 GB |
 | Whether the Windows target can be cross-built from Linux | search `configure.ac` for the host/build checks; until shown otherwise assume **no**, because the documented chain is Visual Studio on Windows |
 | Which Windows SDK tools the MSI packaging calls, and how the Visual C++ runtime is shipped (the component list includes `VC.Redist.MSM`) | read `solenv/bin/modules/installer/windows/` and `scp2/` at the start of Phase 1 |
 | Test targets and their Windows behaviour | read `Makefile.in` and `solenv/gbuild` help text at the start of Phase 1 |

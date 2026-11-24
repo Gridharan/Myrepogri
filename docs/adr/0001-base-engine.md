@@ -16,7 +16,7 @@ This confirms the default named in the brief.
 ## Evidence for the pin
 
 All of this is re-checkable with `python3 -m tools.pin.verify_pin`
-(result in `compliance/evidence/upstream-pin.json`, 5 of 5 checks passed).
+(result in `compliance/evidence/upstream-pin.json`, 7 of 7 checks passed).
 
 | Check | Result |
 |---|---|
@@ -53,13 +53,16 @@ release key published by The Document Foundation, then
 - The base's own packaging produces an MSI (`--with-package-format`,
   used with `msi` in `distro-configs/LibreOfficeWin64.conf`).
 - Baseline fidelity on our seed corpus with the unmodified official
-  build: 89 of 114 documents pass, 25 partial, 0 fail
-  (`reports/fidelity.json`, run `20261124T212654Z-a01b9301`).
-- Release cadence from the upstream release plan (wiki page
-  `ReleasePlan/26.8`, revision 896825): 26.8.4 in week 48 of 2026,
-  26.8.5 in week 5 of 2027, 26.8.6 in week 10 of 2027. End-of-life date
-  of the 26.8 line: UNKNOWN (not on the page excerpt read; verify on the
-  upstream `ReleasePlan` page).
+  build: 84 of 114 documents pass, 30 partial, 0 fail
+  (`reports/fidelity.json`, run `20261124T222749Z-7627aa7a`).
+- Support window from the upstream release plan (wiki page
+  `ReleasePlan/26.8`, revision 896825): the page's "End of Life" table
+  gives **June 13, 2027**, under the caption "no more bugfix releases
+  will be created from the 26-8 code branch by TDF". Bug-fix releases
+  26.8.4, 26.8.5, 26.8.6 and 26.8.7 are listed; their dates are template
+  parameters whose meaning was not expanded (UNKNOWN; read the rendered
+  page). **Consequence:** the product must move to a newer upstream line
+  before mid-2027, or carry security fixes itself after that date.
 
 ### B. Collabora Office desktop (not proposed)
 
@@ -108,8 +111,12 @@ Why it is not proposed as the base:
    the upstream marks from a modified build.
 
 What we take from it: `CODAWindows.conf` is an upstream-maintained
-example of a reduced, Java-free, MPL-only Windows configuration and is
-the starting point for our Phase 2 configuration.
+example of a reduced, Java-free Windows configuration and a useful
+starting point for Phase 2. It is **not** an MPL-only build by itself:
+it only switches off components (its "# MPLv2 subset" block), it does
+not pass `--enable-mpl-subset`, and it passes `--with-fonts`, which
+without the MPL-subset switch still packages the Culmus fonts
+(`Repository.mk:1061`).
 
 ### C. ONLYOFFICE or proprietary SDKs
 
@@ -132,8 +139,10 @@ Excluded by the brief; not evaluated.
 
 ## Open points for the owner
 
-1. Approve option A and the pin.
-2. Say whether an MPL-only build is preferred if the transition
-   measurements allow it (simplest compliance for commercial distribution).
+1. Approve option A and the pin, knowing the 26.8 line ends on
+   June 13, 2027.
+2. Say whether an MPL-only build (`--enable-mpl-subset`) is preferred if
+   the transition measurements allow it. Whether that is the better
+   compliance position is a legal judgement, flagged for human review.
 3. Confirm that upstream test documents may be used as test input
    (ledger row `corpus-upstream-test-documents`).

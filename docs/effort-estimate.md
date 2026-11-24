@@ -26,6 +26,6 @@ machine and signing certificate.
 
 1. A ready Windows machine with Visual Studio licensed and installed
    (removes most of Phase 1's uncertainty).
-2. The owner's rulings on the 88 open ledger rows — choosing the MPL-only
+2. The owner's rulings on the 108 open ledger rows — choosing the MPL-only
    build early shrinks that list.
 3. Owner-supplied reference renderings and real documents for Phase 3.

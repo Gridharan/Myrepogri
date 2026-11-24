@@ -23,6 +23,7 @@ declare a DTD or entities are not parsed.
 from __future__ import annotations
 
 import re
+import xml.parsers.expat
 import zipfile
 from pathlib import Path
 from typing import Dict, Iterable, List, Optional, Tuple
@@ -116,6 +117,7 @@ CRITICAL_PART_KINDS = frozenset((
 #: content counter -> rule; "decrease": any drop is a loss, "vanish": only >0 -> 0
 CONTENT_RULES = {
     "comments": "decrease", "footnotes": "decrease", "endnotes": "decrease",
+    "formulas": "decrease", "tracked-changes": "vanish",
     "headers-with-text": "vanish", "footers-with-text": "vanish",
     "notes-with-text": "vanish",
 }
@@ -162,6 +164,14 @@ class PackageError(Exception):
     """The file is not a readable package, or exceeds the safety limits."""
 
 
+class _DeclarationRefused(Exception):
+    """Raised from the expat handlers to stop parsing a part with a DTD."""
+
+
+def _refuse_declaration(*_args: object) -> None:
+    raise _DeclarationRefused()
+
+
 def _qname(tag: str) -> str:
     """``{uri}local`` -> ``prefix:local`` for known namespaces, else ``?:local``."""
     if not tag.startswith("{"):
@@ -201,18 +211,26 @@ def _is_theme_placeholder(name: str) -> bool:
 
 def scan_xml(data: bytes) -> Dict[str, object]:
     """Count watched elements and collect fonts/transitions from one XML part."""
-    head = data[:4096]
-    if b"<!DOCTYPE" in head or b"<!ENTITY" in head:
-        return {"skipped": "dtd-or-entity-declaration"}
     counts: Dict[str, int] = {}
     fonts = set()
     transitions: List[str] = []
     toc_fields = 0
     font_attr_map = dict(_FONT_ATTRS)
+    # A part that declares a DTD or entities is not parsed at all.  A first pass
+    # with bare expat aborts at the declaration wherever it sits and whatever the
+    # encoding; only a clean part reaches the tree builder.
+    probe = xml.parsers.expat.ParserCreate()
+    probe.StartDoctypeDeclHandler = _refuse_declaration
+    probe.EntityDeclHandler = _refuse_declaration
     try:
+        probe.Parse(data, True)
         root = ElementTree.fromstring(data)
-    except ElementTree.ParseError as exc:
+    except _DeclarationRefused:
+        return {"skipped": "dtd-or-entity-declaration"}
+    except (xml.parsers.expat.ExpatError, ElementTree.ParseError) as exc:
         return {"skipped": f"xml-parse-error: {exc}"}
+    except (ValueError, LookupError) as exc:   # e.g. an encoding expat cannot read
+        return {"skipped": f"xml-unreadable: {exc}"}
     text_chars = 0
     content: Dict[str, int] = {}
     stack: List[Tuple[ElementTree.Element, bool, bool]] = [(root, False, False)]
@@ -226,8 +244,15 @@ def scan_xml(data: bytes) -> Dict[str, object]:
             if (_attr(element, "w:type") or "normal") == "normal":
                 key = "footnotes" if name == "w:footnote" else "endnotes"
                 content[key] = content.get(key, 0) + 1
-        elif name == "w:comment" or element.tag.endswith("}cm"):
+        elif name in ("w:comment", "office:annotation") or element.tag.endswith("}cm"):
             content["comments"] = content.get("comments", 0) + 1
+        elif name == "text:note":
+            key = "endnotes" if _attr(element, "text:note-class") == "endnote" else "footnotes"
+            content[key] = content.get(key, 0) + 1
+        elif name == "m:oMath":
+            content["formulas"] = content.get("formulas", 0) + 1
+        elif name in ("w:ins", "w:del", "w:moveFrom", "w:moveTo", "text:changed-region"):
+            content["tracked-changes"] = content.get("tracked-changes", 0) + 1
         elif name in ("w:t", "a:t") and not in_field:
             text_chars += len((element.text or "").strip())
         if name in font_attr_map:
@@ -395,11 +420,16 @@ def pdf_page_count(path: Path, limit: int = 256 * 1024 * 1024) -> Optional[int]:
     if not data.startswith(b"%PDF-"):
         return None
     best: Optional[int] = None
-    for match in re.finditer(rb"<<(?:(?!>>).){0,400}?/Type\s*/Pages\b(?:(?!>>).){0,400}?>>",
-                             data, flags=re.S):
-        count = re.search(rb"/Count\s+(\d+)", match.group(0))
-        if count:
-            value = int(count.group(1))
+    for match in re.finditer(rb"/Type\s*/Pages\b", data):
+        # the whole object: from the "obj" before the marker to the "endobj" after it
+        # (a page tree lists every page in /Kids, so the object can be long)
+        start = data.rfind(b" obj", 0, match.start())
+        end = data.find(b"endobj", match.end())
+        if end < 0:
+            continue
+        counts = re.findall(rb"/Count\s+(\d+)", data[max(start, 0):end])
+        for raw in counts:
+            value = int(raw)
             best = value if best is None else max(best, value)
     return best
 

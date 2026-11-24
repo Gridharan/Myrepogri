@@ -28,7 +28,7 @@ from pathlib import Path
 from typing import Optional, Sequence
 
 from tools.common.netfetch import sha256_file
-from tools.fidelity.run_fidelity import EngineError, engine_identity
+from tools.fidelity.run_fidelity import EngineError, engine_identity, run_isolated
 
 EXIT_OK = 0
 EXIT_USAGE = 2
@@ -78,8 +78,7 @@ def run(argv: Optional[Sequence[str]] = None) -> int:
                        "--convert-to", f"{extension}:{export_filter}",
                        "--outdir", str(outdir), str(source)]
             try:
-                completed = subprocess.run(command, capture_output=True, text=True,
-                                           timeout=300, stdin=subprocess.DEVNULL)
+                completed = run_isolated(command, timeout=300)
             except (OSError, subprocess.TimeoutExpired) as exc:
                 print(f"error: conversion of {source_name} failed: {exc}", file=sys.stderr)
                 return EXIT_ENGINE

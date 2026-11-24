@@ -1,106 +1,927 @@
 {
- "FONT_ALEF": {
-  "category": "font-asset",
-  "summary": "font-asset; default Windows build: on; linkage: data; options: --without-fonts (quotes verified against the pinned tree: 5/5)"
- },
- "FONT_AMIRI": {
-  "category": "font-asset",
-  "summary": "font-asset; default Windows build: on; linkage: data; options: --without-fonts (quotes verified against the pinned tree: 5/5)"
- },
- "FONT_BACASIME_ANTIQUE": {
-  "category": "runtime-shipped-optional",
-  "summary": "runtime-shipped-optional; default Windows build: off; linkage: data; options: --with-docrepair-fonts, --without-fonts (quotes verified against the pinned tree: 5/5)"
- },
- "FONT_BELANOSIMA": {
-  "category": "runtime-shipped-optional",
-  "summary": "runtime-shipped-optional; default Windows build: off; linkage: data; options: --with-docrepair-fonts, --without-fonts (quotes verified against the pinned tree: 5/5)"
- },
- "FONT_CALADEA": {
-  "category": "font-asset",
-  "summary": "font-asset; default Windows build: on; linkage: data; options: --without-fonts (quotes verified against the pinned tree: 5/5)"
- },
- "FONT_CAPRASIMO": {
-  "category": "runtime-shipped-optional",
-  "summary": "runtime-shipped-optional; default Windows build: off; linkage: data; options: --with-docrepair-fonts, --without-fonts (quotes verified against the pinned tree: 5/5)"
- },
- "FONT_CARLITO": {
-  "category": "font-asset",
-  "summary": "font-asset; default Windows build: on; linkage: data; options: --without-fonts (quotes verified against the pinned tree: 5/5)"
- },
- "FONT_CULMUS": {
-  "category": "font-asset",
-  "summary": "font-asset; default Windows build: on; linkage: data; options: --without-fonts, --enable-mpl-subset (quotes verified against the pinned tree: 5/5)"
- },
- "FONT_DEJAVU": {
-  "category": "font-asset",
-  "summary": "font-asset; default Windows build: on; linkage: data; options: --without-fonts (quotes verified against the pinned tree: 5/5)"
- },
- "FONT_LIBERATION": {
-  "category": "font-asset",
-  "summary": "font-asset; default Windows build: on; linkage: data; options: --without-fonts (quotes verified against the pinned tree: 5/5)"
- },
- "FONT_LIBERATION_NARROW": {
-  "category": "font-asset",
-  "summary": "font-asset; default Windows build: on; linkage: data; options: --without-fonts (quotes verified against the pinned tree: 5/5)"
- },
- "FONT_LIBRE_HEBREW": {
-  "category": "font-asset",
-  "summary": "font-asset; default Windows build: on; linkage: data; options: --without-fonts (quotes verified against the pinned tree: 5/5)"
- },
- "FONT_LINLIBERTINEG": {
-  "category": "font-asset",
-  "summary": "font-asset; default Windows build: on; linkage: data; options: --without-fonts (quotes verified against the pinned tree: 5/5)"
- },
- "FONT_LUGRASIMO": {
-  "category": "runtime-shipped-optional",
-  "summary": "runtime-shipped-optional; default Windows build: off; linkage: data; options: --with-docrepair-fonts, --without-fonts (quotes verified against the pinned tree: 5/5)"
- },
- "FONT_LUMANOSIMO": {
-  "category": "runtime-shipped-optional",
-  "summary": "runtime-shipped-optional; default Windows build: off; linkage: data; options: --with-docrepair-fonts, --without-fonts (quotes verified against the pinned tree: 5/5)"
- },
- "FONT_LUNASIMA": {
-  "category": "runtime-shipped-optional",
-  "summary": "runtime-shipped-optional; default Windows build: off; linkage: data; options: --with-docrepair-fonts, --without-fonts (quotes verified against the pinned tree: 5/5)"
- },
- "FONT_NOTO_KUFI_ARABIC": {
-  "category": "font-asset",
-  "summary": "font-asset; default Windows build: on; linkage: data; options: --without-fonts (quotes verified against the pinned tree: 5/5)"
- },
- "FONT_NOTO_NASKH_ARABIC": {
-  "category": "font-asset",
-  "summary": "font-asset; default Windows build: on; linkage: data; options: --without-fonts (quotes verified against the pinned tree: 5/5)"
- },
- "FONT_NOTO_SANS": {
-  "category": "font-asset",
-  "summary": "font-asset; default Windows build: on; linkage: data; options: --without-fonts (quotes verified against the pinned tree: 5/5)"
- },
- "FONT_NOTO_SANS_ARABIC": {
-  "category": "font-asset",
-  "summary": "font-asset; default Windows build: on; linkage: data; options: --without-fonts (quotes verified against the pinned tree: 5/5)"
- },
- "FONT_NOTO_SANS_ARMENIAN": {
-  "category": "font-asset",
-  "summary": "font-asset; default Windows build: on; linkage: data; options: --without-fonts (quotes verified against the pinned tree: 5/5)"
- },
- "FONT_NOTO_SANS_GEORGIAN": {
-  "category": "font-asset",
-  "summary": "font-asset; default Windows build: on; linkage: data; options: --without-fonts (quotes verified against the pinned tree: 5/5)"
- },
- "FONT_NOTO_SANS_HEBREW": {
-  "category": "font-asset",
-  "summary": "font-asset; default Windows build: on; linkage: data; options: --without-fonts (quotes verified against the pinned tree: 5/5)"
- },
- "FONT_NOTO_SANS_LAO": {
-  "category": "font-asset",
-  "summary": "font-asset; default Windows build: on; linkage: data; options: --without-fonts (quotes verified against the pinned tree: 5/5)"
- },
- "FONT_NOTO_SANS_LISU": {
-  "category": "font-asset",
-  "summary": "font-asset; default Windows build: on; linkage: data; options: --without-fonts (quotes verified against the pinned tree: 5/5)"
- },
- "FONT_NOTO_SERIF": {
-  "category": "font-asset",
-  "summary": "font-asset; default Windows build: on; linkage: data; options: --without-fonts (quotes verified against the pinned tree: 5/5)"
+ "_comment": [
+  "How 26 of the 33 font archives in download.lst are used in the build. Each entry was drafted by a",
+  "research sub-agent; tools.ledger.build_ledger re-checks every quote against the pinned tree each",
+  "time the ledger is built and ignores entries whose quotes no longer match. The other 7 font",
+  "archives and all non-font externals have no entry yet (usage confirmed in Phase 1)."
+ ],
+ "entries": {
+  "FONT_ALEF": {
+   "category": "font-asset",
+   "controlling_options": [
+    "--without-fonts"
+   ],
+   "evidence": [
+    {
+     "line": 204,
+     "path": "Makefile.fetch",
+     "quote": "$(call fetch_Optional,MORE_FONTS,FONT_ALEF_TARBALL) \\"
+    },
+    {
+     "line": 2467,
+     "path": "configure.ac",
+     "quote": "AS_HELP_STRING([--without-fonts],"
+    },
+    {
+     "line": 14641,
+     "path": "configure.ac",
+     "quote": "if test \"$with_fonts\" != \"no\"; then"
+    },
+    {
+     "line": 14644,
+     "path": "configure.ac",
+     "quote": "BUILD_TYPE=\"$BUILD_TYPE MORE_FONTS\""
+    },
+    {
+     "line": 12,
+     "path": "external/more_fonts/ExternalPackage_alef.mk",
+     "quote": "$(eval $(call gb_ExternalPackage_add_unpacked_files,fonts_alef,$(LIBO_SHARE_FOLDER)/fonts/truetype,\\"
+    }
+   ],
+   "linkage": "data",
+   "windows_default": "on"
+  },
+  "FONT_AMIRI": {
+   "category": "font-asset",
+   "controlling_options": [
+    "--without-fonts"
+   ],
+   "evidence": [
+    {
+     "line": 205,
+     "path": "Makefile.fetch",
+     "quote": "$(call fetch_Optional,MORE_FONTS,FONT_AMIRI_TARBALL) \\"
+    },
+    {
+     "line": 2467,
+     "path": "configure.ac",
+     "quote": "AS_HELP_STRING([--without-fonts],"
+    },
+    {
+     "line": 14641,
+     "path": "configure.ac",
+     "quote": "if test \"$with_fonts\" != \"no\"; then"
+    },
+    {
+     "line": 14644,
+     "path": "configure.ac",
+     "quote": "BUILD_TYPE=\"$BUILD_TYPE MORE_FONTS\""
+    },
+    {
+     "line": 12,
+     "path": "external/more_fonts/ExternalPackage_amiri.mk",
+     "quote": "$(eval $(call gb_ExternalPackage_add_unpacked_files,fonts_amiri,$(LIBO_SHARE_FOLDER)/fonts/truetype,\\"
+    }
+   ],
+   "linkage": "data",
+   "windows_default": "on"
+  },
+  "FONT_BACASIME_ANTIQUE": {
+   "category": "runtime-shipped-optional",
+   "controlling_options": [
+    "--with-docrepair-fonts",
+    "--without-fonts"
+   ],
+   "evidence": [
+    {
+     "line": 209,
+     "path": "Makefile.fetch",
+     "quote": "$(call fetch_Optional,MORE_FONTS,FONT_BACASIME_ANTIQUE_TARBALL) \\"
+    },
+    {
+     "line": 2474,
+     "path": "configure.ac",
+     "quote": "AS_HELP_STRING([--with-docrepair-fonts],"
+    },
+    {
+     "line": 2478,
+     "path": "configure.ac",
+     "quote": "for more details. This option has no effect when --without-fonts is used.]),"
+    },
+    {
+     "line": 14647,
+     "path": "configure.ac",
+     "quote": "if test \"$with_docrepair_fonts\" = \"yes\"; then"
+    },
+    {
+     "line": 40,
+     "path": "external/more_fonts/Module_more_fonts.mk",
+     "quote": "$(if $(WITH_DOCREPAIR_FONTS),ExternalPackage_bacasime_antique,) \\"
+    }
+   ],
+   "linkage": "data",
+   "windows_default": "off"
+  },
+  "FONT_BELANOSIMA": {
+   "category": "runtime-shipped-optional",
+   "controlling_options": [
+    "--with-docrepair-fonts",
+    "--without-fonts"
+   ],
+   "evidence": [
+    {
+     "line": 210,
+     "path": "Makefile.fetch",
+     "quote": "$(call fetch_Optional,MORE_FONTS,FONT_BELANOSIMA_TARBALL) \\"
+    },
+    {
+     "line": 2474,
+     "path": "configure.ac",
+     "quote": "AS_HELP_STRING([--with-docrepair-fonts],"
+    },
+    {
+     "line": 2478,
+     "path": "configure.ac",
+     "quote": "for more details. This option has no effect when --without-fonts is used.]),"
+    },
+    {
+     "line": 14647,
+     "path": "configure.ac",
+     "quote": "if test \"$with_docrepair_fonts\" = \"yes\"; then"
+    },
+    {
+     "line": 41,
+     "path": "external/more_fonts/Module_more_fonts.mk",
+     "quote": "$(if $(WITH_DOCREPAIR_FONTS),ExternalPackage_belanosima,) \\"
+    }
+   ],
+   "linkage": "data",
+   "windows_default": "off"
+  },
+  "FONT_CALADEA": {
+   "category": "font-asset",
+   "controlling_options": [
+    "--without-fonts"
+   ],
+   "evidence": [
+    {
+     "line": 182,
+     "path": "Makefile.fetch",
+     "quote": "$(call fetch_Optional,MORE_FONTS,FONT_CALADEA_TARBALL) \\"
+    },
+    {
+     "line": 2467,
+     "path": "configure.ac",
+     "quote": "AS_HELP_STRING([--without-fonts],"
+    },
+    {
+     "line": 14641,
+     "path": "configure.ac",
+     "quote": "if test \"$with_fonts\" != \"no\"; then"
+    },
+    {
+     "line": 14644,
+     "path": "configure.ac",
+     "quote": "BUILD_TYPE=\"$BUILD_TYPE MORE_FONTS\""
+    },
+    {
+     "line": 12,
+     "path": "external/more_fonts/ExternalPackage_caladea.mk",
+     "quote": "$(eval $(call gb_ExternalPackage_add_unpacked_files,fonts_caladea,$(LIBO_SHARE_FOLDER)/fonts/truetype,\\"
+    }
+   ],
+   "linkage": "data",
+   "windows_default": "on"
+  },
+  "FONT_CAPRASIMO": {
+   "category": "runtime-shipped-optional",
+   "controlling_options": [
+    "--with-docrepair-fonts",
+    "--without-fonts"
+   ],
+   "evidence": [
+    {
+     "line": 211,
+     "path": "Makefile.fetch",
+     "quote": "$(call fetch_Optional,MORE_FONTS,FONT_CAPRASIMO_TARBALL) \\"
+    },
+    {
+     "line": 2474,
+     "path": "configure.ac",
+     "quote": "AS_HELP_STRING([--with-docrepair-fonts],"
+    },
+    {
+     "line": 2478,
+     "path": "configure.ac",
+     "quote": "for more details. This option has no effect when --without-fonts is used.]),"
+    },
+    {
+     "line": 14647,
+     "path": "configure.ac",
+     "quote": "if test \"$with_docrepair_fonts\" = \"yes\"; then"
+    },
+    {
+     "line": 42,
+     "path": "external/more_fonts/Module_more_fonts.mk",
+     "quote": "$(if $(WITH_DOCREPAIR_FONTS),ExternalPackage_caprasimo,) \\"
+    }
+   ],
+   "linkage": "data",
+   "windows_default": "off"
+  },
+  "FONT_CARLITO": {
+   "category": "font-asset",
+   "controlling_options": [
+    "--without-fonts"
+   ],
+   "evidence": [
+    {
+     "line": 183,
+     "path": "Makefile.fetch",
+     "quote": "$(call fetch_Optional,MORE_FONTS,FONT_CARLITO_TARBALL) \\"
+    },
+    {
+     "line": 2467,
+     "path": "configure.ac",
+     "quote": "AS_HELP_STRING([--without-fonts],"
+    },
+    {
+     "line": 14641,
+     "path": "configure.ac",
+     "quote": "if test \"$with_fonts\" != \"no\"; then"
+    },
+    {
+     "line": 14644,
+     "path": "configure.ac",
+     "quote": "BUILD_TYPE=\"$BUILD_TYPE MORE_FONTS\""
+    },
+    {
+     "line": 12,
+     "path": "external/more_fonts/ExternalPackage_carlito.mk",
+     "quote": "$(eval $(call gb_ExternalPackage_add_unpacked_files,fonts_carlito,$(LIBO_SHARE_FOLDER)/fonts/truetype,\\"
+    }
+   ],
+   "linkage": "data",
+   "windows_default": "on"
+  },
+  "FONT_CULMUS": {
+   "category": "font-asset",
+   "controlling_options": [
+    "--without-fonts",
+    "--enable-mpl-subset"
+   ],
+   "evidence": [
+    {
+     "line": 202,
+     "path": "Makefile.fetch",
+     "quote": "$(call fetch_Optional,MORE_FONTS,FONT_CULMUS_TARBALL) \\"
+    },
+    {
+     "line": 2467,
+     "path": "configure.ac",
+     "quote": "AS_HELP_STRING([--without-fonts],"
+    },
+    {
+     "line": 14641,
+     "path": "configure.ac",
+     "quote": "if test \"$with_fonts\" != \"no\"; then"
+    },
+    {
+     "line": 1751,
+     "path": "configure.ac",
+     "quote": "AS_HELP_STRING([--enable-mpl-subset],"
+    },
+    {
+     "line": 17,
+     "path": "external/more_fonts/Module_more_fonts.mk",
+     "quote": "$(if $(MPL_SUBSET),,ExternalPackage_culmus) \\"
+    }
+   ],
+   "linkage": "data",
+   "windows_default": "on"
+  },
+  "FONT_DEJAVU": {
+   "category": "font-asset",
+   "controlling_options": [
+    "--without-fonts"
+   ],
+   "evidence": [
+    {
+     "line": 184,
+     "path": "Makefile.fetch",
+     "quote": "$(call fetch_Optional,MORE_FONTS,FONT_DEJAVU_TARBALL) \\"
+    },
+    {
+     "line": 2467,
+     "path": "configure.ac",
+     "quote": "AS_HELP_STRING([--without-fonts],"
+    },
+    {
+     "line": 14641,
+     "path": "configure.ac",
+     "quote": "if test \"$with_fonts\" != \"no\"; then"
+    },
+    {
+     "line": 14644,
+     "path": "configure.ac",
+     "quote": "BUILD_TYPE=\"$BUILD_TYPE MORE_FONTS\""
+    },
+    {
+     "line": 12,
+     "path": "external/more_fonts/ExternalPackage_dejavu.mk",
+     "quote": "$(eval $(call gb_ExternalPackage_add_unpacked_files,fonts_dejavu,$(LIBO_SHARE_FOLDER)/fonts/truetype,\\"
+    }
+   ],
+   "linkage": "data",
+   "windows_default": "on"
+  },
+  "FONT_LIBERATION": {
+   "category": "font-asset",
+   "controlling_options": [
+    "--without-fonts"
+   ],
+   "evidence": [
+    {
+     "line": 186,
+     "path": "Makefile.fetch",
+     "quote": "$(call fetch_Optional,MORE_FONTS,FONT_LIBERATION_TARBALL) \\"
+    },
+    {
+     "line": 2467,
+     "path": "configure.ac",
+     "quote": "AS_HELP_STRING([--without-fonts],"
+    },
+    {
+     "line": 14641,
+     "path": "configure.ac",
+     "quote": "if test \"$with_fonts\" != \"no\"; then"
+    },
+    {
+     "line": 14644,
+     "path": "configure.ac",
+     "quote": "BUILD_TYPE=\"$BUILD_TYPE MORE_FONTS\""
+    },
+    {
+     "line": 12,
+     "path": "external/more_fonts/ExternalPackage_liberation.mk",
+     "quote": "$(eval $(call gb_ExternalPackage_add_unpacked_files,fonts_liberation,$(LIBO_SHARE_FOLDER)/fonts/truetype,\\"
+    }
+   ],
+   "linkage": "data",
+   "windows_default": "on"
+  },
+  "FONT_LIBERATION_NARROW": {
+   "category": "font-asset",
+   "controlling_options": [
+    "--without-fonts"
+   ],
+   "evidence": [
+    {
+     "line": 185,
+     "path": "Makefile.fetch",
+     "quote": "$(call fetch_Optional,MORE_FONTS,FONT_LIBERATION_NARROW_TARBALL) \\"
+    },
+    {
+     "line": 2467,
+     "path": "configure.ac",
+     "quote": "AS_HELP_STRING([--without-fonts],"
+    },
+    {
+     "line": 14641,
+     "path": "configure.ac",
+     "quote": "if test \"$with_fonts\" != \"no\"; then"
+    },
+    {
+     "line": 14644,
+     "path": "configure.ac",
+     "quote": "BUILD_TYPE=\"$BUILD_TYPE MORE_FONTS\""
+    },
+    {
+     "line": 12,
+     "path": "external/more_fonts/ExternalPackage_liberation_narrow.mk",
+     "quote": "$(eval $(call gb_ExternalPackage_add_unpacked_files,fonts_liberation_narrow,$(LIBO_SHARE_FOLDER)/fonts/truetype,\\"
+    }
+   ],
+   "linkage": "data",
+   "windows_default": "on"
+  },
+  "FONT_LIBRE_HEBREW": {
+   "category": "font-asset",
+   "controlling_options": [
+    "--without-fonts"
+   ],
+   "evidence": [
+    {
+     "line": 203,
+     "path": "Makefile.fetch",
+     "quote": "$(call fetch_Optional,MORE_FONTS,FONT_LIBRE_HEBREW_TARBALL) \\"
+    },
+    {
+     "line": 2467,
+     "path": "configure.ac",
+     "quote": "AS_HELP_STRING([--without-fonts],"
+    },
+    {
+     "line": 14641,
+     "path": "configure.ac",
+     "quote": "if test \"$with_fonts\" != \"no\"; then"
+    },
+    {
+     "line": 14644,
+     "path": "configure.ac",
+     "quote": "BUILD_TYPE=\"$BUILD_TYPE MORE_FONTS\""
+    },
+    {
+     "line": 12,
+     "path": "external/more_fonts/ExternalPackage_libre_hebrew.mk",
+     "quote": "$(eval $(call gb_ExternalPackage_add_unpacked_files,fonts_libre_hebrew,$(LIBO_SHARE_FOLDER)/fonts/truetype,\\"
+    }
+   ],
+   "linkage": "data",
+   "windows_default": "on"
+  },
+  "FONT_LINLIBERTINEG": {
+   "category": "font-asset",
+   "controlling_options": [
+    "--without-fonts"
+   ],
+   "evidence": [
+    {
+     "line": 187,
+     "path": "Makefile.fetch",
+     "quote": "$(call fetch_Optional,MORE_FONTS,FONT_LINLIBERTINEG_TARBALL) \\"
+    },
+    {
+     "line": 2467,
+     "path": "configure.ac",
+     "quote": "AS_HELP_STRING([--without-fonts],"
+    },
+    {
+     "line": 14641,
+     "path": "configure.ac",
+     "quote": "if test \"$with_fonts\" != \"no\"; then"
+    },
+    {
+     "line": 14644,
+     "path": "configure.ac",
+     "quote": "BUILD_TYPE=\"$BUILD_TYPE MORE_FONTS\""
+    },
+    {
+     "line": 12,
+     "path": "external/more_fonts/ExternalPackage_libertineg.mk",
+     "quote": "$(eval $(call gb_ExternalPackage_add_unpacked_files,fonts_libertineg,$(LIBO_SHARE_FOLDER)/fonts/truetype,\\"
+    }
+   ],
+   "linkage": "data",
+   "windows_default": "on"
+  },
+  "FONT_LUGRASIMO": {
+   "category": "runtime-shipped-optional",
+   "controlling_options": [
+    "--with-docrepair-fonts",
+    "--without-fonts"
+   ],
+   "evidence": [
+    {
+     "line": 212,
+     "path": "Makefile.fetch",
+     "quote": "$(call fetch_Optional,MORE_FONTS,FONT_LUGRASIMO_TARBALL) \\"
+    },
+    {
+     "line": 2474,
+     "path": "configure.ac",
+     "quote": "AS_HELP_STRING([--with-docrepair-fonts],"
+    },
+    {
+     "line": 2478,
+     "path": "configure.ac",
+     "quote": "for more details. This option has no effect when --without-fonts is used.]),"
+    },
+    {
+     "line": 14647,
+     "path": "configure.ac",
+     "quote": "if test \"$with_docrepair_fonts\" = \"yes\"; then"
+    },
+    {
+     "line": 43,
+     "path": "external/more_fonts/Module_more_fonts.mk",
+     "quote": "$(if $(WITH_DOCREPAIR_FONTS),ExternalPackage_lugrasimo,) \\"
+    }
+   ],
+   "linkage": "data",
+   "windows_default": "off"
+  },
+  "FONT_LUMANOSIMO": {
+   "category": "runtime-shipped-optional",
+   "controlling_options": [
+    "--with-docrepair-fonts",
+    "--without-fonts"
+   ],
+   "evidence": [
+    {
+     "line": 213,
+     "path": "Makefile.fetch",
+     "quote": "$(call fetch_Optional,MORE_FONTS,FONT_LUMANOSIMO_TARBALL) \\"
+    },
+    {
+     "line": 2474,
+     "path": "configure.ac",
+     "quote": "AS_HELP_STRING([--with-docrepair-fonts],"
+    },
+    {
+     "line": 2478,
+     "path": "configure.ac",
+     "quote": "for more details. This option has no effect when --without-fonts is used.]),"
+    },
+    {
+     "line": 14647,
+     "path": "configure.ac",
+     "quote": "if test \"$with_docrepair_fonts\" = \"yes\"; then"
+    },
+    {
+     "line": 44,
+     "path": "external/more_fonts/Module_more_fonts.mk",
+     "quote": "$(if $(WITH_DOCREPAIR_FONTS),ExternalPackage_lumanosimo,) \\"
+    }
+   ],
+   "linkage": "data",
+   "windows_default": "off"
+  },
+  "FONT_LUNASIMA": {
+   "category": "runtime-shipped-optional",
+   "controlling_options": [
+    "--with-docrepair-fonts",
+    "--without-fonts"
+   ],
+   "evidence": [
+    {
+     "line": 214,
+     "path": "Makefile.fetch",
+     "quote": "$(call fetch_Optional,MORE_FONTS,FONT_LUNASIMA_TARBALL) \\"
+    },
+    {
+     "line": 2474,
+     "path": "configure.ac",
+     "quote": "AS_HELP_STRING([--with-docrepair-fonts],"
+    },
+    {
+     "line": 2478,
+     "path": "configure.ac",
+     "quote": "for more details. This option has no effect when --without-fonts is used.]),"
+    },
+    {
+     "line": 14647,
+     "path": "configure.ac",
+     "quote": "if test \"$with_docrepair_fonts\" = \"yes\"; then"
+    },
+    {
+     "line": 45,
+     "path": "external/more_fonts/Module_more_fonts.mk",
+     "quote": "$(if $(WITH_DOCREPAIR_FONTS),ExternalPackage_lunasima,) \\"
+    }
+   ],
+   "linkage": "data",
+   "windows_default": "off"
+  },
+  "FONT_NOTO_KUFI_ARABIC": {
+   "category": "font-asset",
+   "controlling_options": [
+    "--without-fonts"
+   ],
+   "evidence": [
+    {
+     "line": 188,
+     "path": "Makefile.fetch",
+     "quote": "$(call fetch_Optional,MORE_FONTS,FONT_NOTO_KUFI_ARABIC_TARBALL) \\"
+    },
+    {
+     "line": 2467,
+     "path": "configure.ac",
+     "quote": "AS_HELP_STRING([--without-fonts],"
+    },
+    {
+     "line": 14641,
+     "path": "configure.ac",
+     "quote": "if test \"$with_fonts\" != \"no\"; then"
+    },
+    {
+     "line": 14644,
+     "path": "configure.ac",
+     "quote": "BUILD_TYPE=\"$BUILD_TYPE MORE_FONTS\""
+    },
+    {
+     "line": 12,
+     "path": "external/more_fonts/ExternalPackage_noto_kufi_arabic.mk",
+     "quote": "$(eval $(call gb_ExternalPackage_add_unpacked_files,fonts_noto_kufi_arabic,$(LIBO_SHARE_FOLDER)/fonts/truetype,\\"
+    }
+   ],
+   "linkage": "data",
+   "windows_default": "on"
+  },
+  "FONT_NOTO_NASKH_ARABIC": {
+   "category": "font-asset",
+   "controlling_options": [
+    "--without-fonts"
+   ],
+   "evidence": [
+    {
+     "line": 192,
+     "path": "Makefile.fetch",
+     "quote": "$(call fetch_Optional,MORE_FONTS,FONT_NOTO_NASKH_ARABIC_TARBALL) \\"
+    },
+    {
+     "line": 2467,
+     "path": "configure.ac",
+     "quote": "AS_HELP_STRING([--without-fonts],"
+    },
+    {
+     "line": 14641,
+     "path": "configure.ac",
+     "quote": "if test \"$with_fonts\" != \"no\"; then"
+    },
+    {
+     "line": 14644,
+     "path": "configure.ac",
+     "quote": "BUILD_TYPE=\"$BUILD_TYPE MORE_FONTS\""
+    },
+    {
+     "line": 12,
+     "path": "external/more_fonts/ExternalPackage_noto_naskh_arabic.mk",
+     "quote": "$(eval $(call gb_ExternalPackage_add_unpacked_files,fonts_noto_naskh_arabic,$(LIBO_SHARE_FOLDER)/fonts/truetype,\\"
+    }
+   ],
+   "linkage": "data",
+   "windows_default": "on"
+  },
+  "FONT_NOTO_SANS": {
+   "category": "font-asset",
+   "controlling_options": [
+    "--without-fonts"
+   ],
+   "evidence": [
+    {
+     "line": 189,
+     "path": "Makefile.fetch",
+     "quote": "$(call fetch_Optional,MORE_FONTS,FONT_NOTO_SANS_TARBALL) \\"
+    },
+    {
+     "line": 2467,
+     "path": "configure.ac",
+     "quote": "AS_HELP_STRING([--without-fonts],"
+    },
+    {
+     "line": 14641,
+     "path": "configure.ac",
+     "quote": "if test \"$with_fonts\" != \"no\"; then"
+    },
+    {
+     "line": 14644,
+     "path": "configure.ac",
+     "quote": "BUILD_TYPE=\"$BUILD_TYPE MORE_FONTS\""
+    },
+    {
+     "line": 12,
+     "path": "external/more_fonts/ExternalPackage_noto_sans.mk",
+     "quote": "$(eval $(call gb_ExternalPackage_add_unpacked_files,fonts_noto_sans,$(LIBO_SHARE_FOLDER)/fonts/truetype,\\"
+    }
+   ],
+   "linkage": "data",
+   "windows_default": "on"
+  },
+  "FONT_NOTO_SANS_ARABIC": {
+   "category": "font-asset",
+   "controlling_options": [
+    "--without-fonts"
+   ],
+   "evidence": [
+    {
+     "line": 191,
+     "path": "Makefile.fetch",
+     "quote": "$(call fetch_Optional,MORE_FONTS,FONT_NOTO_SANS_ARABIC_TARBALL) \\"
+    },
+    {
+     "line": 2467,
+     "path": "configure.ac",
+     "quote": "AS_HELP_STRING([--without-fonts],"
+    },
+    {
+     "line": 14641,
+     "path": "configure.ac",
+     "quote": "if test \"$with_fonts\" != \"no\"; then"
+    },
+    {
+     "line": 14644,
+     "path": "configure.ac",
+     "quote": "BUILD_TYPE=\"$BUILD_TYPE MORE_FONTS\""
+    },
+    {
+     "line": 12,
+     "path": "external/more_fonts/ExternalPackage_noto_sans_arabic.mk",
+     "quote": "$(eval $(call gb_ExternalPackage_add_unpacked_files,fonts_noto_sans_arabic,$(LIBO_SHARE_FOLDER)/fonts/truetype,\\"
+    }
+   ],
+   "linkage": "data",
+   "windows_default": "on"
+  },
+  "FONT_NOTO_SANS_ARMENIAN": {
+   "category": "font-asset",
+   "controlling_options": [
+    "--without-fonts"
+   ],
+   "evidence": [
+    {
+     "line": 195,
+     "path": "Makefile.fetch",
+     "quote": "$(call fetch_Optional,MORE_FONTS,FONT_NOTO_SANS_ARMENIAN_TARBALL) \\"
+    },
+    {
+     "line": 2467,
+     "path": "configure.ac",
+     "quote": "AS_HELP_STRING([--without-fonts],"
+    },
+    {
+     "line": 14641,
+     "path": "configure.ac",
+     "quote": "if test \"$with_fonts\" != \"no\"; then"
+    },
+    {
+     "line": 14644,
+     "path": "configure.ac",
+     "quote": "BUILD_TYPE=\"$BUILD_TYPE MORE_FONTS\""
+    },
+    {
+     "line": 12,
+     "path": "external/more_fonts/ExternalPackage_noto_sans_armenian.mk",
+     "quote": "$(eval $(call gb_ExternalPackage_add_unpacked_files,fonts_noto_sans_armenian,$(LIBO_SHARE_FOLDER)/fonts/truetype,\\"
+    }
+   ],
+   "linkage": "data",
+   "windows_default": "on"
+  },
+  "FONT_NOTO_SANS_GEORGIAN": {
+   "category": "font-asset",
+   "controlling_options": [
+    "--without-fonts"
+   ],
+   "evidence": [
+    {
+     "line": 197,
+     "path": "Makefile.fetch",
+     "quote": "$(call fetch_Optional,MORE_FONTS,FONT_NOTO_SANS_GEORGIAN_TARBALL) \\"
+    },
+    {
+     "line": 2467,
+     "path": "configure.ac",
+     "quote": "AS_HELP_STRING([--without-fonts],"
+    },
+    {
+     "line": 14641,
+     "path": "configure.ac",
+     "quote": "if test \"$with_fonts\" != \"no\"; then"
+    },
+    {
+     "line": 14644,
+     "path": "configure.ac",
+     "quote": "BUILD_TYPE=\"$BUILD_TYPE MORE_FONTS\""
+    },
+    {
+     "line": 12,
+     "path": "external/more_fonts/ExternalPackage_noto_sans_georgian.mk",
+     "quote": "$(eval $(call gb_ExternalPackage_add_unpacked_files,fonts_noto_sans_georgian,$(LIBO_SHARE_FOLDER)/fonts/truetype,\\"
+    }
+   ],
+   "linkage": "data",
+   "windows_default": "on"
+  },
+  "FONT_NOTO_SANS_HEBREW": {
+   "category": "font-asset",
+   "controlling_options": [
+    "--without-fonts"
+   ],
+   "evidence": [
+    {
+     "line": 193,
+     "path": "Makefile.fetch",
+     "quote": "$(call fetch_Optional,MORE_FONTS,FONT_NOTO_SANS_HEBREW_TARBALL) \\"
+    },
+    {
+     "line": 2467,
+     "path": "configure.ac",
+     "quote": "AS_HELP_STRING([--without-fonts],"
+    },
+    {
+     "line": 14641,
+     "path": "configure.ac",
+     "quote": "if test \"$with_fonts\" != \"no\"; then"
+    },
+    {
+     "line": 14644,
+     "path": "configure.ac",
+     "quote": "BUILD_TYPE=\"$BUILD_TYPE MORE_FONTS\""
+    },
+    {
+     "line": 12,
+     "path": "external/more_fonts/ExternalPackage_noto_sans_hebrew.mk",
+     "quote": "$(eval $(call gb_ExternalPackage_add_unpacked_files,fonts_noto_sans_hebrew,$(LIBO_SHARE_FOLDER)/fonts/truetype,\\"
+    }
+   ],
+   "linkage": "data",
+   "windows_default": "on"
+  },
+  "FONT_NOTO_SANS_LAO": {
+   "category": "font-asset",
+   "controlling_options": [
+    "--without-fonts"
+   ],
+   "evidence": [
+    {
+     "line": 199,
+     "path": "Makefile.fetch",
+     "quote": "$(call fetch_Optional,MORE_FONTS,FONT_NOTO_SANS_LAO_TARBALL) \\"
+    },
+    {
+     "line": 2467,
+     "path": "configure.ac",
+     "quote": "AS_HELP_STRING([--without-fonts],"
+    },
+    {
+     "line": 14641,
+     "path": "configure.ac",
+     "quote": "if test \"$with_fonts\" != \"no\"; then"
+    },
+    {
+     "line": 14644,
+     "path": "configure.ac",
+     "quote": "BUILD_TYPE=\"$BUILD_TYPE MORE_FONTS\""
+    },
+    {
+     "line": 12,
+     "path": "external/more_fonts/ExternalPackage_noto_sans_lao.mk",
+     "quote": "$(eval $(call gb_ExternalPackage_add_unpacked_files,fonts_noto_sans_lao,$(LIBO_SHARE_FOLDER)/fonts/truetype,\\"
+    }
+   ],
+   "linkage": "data",
+   "windows_default": "on"
+  },
+  "FONT_NOTO_SANS_LISU": {
+   "category": "font-asset",
+   "controlling_options": [
+    "--without-fonts"
+   ],
+   "evidence": [
+    {
+     "line": 201,
+     "path": "Makefile.fetch",
+     "quote": "$(call fetch_Optional,MORE_FONTS,FONT_NOTO_SANS_LISU_TARBALL) \\"
+    },
+    {
+     "line": 2467,
+     "path": "configure.ac",
+     "quote": "AS_HELP_STRING([--without-fonts],"
+    },
+    {
+     "line": 14641,
+     "path": "configure.ac",
+     "quote": "if test \"$with_fonts\" != \"no\"; then"
+    },
+    {
+     "line": 14644,
+     "path": "configure.ac",
+     "quote": "BUILD_TYPE=\"$BUILD_TYPE MORE_FONTS\""
+    },
+    {
+     "line": 12,
+     "path": "external/more_fonts/ExternalPackage_noto_sans_lisu.mk",
+     "quote": "$(eval $(call gb_ExternalPackage_add_unpacked_files,fonts_noto_sans_lisu,$(LIBO_SHARE_FOLDER)/fonts/truetype,\\"
+    }
+   ],
+   "linkage": "data",
+   "windows_default": "on"
+  },
+  "FONT_NOTO_SERIF": {
+   "category": "font-asset",
+   "controlling_options": [
+    "--without-fonts"
+   ],
+   "evidence": [
+    {
+     "line": 190,
+     "path": "Makefile.fetch",
+     "quote": "$(call fetch_Optional,MORE_FONTS,FONT_NOTO_SERIF_TARBALL) \\"
+    },
+    {
+     "line": 2467,
+     "path": "configure.ac",
+     "quote": "AS_HELP_STRING([--without-fonts],"
+    },
+    {
+     "line": 14641,
+     "path": "configure.ac",
+     "quote": "if test \"$with_fonts\" != \"no\"; then"
+    },
+    {
+     "line": 14644,
+     "path": "configure.ac",
+     "quote": "BUILD_TYPE=\"$BUILD_TYPE MORE_FONTS\""
+    },
+    {
+     "line": 12,
+     "path": "external/more_fonts/ExternalPackage_noto_serif.mk",
+     "quote": "$(eval $(call gb_ExternalPackage_add_unpacked_files,fonts_noto_serif,$(LIBO_SHARE_FOLDER)/fonts/truetype,\\"
+    }
+   ],
+   "linkage": "data",
+   "windows_default": "on"
+  }
  }
 }

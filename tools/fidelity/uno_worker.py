@@ -163,11 +163,20 @@ class Engine(object):
                 self.desktop.terminate()
             except Exception:  # noqa: BLE001 - the bridge dies while terminating
                 pass
-        try:
-            self.process.wait(timeout=20)
-        except subprocess.TimeoutExpired:
-            self.process.send_signal(signal.SIGKILL)
-            self.process.wait(timeout=10)
+        # SIGTERM first: the launcher forwards it to the real engine process, which a
+        # SIGKILL of the launcher alone would orphan.  The caller additionally kills
+        # this worker's whole process group when it is done.
+        for sig, patience in ((None, 20), (signal.SIGTERM, 10), (signal.SIGKILL, 10)):
+            if sig is not None:
+                try:
+                    self.process.send_signal(sig)
+                except OSError:
+                    break
+            try:
+                self.process.wait(timeout=patience)
+                break
+            except subprocess.TimeoutExpired:
+                continue
         return self.process.returncode
 
 

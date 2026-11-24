@@ -5,6 +5,8 @@
   "official_repository": "https://gerrit.libreoffice.org/core",
   "mirror_repository": "https://github.com/LibreOffice/core",
   "release_version": "26.8.3",
+  "stable_listing_url": "https://download.documentfoundation.org/libreoffice/stable/",
+  "source_listing_url": "https://download.documentfoundation.org/libreoffice/src/26.8.3/",
   "release": {
     "purpose": "official upstream build used for the baseline fidelity run (test tool, not redistributed)",
     "file": "LibreOffice_26.8.3_Linux_x86-64_deb.tar.gz",

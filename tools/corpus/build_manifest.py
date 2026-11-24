@@ -35,7 +35,7 @@ EXIT_USAGE = 2
 EXIT_PROVENANCE = 4
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
-UPSTREAM_LICENCE = "NOASSERTION (ledger row upstream-test-documents)"
+UPSTREAM_LICENCE = "NOASSERTION (ledger row corpus-upstream-test-documents)"
 OWN_LICENCE = "MPL-2.0"
 _TAG_RE = re.compile(r"^[A-Za-z0-9._-]{1,80}$")
 _COMMIT_RE = re.compile(r"^[0-9a-f]{40}$")

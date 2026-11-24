@@ -7,8 +7,9 @@ Nothing below has been built: it is the plan for Phase 2.
 ## 1. Rules we must meet
 
 1. No Microsoft names, icons, artwork, templates, sounds, proofing tools
-   or fonts in the product. Factual compatibility statements are allowed
-   ("opens .docx files").
+   or fonts in the product, and no "Word", "PowerPoint", "Office" or
+   "Microsoft 365" in product, executable or file names. Factual
+   compatibility statements are allowed ("opens .docx files").
 2. No upstream name or logo on a modified build; credit upstream only in
    wording its policy allows.
 
@@ -19,10 +20,25 @@ Policy", revision 266041 dated 2020-05-14 (fetched 2026-11-24). The page
 says: "The text in English is the official version of the Mark Policy and
 shall be regarded as its default and binding version."
 
-Marks covered:
+Marks covered (wiki link markup removed from the second quote):
 
 > Marks cover the names "The Document Foundation" and "LibreOffice" as
 > well as the paper clip icon.
+
+> Marks are not just TDF logos but also the names of its various products
+> and projects, as well as the names documentfoundation.org and
+> libreoffice.org among others (also called word marks), and are
+> collectively referred to as "TDF marks".
+
+How a mark must be written when it is used:
+
+> Accompanying Symbol: The first or most prominent mention of a TDF mark
+> should be accompanied by a symbol indicating whether the mark is a
+> registered trademark ("®") or an unregistered trademark ("™").
+
+> Distinguishable: In at least the first reference, the mark should be set
+> apart from surrounding text, either by capitalizing it or by
+> italicizing, bolding or underlining it.
 
 When the name may be used for software:
 
@@ -57,10 +73,11 @@ Not allowed:
   (Whether a lighter build could keep the name is a legal judgement; we
   do not rely on it. Flagged for human review.)
 - The only upstream credit in the product is one sentence in the About
-  dialog and in THIRD-PARTY-NOTICES, using the policy's own wording:
-  **"PRODUCTNAME is based on LibreOffice."** No upstream logo, no paper
-  clip icon, no "LibreOffice" in product, executable, package, registry
-  or domain names.
+  dialog and in THIRD-PARTY-NOTICES, using the phrase the policy permits
+  ("based on"): **"PRODUCTNAME is based on LibreOffice."** Whether that
+  mention must carry the ® or ™ symbol the policy asks for is flagged for
+  human review. No upstream logo, no paper clip icon, no "LibreOffice" in
+  product, executable, package, registry or domain names.
 - Questions the policy does not answer go to the address the policy
   names (legal@documentfoundation.org); the owner decides whether to ask.
 
@@ -113,14 +130,31 @@ Planned CI gate (Phase 2 onward), run on the unpacked installer payload:
 
 - forbidden strings (case-insensitive, also inside UTF-16 resources):
   Microsoft marks named in the brief and the upstream marks quoted above,
-  with an allow-list for the one credit sentence and for licence texts;
+  including `documentfoundation.org` and `libreoffice.org`, with an
+  allow-list for the one credit sentence and for licence texts;
+- forbidden file names: every file and executable name in the payload is
+  checked against the rule-3 words;
 - forbidden assets: SHA-256 list of every upstream brand image at the
   pinned tag, and of any Microsoft font file name;
 - the gate fails the build on a hit.
 
-## 6. Open points for the owner
+## 6. A conflict the owner must rule on
+
+Rule 3 forbids "Word" and "Office" in executable and file names. The base
+itself ships such names: the launcher is built as `soffice_exe` /
+`soffice_bin` (`desktop/Executable_soffice_exe.mk:10`,
+`desktop/Executable_soffice_bin.mk:10`), the Word-format filter library
+as `msword` (`sw/Library_msword.mk:20`), and the installed program
+directory of the official build also contains `sofficerc` and
+`officehelper.py`. Our visible launchers get new names in any case. Whether
+the rule also reaches these internal names — which would mean renaming
+them by patch across the upstream build system — is the owner's decision
+(risk R19).
+
+## 7. Open points for the owner
 
 1. Choose `PRODUCT_NAME` and confirm it is clear to use.
 2. Confirm the credit sentence.
 3. Decide whether to write to the upstream foundation about the planned
    naming before the first public release.
+4. Rule on internal file names that contain "office" or "word" (section 6).

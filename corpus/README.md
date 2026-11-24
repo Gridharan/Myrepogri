@@ -1,6 +1,11 @@
 # Corpus
 
-Only files we have the right to use, each with a row in `MANIFEST.csv`.
+Every file the harness may read has a row in `MANIFEST.csv`. The 18 files
+we wrote ourselves are cleared. The 96 upstream test documents are the
+category the brief permits ("upstream test files under their licence"),
+but no per-file licence is stated upstream, so their use as test input
+awaits the owner's decision; results are also reported for our own files
+alone.
 
 | Source | Count | Where the bytes live | Licence |
 |---|---|---|---|
@@ -14,8 +19,11 @@ file whose SHA-256 differs from its manifest row.
 
 ## Rules
 
-- No file from an unknown source. No file made with or taken from
-  Microsoft templates, clip art or sample documents.
+- Files **we add** must not come from an unknown source, and must not be
+  made with or taken from Microsoft templates, clip art or sample
+  documents. (The upstream test documents were written by many people
+  with many applications, Microsoft Word and PowerPoint among them; they
+  stay in the upstream tree and are never copied or redistributed by us.)
 - Reference renderings may be added only if the owner supplies them from
   a licensed installation; they go in `corpus/reference/` with a manifest
   row each.

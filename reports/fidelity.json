@@ -2,9 +2,9 @@
  "corpus": {
   "files": 114,
   "manifest": "corpus/MANIFEST.csv",
-  "manifest_sha256": "77d6f570ce9ed7b7c49a52462cd0029496b7e7083dcee7cead7cb829c2002d6e"
+  "manifest_sha256": "1a0402a93a510a05bbe0dff3b4535325bb0f106e62deaf21647986e8a145fa70"
  },
- "duration_ms": 122801,
+ "duration_ms": 124679,
  "engine": {
   "buildid": "861effc5289d539f15c4c18d1ba8579ffd78728b",
   "version": "LibreOffice 26.8.3.1 861effc5289d539f15c4c18d1ba8579ffd78728b"
@@ -14,7 +14,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1921,
+   "duration_ms": 1969,
    "features": [
     "styles",
     "lists",
@@ -85,31 +85,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 518,
+     "duration_ms": 523,
      "ok": true
     },
     "measure": {
-     "duration_ms": 466,
+     "duration_ms": 522,
      "ok": true
     },
     "open": {
-     "duration_ms": 194,
+     "duration_ms": 237,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 14,
+     "duration_ms": 15,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 483,
+     "duration_ms": 421,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 16,
+     "duration_ms": 17,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 14,
+     "duration_ms": 15,
      "ok": true
     }
    },
@@ -122,7 +122,7 @@
    "app": "impress",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1719,
+   "duration_ms": 1618,
    "features": [
     "masters-layouts",
     "notes",
@@ -245,31 +245,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 522,
+     "duration_ms": 519,
      "ok": true
     },
     "measure": {
-     "duration_ms": 308,
+     "duration_ms": 313,
      "ok": true
     },
     "open": {
-     "duration_ms": 185,
+     "duration_ms": 171,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 16,
+     "duration_ms": 14,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 314,
+     "duration_ms": 278,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 32,
+     "duration_ms": 35,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 112,
+     "duration_ms": 123,
      "ok": true
     }
    },
@@ -282,7 +282,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1922,
+   "duration_ms": 1868,
    "features": [
     "headers-footers",
     "footnotes",
@@ -356,31 +356,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 523,
+     "duration_ms": 519,
      "ok": true
     },
     "measure": {
-     "duration_ms": 496,
+     "duration_ms": 462,
      "ok": true
     },
     "open": {
-     "duration_ms": 207,
+     "duration_ms": 202,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 21,
+     "duration_ms": 16,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 438,
+     "duration_ms": 425,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 17,
+     "duration_ms": 21,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 7,
+     "duration_ms": 9,
      "ok": true
     }
    },
@@ -393,7 +393,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1719,
+   "duration_ms": 1721,
    "features": [
     "tracked-changes",
     "comments"
@@ -468,23 +468,23 @@
      "ok": true
     },
     "measure": {
-     "duration_ms": 399,
+     "duration_ms": 391,
      "ok": true
     },
     "open": {
-     "duration_ms": 219,
+     "duration_ms": 181,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 10,
+     "duration_ms": 9,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 361,
+     "duration_ms": 368,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 13,
+     "duration_ms": 16,
      "ok": true
     },
     "roundtrip_save": {
@@ -501,7 +501,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 2773,
+   "duration_ms": 2720,
    "features": [
     "plain-text"
    ],
@@ -567,27 +567,27 @@
      "ok": true
     },
     "measure": {
-     "duration_ms": 977,
+     "duration_ms": 926,
      "ok": true
     },
     "open": {
-     "duration_ms": 175,
+     "duration_ms": 167,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 17,
+     "duration_ms": 16,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 845,
+     "duration_ms": 879,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 24,
+     "duration_ms": 18,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 3,
+     "duration_ms": 2,
      "ok": true
     }
    },
@@ -600,7 +600,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1970,
+   "duration_ms": 2019,
    "features": [
     "styles",
     "lists",
@@ -730,11 +730,11 @@
      "ok": true
     },
     "measure": {
-     "duration_ms": 478,
+     "duration_ms": 501,
      "ok": true
     },
     "open": {
-     "duration_ms": 229,
+     "duration_ms": 240,
      "ok": true
     },
     "pdf_export": {
@@ -742,15 +742,15 @@
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 504,
+     "duration_ms": 475,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 26,
+     "duration_ms": 23,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 8,
+     "duration_ms": 7,
      "ok": true
     }
    },
@@ -763,7 +763,7 @@
    "app": "impress",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1418,
+   "duration_ms": 1468,
    "features": [
     "masters-layouts",
     "notes",
@@ -947,31 +947,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 523,
+     "duration_ms": 520,
      "ok": true
     },
     "measure": {
-     "duration_ms": 118,
+     "duration_ms": 143,
      "ok": true
     },
     "open": {
-     "duration_ms": 194,
+     "duration_ms": 208,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 14,
+     "duration_ms": 17,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 101,
+     "duration_ms": 108,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 47,
+     "duration_ms": 57,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 159,
+     "duration_ms": 172,
      "ok": true
     }
    },
@@ -984,7 +984,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 2120,
+   "duration_ms": 2021,
    "features": [
     "styles",
     "lists",
@@ -1049,7 +1049,11 @@
     "word_count": 45
    },
    "package_before": {
-    "content_counts": {},
+    "content_counts": {
+     "comments": 1,
+     "footnotes": 1,
+     "tracked-changes": 1
+    },
     "element_counts": {
      "draw:frame": 1,
      "draw:image": 1,
@@ -1119,31 +1123,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 520,
+     "duration_ms": 519,
      "ok": true
     },
     "measure": {
-     "duration_ms": 419,
+     "duration_ms": 440,
      "ok": true
     },
     "open": {
-     "duration_ms": 261,
+     "duration_ms": 319,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 16,
+     "duration_ms": 11,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 406,
+     "duration_ms": 326,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 20,
+     "duration_ms": 21,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 207,
+     "duration_ms": 200,
      "ok": true
     }
    },
@@ -1223,7 +1227,7 @@
      ]
     ]
    },
-   "duration_ms": 1722,
+   "duration_ms": 1569,
    "features": [
     "masters-layouts",
     "notes",
@@ -1445,31 +1449,31 @@
    "status": "partial",
    "steps": {
     "engine_start": {
-     "duration_ms": 525,
+     "duration_ms": 519,
      "ok": true
     },
     "measure": {
-     "duration_ms": 355,
+     "duration_ms": 263,
      "ok": true
     },
     "open": {
-     "duration_ms": 245,
+     "duration_ms": 234,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 18,
+     "duration_ms": 23,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 221,
+     "duration_ms": 199,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 97,
+     "duration_ms": 83,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 27,
+     "duration_ms": 44,
      "ok": true
     }
    },
@@ -1482,7 +1486,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1820,
+   "duration_ms": 1720,
    "features": [
     "styles",
     "tables",
@@ -1553,27 +1557,27 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 523,
+     "duration_ms": 519,
      "ok": true
     },
     "measure": {
-     "duration_ms": 427,
+     "duration_ms": 406,
      "ok": true
     },
     "open": {
-     "duration_ms": 197,
+     "duration_ms": 156,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 11,
+     "duration_ms": 15,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 420,
+     "duration_ms": 391,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 18,
+     "duration_ms": 24,
      "ok": true
     },
     "roundtrip_save": {
@@ -1590,7 +1594,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1870,
+   "duration_ms": 1769,
    "features": [
     "proprietary-fonts"
    ],
@@ -1737,23 +1741,23 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 523,
+     "duration_ms": 516,
      "ok": true
     },
     "measure": {
-     "duration_ms": 440,
+     "duration_ms": 385,
      "ok": true
     },
     "open": {
-     "duration_ms": 220,
+     "duration_ms": 261,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 21,
+     "duration_ms": 20,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 399,
+     "duration_ms": 322,
      "ok": true
     },
     "reopen": {
@@ -1761,7 +1765,7 @@
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 7,
+     "duration_ms": 9,
      "ok": true
     }
    },
@@ -1774,7 +1778,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1769,
+   "duration_ms": 1668,
    "features": [
     "images",
     "anchored-images"
@@ -1889,31 +1893,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 520,
+     "duration_ms": 517,
      "ok": true
     },
     "measure": {
-     "duration_ms": 369,
+     "duration_ms": 349,
      "ok": true
     },
     "open": {
-     "duration_ms": 255,
+     "duration_ms": 258,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 9,
+     "duration_ms": 11,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 338,
+     "duration_ms": 274,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 41,
+     "duration_ms": 39,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 7,
+     "duration_ms": 8,
      "ok": true
     }
    },
@@ -1926,7 +1930,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1969,
+   "duration_ms": 1968,
    "features": [
     "headers-footers",
     "first-page-header",
@@ -2087,31 +2091,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 523,
+     "duration_ms": 517,
      "ok": true
     },
     "measure": {
-     "duration_ms": 516,
+     "duration_ms": 459,
      "ok": true
     },
     "open": {
-     "duration_ms": 248,
+     "duration_ms": 277,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 17,
+     "duration_ms": 15,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 396,
+     "duration_ms": 465,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 25,
+     "duration_ms": 26,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 9,
+     "duration_ms": 8,
      "ok": true
     }
    },
@@ -2184,7 +2188,8 @@
    },
    "package_before": {
     "content_counts": {
-     "comments": 2
+     "comments": 2,
+     "tracked-changes": 4
     },
     "element_counts": {
      "w:commentReference": 2,
@@ -2253,27 +2258,27 @@
      "ok": true
     },
     "measure": {
-     "duration_ms": 411,
+     "duration_ms": 402,
      "ok": true
     },
     "open": {
-     "duration_ms": 229,
+     "duration_ms": 257,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 9,
+     "duration_ms": 11,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 380,
+     "duration_ms": 357,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 20,
+     "duration_ms": 24,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 6,
+     "duration_ms": 9,
      "ok": true
     }
    },
@@ -2353,7 +2358,7 @@
      ]
     ]
    },
-   "duration_ms": 1469,
+   "duration_ms": 1579,
    "features": [
     "slideshow-file",
     "masters-layouts",
@@ -2572,31 +2577,31 @@
    "status": "partial",
    "steps": {
     "engine_start": {
-     "duration_ms": 521,
+     "duration_ms": 519,
      "ok": true
     },
     "measure": {
-     "duration_ms": 302,
+     "duration_ms": 327,
      "ok": true
     },
     "open": {
-     "duration_ms": 190,
+     "duration_ms": 211,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 19,
+     "duration_ms": 17,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 204,
+     "duration_ms": 239,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 61,
+     "duration_ms": 72,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 21,
+     "duration_ms": 27,
      "ok": true
     }
    },
@@ -2609,7 +2614,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1869,
+   "duration_ms": 1921,
    "features": [
     "template",
     "styles",
@@ -2730,31 +2735,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 518,
+     "duration_ms": 521,
      "ok": true
     },
     "measure": {
-     "duration_ms": 392,
+     "duration_ms": 442,
      "ok": true
     },
     "open": {
-     "duration_ms": 195,
+     "duration_ms": 197,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 14,
+     "duration_ms": 16,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 489,
+     "duration_ms": 478,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 31,
+     "duration_ms": 26,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 7,
+     "duration_ms": 9,
      "ok": true
     }
    },
@@ -3053,23 +3058,23 @@
    "status": "partial",
    "steps": {
     "engine_start": {
-     "duration_ms": 518,
+     "duration_ms": 520,
      "ok": true
     },
     "measure": {
-     "duration_ms": 324,
+     "duration_ms": 301,
      "ok": true
     },
     "open": {
-     "duration_ms": 203,
+     "duration_ms": 204,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 18,
+     "duration_ms": 19,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 246,
+     "duration_ms": 229,
      "ok": true
     },
     "reopen": {
@@ -3077,7 +3082,7 @@
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 32,
+     "duration_ms": 26,
      "ok": true
     }
    },
@@ -3090,7 +3095,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1669,
+   "duration_ms": 1671,
    "features": [
     "plain-text",
     "unicode"
@@ -3153,11 +3158,11 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 518,
+     "duration_ms": 525,
      "ok": true
     },
     "measure": {
-     "duration_ms": 389,
+     "duration_ms": 340,
      "ok": true
     },
     "open": {
@@ -3165,19 +3170,19 @@
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 17,
+     "duration_ms": 14,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 328,
+     "duration_ms": 348,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 12,
+     "duration_ms": 14,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 2,
+     "duration_ms": 3,
      "ok": true
     }
    },
@@ -3195,7 +3200,7 @@
      2
     ]
    },
-   "duration_ms": 2023,
+   "duration_ms": 2075,
    "features": [
     "bookmarks",
     "content-controls",
@@ -3435,15 +3440,15 @@
    "status": "partial",
    "steps": {
     "engine_start": {
-     "duration_ms": 519,
+     "duration_ms": 522,
      "ok": true
     },
     "measure": {
-     "duration_ms": 435,
+     "duration_ms": 469,
      "ok": true
     },
     "open": {
-     "duration_ms": 346,
+     "duration_ms": 331,
      "ok": true
     },
     "pdf_export": {
@@ -3451,15 +3456,15 @@
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 344,
+     "duration_ms": 386,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 66,
+     "duration_ms": 61,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 15,
+     "duration_ms": 14,
      "ok": true
     }
    },
@@ -3477,7 +3482,7 @@
      0
     ]
    },
-   "duration_ms": 1518,
+   "duration_ms": 1420,
    "features": [
     "many-layouts",
     "math",
@@ -3571,7 +3576,9 @@
     ]
    },
    "package_before": {
-    "content_counts": {},
+    "content_counts": {
+     "formulas": 1
+    },
     "element_counts": {
      "m:oMath": 1,
      "p:sld": 1,
@@ -3647,31 +3654,31 @@
    "status": "partial",
    "steps": {
     "engine_start": {
-     "duration_ms": 529,
+     "duration_ms": 519,
      "ok": true
     },
     "measure": {
-     "duration_ms": 52,
+     "duration_ms": 46,
      "ok": true
     },
     "open": {
-     "duration_ms": 403,
+     "duration_ms": 397,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 17,
+     "duration_ms": 15,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 42,
+     "duration_ms": 31,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 202,
+     "duration_ms": 162,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 49,
+     "duration_ms": 42,
      "ok": true
     }
    },
@@ -3684,7 +3691,7 @@
    "app": "impress",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1470,
+   "duration_ms": 1419,
    "features": [
     "alternate-content",
     "many-layouts",
@@ -3761,7 +3768,9 @@
     ]
    },
    "package_before": {
-    "content_counts": {},
+    "content_counts": {
+     "formulas": 1
+    },
     "element_counts": {
      "m:oMath": 1,
      "mc:AlternateContent": 1,
@@ -3788,8 +3797,15 @@
     "transitions": []
    },
    "package_diff": {
-    "content_counts_changed": {},
-    "content_lost": [],
+    "content_counts_changed": {
+     "formulas": [
+      1,
+      0
+     ]
+    },
+    "content_lost": [
+     "formulas"
+    ],
     "critical_part_kinds_lost": [],
     "element_counts_changed": {
      "m:oMath": [
@@ -3830,37 +3846,39 @@
    "package_error": "",
    "path": "oox/qa/unit/data/import-mce.pptx",
    "pdf_pages": 1,
-   "reasons": [],
+   "reasons": [
+    "content-lost:formulas"
+   ],
    "sha256": "20b39ce6708e980fe16fd0946dabe5d08d5ab29f36edd9e05aedbb334eb07253",
    "source": "upstream-test-file",
-   "status": "pass",
+   "status": "partial",
    "steps": {
     "engine_start": {
-     "duration_ms": 521,
+     "duration_ms": 520,
      "ok": true
     },
     "measure": {
-     "duration_ms": 68,
+     "duration_ms": 53,
      "ok": true
     },
     "open": {
-     "duration_ms": 419,
+     "duration_ms": 446,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 14,
+     "duration_ms": 13,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 40,
+     "duration_ms": 26,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 163,
+     "duration_ms": 155,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 45,
+     "duration_ms": 43,
      "ok": true
     }
    },
@@ -3873,7 +3891,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1919,
+   "duration_ms": 1771,
    "features": [
     "connectors",
     "groups",
@@ -3985,31 +4003,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 521,
+     "duration_ms": 518,
      "ok": true
     },
     "measure": {
-     "duration_ms": 353,
+     "duration_ms": 277,
      "ok": true
     },
     "open": {
-     "duration_ms": 247,
+     "duration_ms": 222,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 11,
+     "duration_ms": 12,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 321,
+     "duration_ms": 283,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 23,
+     "duration_ms": 20,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 208,
+     "duration_ms": 233,
      "ok": true
     }
    },
@@ -4022,7 +4040,7 @@
    "app": "impress",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1671,
+   "duration_ms": 1718,
    "features": [
     "connectors",
     "many-layouts",
@@ -4167,31 +4185,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 517,
+     "duration_ms": 518,
      "ok": true
     },
     "measure": {
-     "duration_ms": 134,
+     "duration_ms": 130,
      "ok": true
     },
     "open": {
-     "duration_ms": 363,
+     "duration_ms": 376,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 104,
+     "duration_ms": 107,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 116,
+     "duration_ms": 119,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 160,
+     "duration_ms": 162,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 41,
+     "duration_ms": 46,
      "ok": true
     }
    },
@@ -4204,7 +4222,7 @@
    "app": "impress",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1669,
+   "duration_ms": 1568,
    "features": [
     "connectors",
     "many-layouts",
@@ -4349,31 +4367,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 525,
+     "duration_ms": 520,
      "ok": true
     },
     "measure": {
-     "duration_ms": 145,
+     "duration_ms": 94,
      "ok": true
     },
     "open": {
-     "duration_ms": 360,
+     "duration_ms": 326,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 101,
+     "duration_ms": 89,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 108,
+     "duration_ms": 100,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 171,
+     "duration_ms": 147,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 49,
+     "duration_ms": 50,
      "ok": true
     }
    },
@@ -4386,7 +4404,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 2119,
+   "duration_ms": 2019,
    "features": [
     "endnotes",
     "notes"
@@ -4451,31 +4469,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 519,
+     "duration_ms": 518,
      "ok": true
     },
     "measure": {
-     "duration_ms": 603,
+     "duration_ms": 513,
      "ok": true
     },
     "open": {
-     "duration_ms": 180,
+     "duration_ms": 201,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 11,
+     "duration_ms": 12,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 576,
+     "duration_ms": 550,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 15,
+     "duration_ms": 22,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 6,
+     "duration_ms": 5,
      "ok": true
     }
    },
@@ -4488,7 +4506,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1519,
+   "duration_ms": 1618,
    "features": [
     "lists",
     "tables"
@@ -4553,31 +4571,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 518,
+     "duration_ms": 522,
      "ok": true
     },
     "measure": {
-     "duration_ms": 326,
+     "duration_ms": 353,
      "ok": true
     },
     "open": {
-     "duration_ms": 176,
+     "duration_ms": 201,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 9,
+     "duration_ms": 16,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 251,
+     "duration_ms": 276,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 12,
+     "duration_ms": 24,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 5,
+     "duration_ms": 8,
      "ok": true
     }
    },
@@ -4590,7 +4608,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1524,
+   "duration_ms": 1671,
    "features": [
     "embedded-fonts",
     "proprietary-fonts"
@@ -4718,15 +4736,15 @@
    "status": "partial",
    "steps": {
     "engine_start": {
-     "duration_ms": 521,
+     "duration_ms": 518,
      "ok": true
     },
     "measure": {
-     "duration_ms": 259,
+     "duration_ms": 354,
      "ok": true
     },
     "open": {
-     "duration_ms": 238,
+     "duration_ms": 261,
      "ok": true
     },
     "pdf_export": {
@@ -4734,15 +4752,15 @@
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 256,
+     "duration_ms": 278,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 21,
+     "duration_ms": 25,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 13,
+     "duration_ms": 14,
      "ok": true
     }
    },
@@ -4873,31 +4891,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 520,
+     "duration_ms": 533,
      "ok": true
     },
     "measure": {
-     "duration_ms": 273,
+     "duration_ms": 341,
      "ok": true
     },
     "open": {
-     "duration_ms": 304,
+     "duration_ms": 253,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 39,
+     "duration_ms": 8,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 259,
+     "duration_ms": 233,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 30,
+     "duration_ms": 32,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 27,
+     "duration_ms": 23,
      "ok": true
     }
    },
@@ -4910,7 +4928,7 @@
    "app": "impress",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1568,
+   "duration_ms": 1518,
    "features": [
     "embedded-fonts",
     "many-layouts",
@@ -5059,31 +5077,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 518,
+     "duration_ms": 524,
      "ok": true
     },
     "measure": {
-     "duration_ms": 56,
+     "duration_ms": 58,
      "ok": true
     },
     "open": {
-     "duration_ms": 444,
+     "duration_ms": 439,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 14,
+     "duration_ms": 13,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 32,
+     "duration_ms": 36,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 241,
+     "duration_ms": 173,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 67,
+     "duration_ms": 52,
      "ok": true
     }
    },
@@ -5096,7 +5114,7 @@
    "app": "impress",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1522,
+   "duration_ms": 1418,
    "features": [
     "groups",
     "images",
@@ -5249,15 +5267,15 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 518,
+     "duration_ms": 520,
      "ok": true
     },
     "measure": {
-     "duration_ms": 112,
+     "duration_ms": 115,
      "ok": true
     },
     "open": {
-     "duration_ms": 287,
+     "duration_ms": 246,
      "ok": true
     },
     "pdf_export": {
@@ -5265,15 +5283,15 @@
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 82,
+     "duration_ms": 81,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 61,
+     "duration_ms": 70,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 212,
+     "duration_ms": 177,
      "ok": true
     }
    },
@@ -5286,7 +5304,7 @@
    "app": "impress",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1268,
+   "duration_ms": 1218,
    "features": [
     "hyperlinks",
     "notes",
@@ -5432,31 +5450,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 521,
+     "duration_ms": 519,
      "ok": true
     },
     "measure": {
-     "duration_ms": 58,
+     "duration_ms": 51,
      "ok": true
     },
     "open": {
-     "duration_ms": 238,
+     "duration_ms": 203,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 12,
+     "duration_ms": 16,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 39,
+     "duration_ms": 33,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 50,
+     "duration_ms": 57,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 145,
+     "duration_ms": 187,
      "ok": true
     }
    },
@@ -5469,7 +5487,7 @@
    "app": "impress",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1417,
+   "duration_ms": 1519,
    "features": [
     "animations",
     "images",
@@ -5622,31 +5640,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 517,
+     "duration_ms": 518,
      "ok": true
     },
     "measure": {
-     "duration_ms": 77,
+     "duration_ms": 89,
      "ok": true
     },
     "open": {
-     "duration_ms": 270,
+     "duration_ms": 285,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 15,
+     "duration_ms": 16,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 60,
+     "duration_ms": 56,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 67,
+     "duration_ms": 77,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 204,
+     "duration_ms": 234,
      "ok": true
     }
    },
@@ -5659,7 +5677,7 @@
    "app": "impress",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1621,
+   "duration_ms": 1719,
    "features": [
     "lists",
     "multi-master",
@@ -5829,31 +5847,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 516,
+     "duration_ms": 519,
      "ok": true
     },
     "measure": {
-     "duration_ms": 161,
+     "duration_ms": 191,
      "ok": true
     },
     "open": {
-     "duration_ms": 223,
+     "duration_ms": 217,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 21,
+     "duration_ms": 25,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 126,
+     "duration_ms": 120,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 74,
+     "duration_ms": 109,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 256,
+     "duration_ms": 272,
      "ok": true
     }
    },
@@ -5866,7 +5884,7 @@
    "app": "impress",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 2069,
+   "duration_ms": 1971,
    "features": [
     "animations",
     "many-layouts",
@@ -6019,11 +6037,11 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 517,
+     "duration_ms": 520,
      "ok": true
     },
     "measure": {
-     "duration_ms": 62,
+     "duration_ms": 67,
      "ok": true
     },
     "open": {
@@ -6031,7 +6049,7 @@
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 15,
+     "duration_ms": 13,
      "ok": true
     },
     "remeasure": {
@@ -6039,11 +6057,11 @@
      "ok": true
     },
     "reopen": {
-     "duration_ms": 606,
+     "duration_ms": 548,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 405,
+     "duration_ms": 372,
      "ok": true
     }
    },
@@ -6075,7 +6093,7 @@
      ]
     ]
    },
-   "duration_ms": 1970,
+   "duration_ms": 1969,
    "features": [],
    "fonts": [
     "Arial"
@@ -6160,31 +6178,31 @@
    "status": "partial",
    "steps": {
     "engine_start": {
-     "duration_ms": 519,
+     "duration_ms": 521,
      "ok": true
     },
     "measure": {
-     "duration_ms": 499,
+     "duration_ms": 494,
      "ok": true
     },
     "open": {
-     "duration_ms": 150,
+     "duration_ms": 143,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 19,
+     "duration_ms": 17,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 428,
+     "duration_ms": 424,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 25,
+     "duration_ms": 23,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 182,
+     "duration_ms": 193,
      "ok": true
     }
    },
@@ -6216,7 +6234,7 @@
      ]
     ]
    },
-   "duration_ms": 1117,
+   "duration_ms": 1118,
    "features": [
     "lists"
    ],
@@ -6311,31 +6329,31 @@
    "status": "partial",
    "steps": {
     "engine_start": {
-     "duration_ms": 521,
+     "duration_ms": 520,
      "ok": true
     },
     "measure": {
-     "duration_ms": 59,
+     "duration_ms": 66,
      "ok": true
     },
     "open": {
-     "duration_ms": 158,
+     "duration_ms": 151,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 18,
+     "duration_ms": 16,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 41,
+     "duration_ms": 45,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 24,
+     "duration_ms": 23,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 109,
+     "duration_ms": 117,
      "ok": true
     }
    },
@@ -6367,7 +6385,7 @@
      ]
     ]
    },
-   "duration_ms": 1218,
+   "duration_ms": 1168,
    "features": [],
    "fonts": [
     "Times New Roman"
@@ -6452,31 +6470,31 @@
    "status": "partial",
    "steps": {
     "engine_start": {
-     "duration_ms": 520,
+     "duration_ms": 519,
      "ok": true
     },
     "measure": {
-     "duration_ms": 52,
+     "duration_ms": 57,
      "ok": true
     },
     "open": {
-     "duration_ms": 169,
+     "duration_ms": 146,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 11,
+     "duration_ms": 16,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 28,
+     "duration_ms": 34,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 17,
+     "duration_ms": 18,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 154,
+     "duration_ms": 172,
      "ok": true
     }
    },
@@ -6489,7 +6507,7 @@
    "app": "impress",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1218,
+   "duration_ms": 1172,
    "features": [
     "lists"
    ],
@@ -6574,31 +6592,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 521,
+     "duration_ms": 517,
      "ok": true
     },
     "measure": {
-     "duration_ms": 63,
+     "duration_ms": 54,
      "ok": true
     },
     "open": {
-     "duration_ms": 160,
+     "duration_ms": 144,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 16,
+     "duration_ms": 11,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 31,
+     "duration_ms": 34,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 23,
+     "duration_ms": 21,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 207,
+     "duration_ms": 168,
      "ok": true
     }
    },
@@ -6611,7 +6629,7 @@
    "app": "impress",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1468,
+   "duration_ms": 1619,
    "features": [],
    "fonts": [
     "Arial"
@@ -6733,27 +6751,27 @@
      "ok": true
     },
     "measure": {
-     "duration_ms": 210,
+     "duration_ms": 274,
      "ok": true
     },
     "open": {
-     "duration_ms": 140,
+     "duration_ms": 145,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 30,
+     "duration_ms": 25,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 192,
+     "duration_ms": 258,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 28,
+     "duration_ms": 23,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 176,
+     "duration_ms": 193,
      "ok": true
     }
    },
@@ -6785,7 +6803,7 @@
      ]
     ]
    },
-   "duration_ms": 1468,
+   "duration_ms": 1623,
    "features": [],
    "fonts": [
     "Arial",
@@ -6877,31 +6895,31 @@
    "status": "partial",
    "steps": {
     "engine_start": {
-     "duration_ms": 516,
+     "duration_ms": 525,
      "ok": true
     },
     "measure": {
-     "duration_ms": 164,
+     "duration_ms": 205,
      "ok": true
     },
     "open": {
-     "duration_ms": 163,
+     "duration_ms": 175,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 36,
+     "duration_ms": 38,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 140,
+     "duration_ms": 193,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 24,
+     "duration_ms": 48,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 174,
+     "duration_ms": 197,
      "ok": true
     }
    },
@@ -6933,7 +6951,7 @@
      ]
     ]
    },
-   "duration_ms": 1167,
+   "duration_ms": 1218,
    "features": [],
    "fonts": [
     "Arial"
@@ -7015,19 +7033,19 @@
    "status": "partial",
    "steps": {
     "engine_start": {
-     "duration_ms": 518,
+     "duration_ms": 523,
      "ok": true
     },
     "measure": {
-     "duration_ms": 71,
+     "duration_ms": 85,
      "ok": true
     },
     "open": {
-     "duration_ms": 142,
+     "duration_ms": 159,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 11,
+     "duration_ms": 12,
      "ok": true
     },
     "remeasure": {
@@ -7035,11 +7053,11 @@
      "ok": true
     },
     "reopen": {
-     "duration_ms": 21,
+     "duration_ms": 19,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 169,
+     "duration_ms": 165,
      "ok": true
     }
    },
@@ -7052,7 +7070,7 @@
    "app": "impress",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1070,
+   "duration_ms": 1123,
    "features": [],
    "fonts": [
     "Arial"
@@ -7131,31 +7149,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 517,
+     "duration_ms": 520,
      "ok": true
     },
     "measure": {
-     "duration_ms": 58,
+     "duration_ms": 72,
      "ok": true
     },
     "open": {
-     "duration_ms": 123,
+     "duration_ms": 136,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 15,
+     "duration_ms": 17,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 36,
+     "duration_ms": 41,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 26,
+     "duration_ms": 21,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 139,
+     "duration_ms": 152,
      "ok": true
     }
    },
@@ -7168,7 +7186,7 @@
    "app": "impress",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1419,
+   "duration_ms": 1520,
    "features": [
     "animations",
     "hyperlinks",
@@ -7336,31 +7354,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 520,
+     "duration_ms": 524,
      "ok": true
     },
     "measure": {
-     "duration_ms": 63,
+     "duration_ms": 76,
      "ok": true
     },
     "open": {
-     "duration_ms": 361,
+     "duration_ms": 462,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 13,
+     "duration_ms": 15,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 46,
+     "duration_ms": 41,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 199,
+     "duration_ms": 163,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 38,
+     "duration_ms": 43,
      "ok": true
     }
    },
@@ -7373,7 +7391,7 @@
    "app": "impress",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1571,
+   "duration_ms": 1621,
    "features": [
     "animations",
     "hyperlinks",
@@ -7542,21 +7560,23 @@
    "package_error": "",
    "path": "sd/qa/unit/data/pptx/bnc591147.pptx",
    "pdf_pages": 2,
-   "reasons": [],
+   "reasons": [
+    "content-shrank:animation_nodes"
+   ],
    "sha256": "3724fa0ecbf42e7380ee8528fe0f784b23247a69d897c434c5cc7643822ad0e2",
    "source": "upstream-test-file",
-   "status": "pass",
+   "status": "partial",
    "steps": {
     "engine_start": {
-     "duration_ms": 520,
+     "duration_ms": 522,
      "ok": true
     },
     "measure": {
-     "duration_ms": 97,
+     "duration_ms": 105,
      "ok": true
     },
     "open": {
-     "duration_ms": 393,
+     "duration_ms": 390,
      "ok": true
     },
     "pdf_export": {
@@ -7564,15 +7584,15 @@
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 68,
+     "duration_ms": 91,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 186,
+     "duration_ms": 174,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 50,
+     "duration_ms": 65,
      "ok": true
     }
    },
@@ -7585,7 +7605,7 @@
    "app": "impress",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1067,
+   "duration_ms": 1018,
    "features": [
     "charts",
     "ole",
@@ -7765,31 +7785,31 @@
    "status": "partial",
    "steps": {
     "engine_start": {
-     "duration_ms": 518,
+     "duration_ms": 520,
      "ok": true
     },
     "measure": {
-     "duration_ms": 68,
+     "duration_ms": 51,
      "ok": true
     },
     "open": {
-     "duration_ms": 203,
+     "duration_ms": 219,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 12,
+     "duration_ms": 11,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 33,
+     "duration_ms": 29,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 37,
+     "duration_ms": 30,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 17,
+     "duration_ms": 13,
      "ok": true
     }
    },
@@ -7802,7 +7822,7 @@
    "app": "impress",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1067,
+   "duration_ms": 1017,
    "features": [
     "custom-xml",
     "embedded-fonts",
@@ -7982,15 +8002,15 @@
    "status": "partial",
    "steps": {
     "engine_start": {
-     "duration_ms": 523,
+     "duration_ms": 518,
      "ok": true
     },
     "measure": {
-     "duration_ms": 41,
+     "duration_ms": 45,
      "ok": true
     },
     "open": {
-     "duration_ms": 203,
+     "duration_ms": 204,
      "ok": true
     },
     "pdf_export": {
@@ -7998,11 +8018,11 @@
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 32,
+     "duration_ms": 19,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 29,
+     "duration_ms": 32,
      "ok": true
     },
     "roundtrip_save": {
@@ -8019,7 +8039,7 @@
    "app": "impress",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1067,
+   "duration_ms": 1117,
    "features": [
     "animations",
     "hyperlinks",
@@ -8186,17 +8206,19 @@
    "package_error": "",
    "path": "sd/qa/unit/data/pptx/narration-non-media-shape.pptx",
    "pdf_pages": 1,
-   "reasons": [],
+   "reasons": [
+    "content-shrank:animation_nodes"
+   ],
    "sha256": "5088b45f6e39576247448c26bc800923e7c46378d2b0a1c3989efa3e83ebee41",
    "source": "upstream-test-file",
-   "status": "pass",
+   "status": "partial",
    "steps": {
     "engine_start": {
-     "duration_ms": 522,
+     "duration_ms": 520,
      "ok": true
     },
     "measure": {
-     "duration_ms": 80,
+     "duration_ms": 74,
      "ok": true
     },
     "open": {
@@ -8204,19 +8226,19 @@
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 12,
+     "duration_ms": 11,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 44,
+     "duration_ms": 54,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 31,
+     "duration_ms": 34,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 17,
+     "duration_ms": 10,
      "ok": true
     }
    },
@@ -8229,7 +8251,7 @@
    "app": "impress",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1418,
+   "duration_ms": 1473,
    "features": [
     "alternate-content",
     "animations",
@@ -8383,27 +8405,27 @@
      "ok": true
     },
     "measure": {
-     "duration_ms": 55,
+     "duration_ms": 48,
      "ok": true
     },
     "open": {
-     "duration_ms": 385,
+     "duration_ms": 405,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 19,
+     "duration_ms": 27,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 34,
+     "duration_ms": 37,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 154,
+     "duration_ms": 181,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 46,
+     "duration_ms": 49,
      "ok": true
     }
    },
@@ -8416,7 +8438,7 @@
    "app": "impress",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 917,
+   "duration_ms": 1021,
    "features": [
     "comments",
     "proprietary-fonts"
@@ -8570,27 +8592,27 @@
      "ok": true
     },
     "measure": {
-     "duration_ms": 33,
+     "duration_ms": 30,
      "ok": true
     },
     "open": {
-     "duration_ms": 160,
+     "duration_ms": 215,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 9,
+     "duration_ms": 11,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 19,
-     "ok": true
-    },
-    "reopen": {
      "duration_ms": 23,
      "ok": true
     },
+    "reopen": {
+     "duration_ms": 26,
+     "ok": true
+    },
     "roundtrip_save": {
-     "duration_ms": 8,
+     "duration_ms": 11,
      "ok": true
     }
    },
@@ -8608,7 +8630,7 @@
      19
     ]
    },
-   "duration_ms": 6532,
+   "duration_ms": 6736,
    "features": [
     "alternate-content",
     "groups",
@@ -8925,31 +8947,31 @@
    "status": "partial",
    "steps": {
     "engine_start": {
-     "duration_ms": 517,
+     "duration_ms": 526,
      "ok": true
     },
     "measure": {
-     "duration_ms": 2263,
+     "duration_ms": 2274,
      "ok": true
     },
     "open": {
-     "duration_ms": 660,
+     "duration_ms": 707,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 47,
+     "duration_ms": 56,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 2088,
+     "duration_ms": 2072,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 535,
+     "duration_ms": 633,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 162,
+     "duration_ms": 207,
      "ok": true
     }
    },
@@ -8967,7 +8989,7 @@
      4
     ]
    },
-   "duration_ms": 3322,
+   "duration_ms": 3323,
    "features": [
     "groups",
     "hyperlinks",
@@ -9208,31 +9230,31 @@
    "status": "partial",
    "steps": {
     "engine_start": {
-     "duration_ms": 522,
+     "duration_ms": 520,
      "ok": true
     },
     "measure": {
-     "duration_ms": 955,
+     "duration_ms": 990,
      "ok": true
     },
     "open": {
-     "duration_ms": 395,
+     "duration_ms": 404,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 64,
+     "duration_ms": 65,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 912,
+     "duration_ms": 884,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 175,
+     "duration_ms": 154,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 81,
+     "duration_ms": 87,
      "ok": true
     }
    },
@@ -9245,7 +9267,7 @@
    "app": "impress",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1168,
+   "duration_ms": 1166,
    "features": [
     "proprietary-fonts",
     "smartart"
@@ -9397,31 +9419,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 519,
+     "duration_ms": 521,
      "ok": true
     },
     "measure": {
-     "duration_ms": 105,
+     "duration_ms": 89,
      "ok": true
     },
     "open": {
-     "duration_ms": 206,
+     "duration_ms": 201,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 14,
+     "duration_ms": 12,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 78,
+     "duration_ms": 75,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 36,
+     "duration_ms": 38,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 15,
+     "duration_ms": 14,
      "ok": true
     }
    },
@@ -9434,7 +9456,7 @@
    "app": "impress",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1019,
+   "duration_ms": 1069,
    "features": [
     "alternate-content",
     "custom-xml",
@@ -9630,31 +9652,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 516,
+     "duration_ms": 519,
      "ok": true
     },
     "measure": {
-     "duration_ms": 61,
+     "duration_ms": 64,
      "ok": true
     },
     "open": {
-     "duration_ms": 188,
+     "duration_ms": 202,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 16,
+     "duration_ms": 11,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 41,
+     "duration_ms": 40,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 33,
+     "duration_ms": 34,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 13,
+     "duration_ms": 16,
      "ok": true
     }
    },
@@ -9667,7 +9689,7 @@
    "app": "impress",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 2171,
+   "duration_ms": 2185,
    "features": [
     "alternate-content",
     "animations",
@@ -9871,31 +9893,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 517,
+     "duration_ms": 518,
      "ok": true
     },
     "measure": {
-     "duration_ms": 235,
+     "duration_ms": 217,
      "ok": true
     },
     "open": {
-     "duration_ms": 508,
+     "duration_ms": 532,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 15,
+     "duration_ms": 17,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 188,
+     "duration_ms": 241,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 382,
+     "duration_ms": 337,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 109,
+     "duration_ms": 82,
      "ok": true
     }
    },
@@ -9908,7 +9930,7 @@
    "app": "impress",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 2172,
+   "duration_ms": 2328,
    "features": [
     "animations",
     "groups",
@@ -10147,31 +10169,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 522,
+     "duration_ms": 521,
      "ok": true
     },
     "measure": {
-     "duration_ms": 386,
+     "duration_ms": 402,
      "ok": true
     },
     "open": {
-     "duration_ms": 450,
+     "duration_ms": 496,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 28,
+     "duration_ms": 33,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 290,
+     "duration_ms": 317,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 197,
+     "duration_ms": 253,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 68,
+     "duration_ms": 79,
      "ok": true
     }
    },
@@ -10184,7 +10206,7 @@
    "app": "impress",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1520,
+   "duration_ms": 1521,
    "features": [
     "alternate-content",
     "animations",
@@ -10363,31 +10385,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 519,
+     "duration_ms": 518,
      "ok": true
     },
     "measure": {
-     "duration_ms": 49,
+     "duration_ms": 46,
      "ok": true
     },
     "open": {
-     "duration_ms": 418,
+     "duration_ms": 461,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 56,
+     "duration_ms": 49,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 29,
+     "duration_ms": 31,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 161,
+     "duration_ms": 152,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 71,
+     "duration_ms": 62,
      "ok": true
     }
    },
@@ -10400,7 +10422,7 @@
    "app": "impress",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1018,
+   "duration_ms": 1067,
    "features": [
     "proprietary-fonts",
     "tables"
@@ -10550,23 +10572,23 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 522,
+     "duration_ms": 524,
      "ok": true
     },
     "measure": {
-     "duration_ms": 40,
+     "duration_ms": 55,
      "ok": true
     },
     "open": {
-     "duration_ms": 244,
+     "duration_ms": 202,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 11,
+     "duration_ms": 13,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 18,
+     "duration_ms": 9,
      "ok": true
     },
     "reopen": {
@@ -10574,7 +10596,7 @@
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 11,
+     "duration_ms": 12,
      "ok": true
     }
    },
@@ -10587,7 +10609,7 @@
    "app": "impress",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1017,
+   "duration_ms": 1067,
    "features": [
     "alternate-content",
     "animations",
@@ -10778,27 +10800,27 @@
      "ok": true
     },
     "measure": {
-     "duration_ms": 47,
+     "duration_ms": 50,
      "ok": true
     },
     "open": {
-     "duration_ms": 191,
+     "duration_ms": 206,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 30,
+     "duration_ms": 28,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 26,
+     "duration_ms": 31,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 25,
+     "duration_ms": 29,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 11,
+     "duration_ms": 13,
      "ok": true
     }
    },
@@ -10811,7 +10833,7 @@
    "app": "impress",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 2170,
+   "duration_ms": 2271,
    "features": [
     "animations",
     "connectors",
@@ -10991,15 +11013,15 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 518,
+     "duration_ms": 519,
      "ok": true
     },
     "measure": {
-     "duration_ms": 312,
+     "duration_ms": 344,
      "ok": true
     },
     "open": {
-     "duration_ms": 457,
+     "duration_ms": 490,
      "ok": true
     },
     "pdf_export": {
@@ -11007,15 +11029,15 @@
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 349,
+     "duration_ms": 350,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 185,
+     "duration_ms": 225,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 54,
+     "duration_ms": 56,
      "ok": true
     }
    },
@@ -11028,7 +11050,7 @@
    "app": "impress",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1268,
+   "duration_ms": 1270,
    "features": [
     "connectors",
     "custom-xml",
@@ -11202,27 +11224,27 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 519,
+     "duration_ms": 521,
      "ok": true
     },
     "measure": {
-     "duration_ms": 121,
+     "duration_ms": 116,
      "ok": true
     },
     "open": {
-     "duration_ms": 323,
+     "duration_ms": 246,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 12,
+     "duration_ms": 16,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 91,
+     "duration_ms": 96,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 47,
+     "duration_ms": 48,
      "ok": true
     },
     "roundtrip_save": {
@@ -11239,7 +11261,7 @@
    "app": "impress",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1675,
+   "duration_ms": 1670,
    "features": [
     "alternate-content",
     "custom-xml",
@@ -11428,15 +11450,15 @@
    "status": "partial",
    "steps": {
     "engine_start": {
-     "duration_ms": 520,
+     "duration_ms": 523,
      "ok": true
     },
     "measure": {
-     "duration_ms": 154,
+     "duration_ms": 156,
      "ok": true
     },
     "open": {
-     "duration_ms": 387,
+     "duration_ms": 435,
      "ok": true
     },
     "pdf_export": {
@@ -11444,15 +11466,15 @@
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 134,
+     "duration_ms": 131,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 192,
+     "duration_ms": 186,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 47,
+     "duration_ms": 54,
      "ok": true
     }
    },
@@ -11465,7 +11487,7 @@
    "app": "impress",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 3187,
+   "duration_ms": 3022,
    "features": [
     "alternate-content",
     "groups",
@@ -11672,31 +11694,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 521,
+     "duration_ms": 519,
      "ok": true
     },
     "measure": {
-     "duration_ms": 617,
+     "duration_ms": 615,
      "ok": true
     },
     "open": {
-     "duration_ms": 465,
+     "duration_ms": 446,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 416,
+     "duration_ms": 385,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 649,
+     "duration_ms": 573,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 204,
+     "duration_ms": 202,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 71,
+     "duration_ms": 78,
      "ok": true
     }
    },
@@ -11709,7 +11731,7 @@
    "app": "impress",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 2325,
+   "duration_ms": 2270,
    "features": [
     "alternate-content",
     "connectors",
@@ -11859,31 +11881,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 519,
+     "duration_ms": 518,
      "ok": true
     },
     "measure": {
-     "duration_ms": 147,
+     "duration_ms": 133,
      "ok": true
     },
     "open": {
-     "duration_ms": 345,
+     "duration_ms": 330,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 130,
+     "duration_ms": 112,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 96,
+     "duration_ms": 93,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 611,
+     "duration_ms": 615,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 231,
+     "duration_ms": 196,
      "ok": true
     }
    },
@@ -11896,7 +11918,7 @@
    "app": "impress",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1017,
+   "duration_ms": 1119,
    "features": [
     "alternate-content",
     "images",
@@ -12066,31 +12088,31 @@
    "status": "partial",
    "steps": {
     "engine_start": {
-     "duration_ms": 517,
+     "duration_ms": 518,
      "ok": true
     },
     "measure": {
-     "duration_ms": 50,
+     "duration_ms": 60,
      "ok": true
     },
     "open": {
-     "duration_ms": 202,
+     "duration_ms": 196,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 52,
+     "duration_ms": 68,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 20,
+     "duration_ms": 27,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 28,
+     "duration_ms": 30,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 11,
+     "duration_ms": 12,
      "ok": true
     }
    },
@@ -12103,7 +12125,7 @@
    "app": "impress",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1724,
+   "duration_ms": 1669,
    "features": [
     "alternate-content",
     "animations",
@@ -12360,27 +12382,27 @@
      "ok": true
     },
     "measure": {
-     "duration_ms": 135,
+     "duration_ms": 115,
      "ok": true
     },
     "open": {
-     "duration_ms": 345,
+     "duration_ms": 311,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 239,
+     "duration_ms": 235,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 95,
+     "duration_ms": 93,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 100,
+     "duration_ms": 110,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 94,
+     "duration_ms": 70,
      "ok": true
     }
    },
@@ -12393,7 +12415,7 @@
    "app": "impress",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1268,
+   "duration_ms": 1169,
    "features": [
     "animations",
     "comments",
@@ -12567,37 +12589,39 @@
    "package_error": "",
    "path": "sd/qa/unit/data/pptx/tdf91060.pptx",
    "pdf_pages": 1,
-   "reasons": [],
+   "reasons": [
+    "content-shrank:animation_nodes"
+   ],
    "sha256": "fe7776906699d528ca797c261c6b9f59e6822a31eeddec0033be23655663e3a1",
    "source": "upstream-test-file",
-   "status": "pass",
+   "status": "partial",
    "steps": {
     "engine_start": {
-     "duration_ms": 519,
+     "duration_ms": 518,
      "ok": true
     },
     "measure": {
-     "duration_ms": 102,
+     "duration_ms": 88,
      "ok": true
     },
     "open": {
-     "duration_ms": 258,
+     "duration_ms": 234,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 11,
+     "duration_ms": 10,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 78,
+     "duration_ms": 79,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 39,
+     "duration_ms": 43,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 18,
+     "duration_ms": 14,
      "ok": true
     }
    },
@@ -12610,7 +12634,7 @@
    "app": "impress",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1418,
+   "duration_ms": 1522,
    "features": [
     "animations",
     "multi-slide",
@@ -12776,31 +12800,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 519,
+     "duration_ms": 524,
      "ok": true
     },
     "measure": {
-     "duration_ms": 120,
+     "duration_ms": 154,
      "ok": true
     },
     "open": {
-     "duration_ms": 202,
+     "duration_ms": 240,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 12,
+     "duration_ms": 14,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 140,
+     "duration_ms": 131,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 58,
+     "duration_ms": 75,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 160,
+     "duration_ms": 170,
      "ok": true
     }
    },
@@ -12971,27 +12995,27 @@
      "ok": true
     },
     "measure": {
-     "duration_ms": 71,
+     "duration_ms": 56,
      "ok": true
     },
     "open": {
-     "duration_ms": 305,
+     "duration_ms": 336,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 16,
+     "duration_ms": 14,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 39,
+     "duration_ms": 51,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 156,
+     "duration_ms": 159,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 49,
+     "duration_ms": 40,
      "ok": true
     }
    },
@@ -13009,7 +13033,7 @@
      2
     ]
    },
-   "duration_ms": 2027,
+   "duration_ms": 2176,
    "features": [
     "bookmarks",
     "content-controls",
@@ -13237,15 +13261,15 @@
    "status": "partial",
    "steps": {
     "engine_start": {
-     "duration_ms": 519,
+     "duration_ms": 520,
      "ok": true
     },
     "measure": {
-     "duration_ms": 448,
+     "duration_ms": 463,
      "ok": true
     },
     "open": {
-     "duration_ms": 298,
+     "duration_ms": 449,
      "ok": true
     },
     "pdf_export": {
@@ -13253,15 +13277,15 @@
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 413,
+     "duration_ms": 393,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 77,
+     "duration_ms": 74,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 52,
+     "duration_ms": 58,
      "ok": true
     }
    },
@@ -13274,7 +13298,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1721,
+   "duration_ms": 1822,
    "features": [
     "proprietary-fonts",
     "tables",
@@ -13408,27 +13432,27 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 517,
+     "duration_ms": 520,
      "ok": true
     },
     "measure": {
-     "duration_ms": 358,
+     "duration_ms": 384,
      "ok": true
     },
     "open": {
-     "duration_ms": 254,
+     "duration_ms": 336,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 6,
+     "duration_ms": 10,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 338,
+     "duration_ms": 322,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 39,
+     "duration_ms": 40,
      "ok": true
     },
     "roundtrip_save": {
@@ -13445,7 +13469,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1618,
+   "duration_ms": 1668,
    "features": [
     "endnotes",
     "footnotes"
@@ -13510,23 +13534,23 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 517,
+     "duration_ms": 519,
      "ok": true
     },
     "measure": {
-     "duration_ms": 347,
+     "duration_ms": 335,
      "ok": true
     },
     "open": {
-     "duration_ms": 194,
+     "duration_ms": 219,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 9,
+     "duration_ms": 10,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 300,
+     "duration_ms": 366,
      "ok": true
     },
     "reopen": {
@@ -13534,7 +13558,7 @@
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 6,
+     "duration_ms": 5,
      "ok": true
     }
    },
@@ -13547,7 +13571,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 3623,
+   "duration_ms": 3775,
    "features": [
     "alternate-content",
     "bookmarks",
@@ -13783,31 +13807,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 519,
+     "duration_ms": 518,
      "ok": true
     },
     "measure": {
-     "duration_ms": 1212,
+     "duration_ms": 1329,
      "ok": true
     },
     "open": {
-     "duration_ms": 393,
+     "duration_ms": 403,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 41,
+     "duration_ms": 32,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 1042,
+     "duration_ms": 1125,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 92,
+     "duration_ms": 94,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 23,
+     "duration_ms": 20,
      "ok": true
     }
    },
@@ -13820,7 +13844,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1868,
+   "duration_ms": 1918,
    "features": [
     "images",
     "ole"
@@ -13885,31 +13909,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 520,
+     "duration_ms": 534,
      "ok": true
     },
     "measure": {
-     "duration_ms": 375,
+     "duration_ms": 381,
      "ok": true
     },
     "open": {
-     "duration_ms": 342,
+     "duration_ms": 290,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 60,
+     "duration_ms": 54,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 284,
+     "duration_ms": 353,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 47,
+     "duration_ms": 62,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 15,
+     "duration_ms": 17,
      "ok": true
     }
    },
@@ -13922,7 +13946,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 4776,
+   "duration_ms": 4780,
    "features": [
     "alternate-content",
     "bookmarks",
@@ -14141,31 +14165,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 520,
+     "duration_ms": 521,
      "ok": true
     },
     "measure": {
-     "duration_ms": 1959,
+     "duration_ms": 2039,
      "ok": true
     },
     "open": {
-     "duration_ms": 294,
+     "duration_ms": 319,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 32,
+     "duration_ms": 27,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 1637,
+     "duration_ms": 1553,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 67,
+     "duration_ms": 55,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 24,
+     "duration_ms": 22,
      "ok": true
     }
    },
@@ -14178,7 +14202,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1868,
+   "duration_ms": 2021,
    "features": [
     "bookmarks",
     "charts",
@@ -14237,7 +14261,9 @@
     "word_count": 0
    },
    "package_before": {
-    "content_counts": {},
+    "content_counts": {
+     "formulas": 1
+    },
     "element_counts": {
      "c:chart": 2,
      "m:oMath": 1,
@@ -14307,19 +14333,19 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 517,
+     "duration_ms": 519,
      "ok": true
     },
     "measure": {
-     "duration_ms": 334,
+     "duration_ms": 391,
      "ok": true
     },
     "open": {
-     "duration_ms": 334,
+     "duration_ms": 403,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 30,
+     "duration_ms": 32,
      "ok": true
     },
     "remeasure": {
@@ -14327,11 +14353,11 @@
      "ok": true
     },
     "reopen": {
-     "duration_ms": 90,
+     "duration_ms": 85,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 26,
+     "duration_ms": 25,
      "ok": true
     }
    },
@@ -14344,7 +14370,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 2319,
+   "duration_ms": 2269,
    "features": [
     "bookmarks",
     "comments",
@@ -14411,7 +14437,11 @@
     "word_count": 41
    },
    "package_before": {
-    "content_counts": {},
+    "content_counts": {
+     "comments": 1,
+     "footnotes": 1,
+     "tracked-changes": 2
+    },
     "element_counts": {
      "draw:custom-shape": 3,
      "draw:frame": 1,
@@ -14468,23 +14498,23 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 519,
+     "duration_ms": 521,
      "ok": true
     },
     "measure": {
-     "duration_ms": 587,
+     "duration_ms": 547,
      "ok": true
     },
     "open": {
-     "duration_ms": 247,
+     "duration_ms": 249,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 12,
+     "duration_ms": 11,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 510,
+     "duration_ms": 496,
      "ok": true
     },
     "reopen": {
@@ -14492,7 +14522,7 @@
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 192,
+     "duration_ms": 176,
      "ok": true
     }
    },
@@ -14505,7 +14535,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1623,
+   "duration_ms": 1876,
    "features": [
     "comments",
     "custom-xml",
@@ -14631,31 +14661,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 520,
+     "duration_ms": 521,
      "ok": true
     },
     "measure": {
-     "duration_ms": 337,
+     "duration_ms": 409,
      "ok": true
     },
     "open": {
-     "duration_ms": 243,
+     "duration_ms": 244,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 8,
+     "duration_ms": 10,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 270,
+     "duration_ms": 386,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 23,
+     "duration_ms": 29,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 6,
+     "duration_ms": 9,
      "ok": true
     }
    },
@@ -14668,7 +14698,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 2173,
+   "duration_ms": 2525,
    "features": [
     "bookmarks",
     "charts",
@@ -14818,31 +14848,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 515,
+     "duration_ms": 517,
      "ok": true
     },
     "measure": {
-     "duration_ms": 569,
+     "duration_ms": 701,
      "ok": true
     },
     "open": {
-     "duration_ms": 326,
+     "duration_ms": 334,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 34,
+     "duration_ms": 42,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 456,
+     "duration_ms": 584,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 64,
+     "duration_ms": 90,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 14,
+     "duration_ms": 18,
      "ok": true
     }
    },
@@ -14855,7 +14885,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 2319,
+   "duration_ms": 2723,
    "features": [
     "alternate-content",
     "bookmarks",
@@ -15047,31 +15077,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 519,
+     "duration_ms": 525,
      "ok": true
     },
     "measure": {
-     "duration_ms": 817,
+     "duration_ms": 1001,
      "ok": true
     },
     "open": {
-     "duration_ms": 271,
+     "duration_ms": 313,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 18,
+     "duration_ms": 20,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 371,
+     "duration_ms": 455,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 64,
+     "duration_ms": 85,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 13,
+     "duration_ms": 18,
      "ok": true
     }
    },
@@ -15084,7 +15114,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 7483,
+   "duration_ms": 7941,
    "features": [
     "alternate-content",
     "bookmarks",
@@ -15269,31 +15299,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 518,
+     "duration_ms": 523,
      "ok": true
     },
     "measure": {
-     "duration_ms": 2009,
+     "duration_ms": 2389,
      "ok": true
     },
     "open": {
-     "duration_ms": 547,
+     "duration_ms": 669,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 1618,
+     "duration_ms": 1661,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 2227,
+     "duration_ms": 2138,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 122,
+     "duration_ms": 129,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 42,
+     "duration_ms": 59,
      "ok": true
     }
    },
@@ -15306,7 +15336,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 6031,
+   "duration_ms": 6486,
    "features": [
     "groups",
     "hyperlinks",
@@ -15397,7 +15427,9 @@
     "word_count": 2444
    },
    "package_before": {
-    "content_counts": {},
+    "content_counts": {
+     "tracked-changes": 17
+    },
     "element_counts": {
      "draw:frame": 33,
      "draw:g": 6,
@@ -15443,7 +15475,12 @@
     "transitions": []
    },
    "package_diff": {
-    "content_counts_changed": {},
+    "content_counts_changed": {
+     "tracked-changes": [
+      17,
+      14
+     ]
+    },
     "content_lost": [],
     "critical_part_kinds_lost": [],
     "element_counts_changed": {
@@ -15496,31 +15533,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 517,
+     "duration_ms": 523,
      "ok": true
     },
     "measure": {
-     "duration_ms": 1868,
+     "duration_ms": 2190,
      "ok": true
     },
     "open": {
-     "duration_ms": 371,
+     "duration_ms": 549,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 203,
+     "duration_ms": 217,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 2278,
+     "duration_ms": 2038,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 101,
+     "duration_ms": 223,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 398,
+     "duration_ms": 499,
      "ok": true
     }
    },
@@ -15533,7 +15570,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1771,
+   "duration_ms": 1523,
    "features": [
     "bookmarks",
     "proprietary-fonts"
@@ -15650,15 +15687,15 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 524,
+     "duration_ms": 520,
      "ok": true
     },
     "measure": {
-     "duration_ms": 355,
+     "duration_ms": 271,
      "ok": true
     },
     "open": {
-     "duration_ms": 202,
+     "duration_ms": 220,
      "ok": true
     },
     "pdf_export": {
@@ -15666,15 +15703,15 @@
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 384,
+     "duration_ms": 243,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 28,
+     "duration_ms": 20,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 9,
+     "duration_ms": 43,
      "ok": true
     }
    },
@@ -15687,7 +15724,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 2471,
+   "duration_ms": 1819,
    "features": [
     "charts",
     "headers-footers",
@@ -15760,6 +15797,7 @@
    },
    "package_before": {
     "content_counts": {
+     "formulas": 1,
      "headers-with-text": 1
     },
     "element_counts": {
@@ -15857,31 +15895,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 776,
+     "duration_ms": 519,
      "ok": true
     },
     "measure": {
-     "duration_ms": 477,
+     "duration_ms": 264,
      "ok": true
     },
     "open": {
-     "duration_ms": 418,
+     "duration_ms": 322,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 27,
+     "duration_ms": 25,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 335,
+     "duration_ms": 314,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 149,
+     "duration_ms": 123,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 31,
+     "duration_ms": 50,
      "ok": true
     }
    },
@@ -15894,7 +15932,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1822,
+   "duration_ms": 1771,
    "features": [
     "proprietary-fonts",
     "smartart"
@@ -16007,15 +16045,15 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 529,
+     "duration_ms": 518,
      "ok": true
     },
     "measure": {
-     "duration_ms": 338,
+     "duration_ms": 396,
      "ok": true
     },
     "open": {
-     "duration_ms": 304,
+     "duration_ms": 322,
      "ok": true
     },
     "pdf_export": {
@@ -16023,11 +16061,11 @@
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 376,
+     "duration_ms": 288,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 43,
+     "duration_ms": 35,
      "ok": true
     },
     "roundtrip_save": {
@@ -16053,7 +16091,7 @@
      20
     ]
    },
-   "duration_ms": 5884,
+   "duration_ms": 5741,
    "features": [
     "alternate-content",
     "bookmarks",
@@ -16311,31 +16349,31 @@
    "status": "partial",
    "steps": {
     "engine_start": {
-     "duration_ms": 521,
+     "duration_ms": 520,
      "ok": true
     },
     "measure": {
-     "duration_ms": 2246,
+     "duration_ms": 2057,
      "ok": true
     },
     "open": {
-     "duration_ms": 379,
+     "duration_ms": 389,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 59,
+     "duration_ms": 56,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 2140,
+     "duration_ms": 2233,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 165,
+     "duration_ms": 116,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 30,
+     "duration_ms": 33,
      "ok": true
     }
    },
@@ -16348,7 +16386,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1768,
+   "duration_ms": 1718,
    "features": [
     "endnotes",
     "footnotes",
@@ -16413,7 +16451,8 @@
    "package_before": {
     "content_counts": {
      "endnotes": 1,
-     "footnotes": 1
+     "footnotes": 1,
+     "tracked-changes": 6
     },
     "element_counts": {
      "w:endnoteReference": 1,
@@ -16478,11 +16517,11 @@
      "ok": true
     },
     "measure": {
-     "duration_ms": 413,
+     "duration_ms": 378,
      "ok": true
     },
     "open": {
-     "duration_ms": 253,
+     "duration_ms": 250,
      "ok": true
     },
     "pdf_export": {
@@ -16490,15 +16529,15 @@
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 327,
+     "duration_ms": 331,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 19,
+     "duration_ms": 27,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 7,
+     "duration_ms": 9,
      "ok": true
     }
    },
@@ -16516,7 +16555,7 @@
      18
     ]
    },
-   "duration_ms": 2570,
+   "duration_ms": 2419,
    "features": [
     "bookmarks",
     "content-controls",
@@ -16608,7 +16647,8 @@
    "package_before": {
     "content_counts": {
      "footers-with-text": 2,
-     "headers-with-text": 1
+     "headers-with-text": 1,
+     "tracked-changes": 1
     },
     "element_counts": {
      "w:bookmarkStart": 1,
@@ -16661,8 +16701,15 @@
     "transitions": []
    },
    "package_diff": {
-    "content_counts_changed": {},
-    "content_lost": [],
+    "content_counts_changed": {
+     "tracked-changes": [
+      1,
+      0
+     ]
+    },
+    "content_lost": [
+     "tracked-changes"
+    ],
     "critical_part_kinds_lost": [],
     "element_counts_changed": {
      "w:fldChar": [
@@ -16736,38 +16783,39 @@
    "path": "sw/qa/extras/ooxmlexport/data/tdf123705.docx",
    "pdf_pages": 4,
    "reasons": [
-    "critical-metric-changed:redlines"
+    "critical-metric-changed:redlines",
+    "content-lost:tracked-changes"
    ],
    "sha256": "118b188120d4db3d89157ad4702bc1b0850e55a79e1637b6a5a58d1e44864b28",
    "source": "upstream-test-file",
    "status": "partial",
    "steps": {
     "engine_start": {
-     "duration_ms": 533,
+     "duration_ms": 521,
      "ok": true
     },
     "measure": {
-     "duration_ms": 518,
+     "duration_ms": 561,
      "ok": true
     },
     "open": {
-     "duration_ms": 407,
+     "duration_ms": 377,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 39,
+     "duration_ms": 42,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 528,
+     "duration_ms": 483,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 184,
+     "duration_ms": 145,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 24,
+     "duration_ms": 21,
      "ok": true
     }
    },
@@ -16780,7 +16828,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 2275,
+   "duration_ms": 2375,
    "features": [
     "bookmarks",
     "content-controls",
@@ -16978,33 +17026,36 @@
    "package_error": "",
    "path": "sw/qa/extras/ooxmlexport/data/tdf124637_sectionMargin.docx",
    "pdf_pages": 5,
-   "reasons": [],
+   "reasons": [
+    "content-shrank:paragraphs",
+    "content-shrank:hyperlink_portions"
+   ],
    "sha256": "59877f0b300ca9a34e925ce1b05e2a33877ff121f19efe31b12bc472beb02e50",
    "source": "upstream-test-file",
-   "status": "pass",
+   "status": "partial",
    "steps": {
     "engine_start": {
-     "duration_ms": 523,
+     "duration_ms": 521,
      "ok": true
     },
     "measure": {
-     "duration_ms": 631,
+     "duration_ms": 573,
      "ok": true
     },
     "open": {
-     "duration_ms": 250,
+     "duration_ms": 273,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 16,
+     "duration_ms": 19,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 580,
+     "duration_ms": 605,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 57,
+     "duration_ms": 51,
      "ok": true
     },
     "roundtrip_save": {
@@ -17021,7 +17072,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 8790,
+   "duration_ms": 9496,
    "features": [
     "bookmarks",
     "footnotes",
@@ -17057,7 +17108,6 @@
    "id": "up-sw-qa-extras-ooxmlexport-data-tdf146955-odt",
    "import_filter": "writer8",
    "info": [
-    "pdf-page-count-unknown",
     "part-kind-lost:object-replacement"
    ],
    "info_diffs": {
@@ -17113,7 +17163,9 @@
     "word_count": 2896
    },
    "package_before": {
-    "content_counts": {},
+    "content_counts": {
+     "footnotes": 5
+    },
     "element_counts": {
      "draw:frame": 466,
      "draw:image": 143,
@@ -17206,38 +17258,38 @@
    },
    "package_error": "",
    "path": "sw/qa/extras/ooxmlexport/data/tdf146955.odt",
-   "pdf_pages": null,
+   "pdf_pages": 367,
    "reasons": [],
    "sha256": "cface46200a3e403a22a86234b19556c74864ce984f4aae02a80491f86b96615",
    "source": "upstream-test-file",
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 519,
+     "duration_ms": 522,
      "ok": true
     },
     "measure": {
-     "duration_ms": 2823,
+     "duration_ms": 3057,
      "ok": true
     },
     "open": {
-     "duration_ms": 564,
+     "duration_ms": 622,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 829,
+     "duration_ms": 814,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 2864,
+     "duration_ms": 2989,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 138,
+     "duration_ms": 170,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 439,
+     "duration_ms": 679,
      "ok": true
     }
    },
@@ -17257,7 +17309,7 @@
      {}
     ]
    },
-   "duration_ms": 3480,
+   "duration_ms": 3773,
    "features": [
     "alternate-content",
     "bookmarks",
@@ -17381,7 +17433,8 @@
    },
    "package_before": {
     "content_counts": {
-     "comments": 12
+     "comments": 12,
+     "tracked-changes": 3
     },
     "element_counts": {
      "mc:AlternateContent": 1,
@@ -17434,7 +17487,12 @@
     "transitions": []
    },
    "package_diff": {
-    "content_counts_changed": {},
+    "content_counts_changed": {
+     "tracked-changes": [
+      3,
+      4
+     ]
+    },
     "content_lost": [],
     "critical_part_kinds_lost": [],
     "element_counts_changed": {
@@ -17506,38 +17564,40 @@
    "path": "sw/qa/extras/ooxmlexport/data/tdf154478.docx",
    "pdf_pages": 7,
    "reasons": [
-    "critical-metric-changed:indexes"
+    "critical-metric-changed:indexes",
+    "content-shrank:hyperlink_portions",
+    "content-shrank:sections"
    ],
    "sha256": "2af13d3cd96caefbf45b149bd87cfb44e55a6a548eb3b65608e1387d54be605b",
    "source": "upstream-test-file",
    "status": "partial",
    "steps": {
     "engine_start": {
-     "duration_ms": 519,
+     "duration_ms": 522,
      "ok": true
     },
     "measure": {
-     "duration_ms": 1248,
+     "duration_ms": 1498,
      "ok": true
     },
     "open": {
-     "duration_ms": 450,
+     "duration_ms": 415,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 32,
+     "duration_ms": 30,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 908,
+     "duration_ms": 960,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 80,
+     "duration_ms": 75,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 21,
+     "duration_ms": 24,
      "ok": true
     }
    },
@@ -17557,7 +17617,7 @@
      {}
     ]
    },
-   "duration_ms": 3735,
+   "duration_ms": 3824,
    "features": [
     "alternate-content",
     "bookmarks",
@@ -17681,7 +17741,8 @@
    },
    "package_before": {
     "content_counts": {
-     "comments": 12
+     "comments": 12,
+     "tracked-changes": 3
     },
     "element_counts": {
      "mc:AlternateContent": 1,
@@ -17734,7 +17795,12 @@
     "transitions": []
    },
    "package_diff": {
-    "content_counts_changed": {},
+    "content_counts_changed": {
+     "tracked-changes": [
+      3,
+      4
+     ]
+    },
     "content_lost": [],
     "critical_part_kinds_lost": [],
     "element_counts_changed": {
@@ -17806,38 +17872,40 @@
    "path": "sw/qa/extras/ooxmlexport/data/tdf154481.docx",
    "pdf_pages": 7,
    "reasons": [
-    "critical-metric-changed:indexes"
+    "critical-metric-changed:indexes",
+    "content-shrank:hyperlink_portions",
+    "content-shrank:sections"
    ],
    "sha256": "2af13d3cd96caefbf45b149bd87cfb44e55a6a548eb3b65608e1387d54be605b",
    "source": "upstream-test-file",
    "status": "partial",
    "steps": {
     "engine_start": {
-     "duration_ms": 520,
+     "duration_ms": 523,
      "ok": true
     },
     "measure": {
-     "duration_ms": 1427,
+     "duration_ms": 1390,
      "ok": true
     },
     "open": {
-     "duration_ms": 415,
+     "duration_ms": 426,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 23,
+     "duration_ms": 35,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 997,
+     "duration_ms": 1110,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 66,
+     "duration_ms": 97,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 24,
+     "duration_ms": 21,
      "ok": true
     }
    },
@@ -17850,7 +17918,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 4632,
+   "duration_ms": 4638,
    "features": [
     "bookmarks",
     "content-controls",
@@ -18114,27 +18182,27 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 521,
+     "duration_ms": 518,
      "ok": true
     },
     "measure": {
-     "duration_ms": 1789,
+     "duration_ms": 1752,
      "ok": true
     },
     "open": {
-     "duration_ms": 326,
+     "duration_ms": 268,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 40,
+     "duration_ms": 42,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 1604,
+     "duration_ms": 1663,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 98,
+     "duration_ms": 71,
      "ok": true
     },
     "roundtrip_save": {
@@ -18151,7 +18219,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 2019,
+   "duration_ms": 2021,
    "features": [
     "multi-master",
     "proprietary-fonts"
@@ -18256,11 +18324,11 @@
      "ok": true
     },
     "measure": {
-     "duration_ms": 410,
+     "duration_ms": 366,
      "ok": true
     },
     "open": {
-     "duration_ms": 269,
+     "duration_ms": 271,
      "ok": true
     },
     "pdf_export": {
@@ -18268,15 +18336,15 @@
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 331,
+     "duration_ms": 342,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 29,
+     "duration_ms": 26,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 192,
+     "duration_ms": 207,
      "ok": true
     }
    },
@@ -18289,7 +18357,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 4579,
+   "duration_ms": 4627,
    "features": [
     "alternate-content",
     "bookmarks",
@@ -18561,31 +18629,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 522,
+     "duration_ms": 520,
      "ok": true
     },
     "measure": {
-     "duration_ms": 1335,
+     "duration_ms": 1370,
      "ok": true
     },
     "open": {
-     "duration_ms": 668,
+     "duration_ms": 664,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 153,
+     "duration_ms": 186,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 1146,
+     "duration_ms": 1193,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 291,
+     "duration_ms": 253,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 64,
+     "duration_ms": 83,
      "ok": true
     }
    },
@@ -18598,7 +18666,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1570,
+   "duration_ms": 1718,
    "features": [
     "ole",
     "proprietary-fonts"
@@ -18720,31 +18788,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 519,
+     "duration_ms": 520,
      "ok": true
     },
     "measure": {
-     "duration_ms": 333,
+     "duration_ms": 375,
      "ok": true
     },
     "open": {
-     "duration_ms": 227,
+     "duration_ms": 241,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 13,
+     "duration_ms": 8,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 262,
+     "duration_ms": 320,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 19,
+     "duration_ms": 25,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 6,
+     "duration_ms": 8,
      "ok": true
     }
    },
@@ -18757,7 +18825,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1577,
+   "duration_ms": 1716,
    "features": [
     "images",
     "ole"
@@ -18820,27 +18888,27 @@
      "ok": true
     },
     "measure": {
-     "duration_ms": 277,
+     "duration_ms": 371,
      "ok": true
     },
     "open": {
-     "duration_ms": 201,
+     "duration_ms": 227,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 9,
+     "duration_ms": 12,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 290,
+     "duration_ms": 316,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 39,
+     "duration_ms": 33,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 42,
+     "duration_ms": 10,
      "ok": true
     }
    },
@@ -18853,7 +18921,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1518,
+   "duration_ms": 1620,
    "features": [
     "lists"
    ],
@@ -18915,31 +18983,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 519,
+     "duration_ms": 524,
      "ok": true
     },
     "measure": {
-     "duration_ms": 275,
+     "duration_ms": 370,
      "ok": true
     },
     "open": {
-     "duration_ms": 168,
+     "duration_ms": 211,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 11,
+     "duration_ms": 10,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 277,
+     "duration_ms": 259,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 15,
+     "duration_ms": 21,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 40,
+     "duration_ms": 10,
      "ok": true
     }
    },
@@ -18952,7 +19020,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1619,
+   "duration_ms": 1567,
    "features": [
     "math"
    ],
@@ -19010,31 +19078,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 522,
+     "duration_ms": 523,
      "ok": true
     },
     "measure": {
-     "duration_ms": 374,
+     "duration_ms": 270,
      "ok": true
     },
     "open": {
-     "duration_ms": 185,
+     "duration_ms": 214,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 8,
+     "duration_ms": 9,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 260,
+     "duration_ms": 290,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 21,
+     "duration_ms": 18,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 12,
+     "duration_ms": 10,
      "ok": true
     }
    },
@@ -19047,7 +19115,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1617,
+   "duration_ms": 1669,
    "features": [
     "toc"
    ],
@@ -19111,31 +19179,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 519,
+     "duration_ms": 518,
      "ok": true
     },
     "measure": {
-     "duration_ms": 370,
+     "duration_ms": 374,
      "ok": true
     },
     "open": {
-     "duration_ms": 206,
+     "duration_ms": 185,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 9,
+     "duration_ms": 10,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 269,
+     "duration_ms": 321,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 15,
+     "duration_ms": 19,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 8,
+     "duration_ms": 9,
      "ok": true
     }
    },
@@ -19148,7 +19216,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1517,
+   "duration_ms": 1472,
    "features": [
     "groups",
     "textboxes"
@@ -19216,31 +19284,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 516,
+     "duration_ms": 519,
      "ok": true
     },
     "measure": {
-     "duration_ms": 265,
+     "duration_ms": 275,
      "ok": true
     },
     "open": {
-     "duration_ms": 172,
+     "duration_ms": 167,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 8,
+     "duration_ms": 9,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 285,
+     "duration_ms": 251,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 18,
+     "duration_ms": 15,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 10,
+     "duration_ms": 35,
      "ok": true
     }
    },
@@ -19253,7 +19321,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1670,
+   "duration_ms": 1518,
    "features": [
     "groups",
     "textboxes"
@@ -19321,15 +19389,15 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 520,
+     "duration_ms": 522,
      "ok": true
     },
     "measure": {
-     "duration_ms": 343,
+     "duration_ms": 276,
      "ok": true
     },
     "open": {
-     "duration_ms": 215,
+     "duration_ms": 160,
      "ok": true
     },
     "pdf_export": {
@@ -19337,15 +19405,15 @@
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 336,
+     "duration_ms": 286,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 18,
+     "duration_ms": 22,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 10,
+     "duration_ms": 41,
      "ok": true
     }
    },
@@ -19358,7 +19426,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1971,
+   "duration_ms": 1923,
    "features": [
     "multi-master",
     "signature",
@@ -19475,31 +19543,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 523,
+     "duration_ms": 527,
      "ok": true
     },
     "measure": {
-     "duration_ms": 354,
+     "duration_ms": 261,
      "ok": true
     },
     "open": {
-     "duration_ms": 312,
+     "duration_ms": 233,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 9,
+     "duration_ms": 10,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 270,
+     "duration_ms": 347,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 20,
+     "duration_ms": 25,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 196,
+     "duration_ms": 210,
      "ok": true
     }
    },
@@ -19512,7 +19580,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1619,
+   "duration_ms": 1720,
    "features": [
     "bookmarks",
     "proprietary-fonts"
@@ -19629,19 +19697,19 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 522,
+     "duration_ms": 524,
      "ok": true
     },
     "measure": {
-     "duration_ms": 345,
+     "duration_ms": 398,
      "ok": true
     },
     "open": {
-     "duration_ms": 207,
+     "duration_ms": 231,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 9,
+     "duration_ms": 11,
      "ok": true
     },
     "remeasure": {
@@ -19653,7 +19721,7 @@
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 7,
+     "duration_ms": 9,
      "ok": true
     }
    },
@@ -19666,7 +19734,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1970,
+   "duration_ms": 2022,
    "features": [
     "bookmarks",
     "multi-master",
@@ -19798,27 +19866,27 @@
      "ok": true
     },
     "measure": {
-     "duration_ms": 336,
+     "duration_ms": 367,
      "ok": true
     },
     "open": {
-     "duration_ms": 287,
+     "duration_ms": 296,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 15,
+     "duration_ms": 16,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 358,
+     "duration_ms": 388,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 26,
+     "duration_ms": 38,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 172,
+     "duration_ms": 189,
      "ok": true
     }
    },
@@ -19836,7 +19904,7 @@
      4
     ]
    },
-   "duration_ms": 3425,
+   "duration_ms": 3678,
    "features": [
     "alternate-content",
     "bookmarks",
@@ -20109,6 +20177,9 @@
    "pdf_pages": 6,
    "reasons": [
     "critical-metric-changed:tables",
+    "content-shrank:draw_shapes",
+    "content-shrank:hyperlink_portions",
+    "content-shrank:sections",
     "content-lost:headers-with-text"
    ],
    "sha256": "71890ab32a9fc3aec74c40bbf059f2b09da6d11a443051489608d4ce83a8e2e4",
@@ -20116,31 +20187,31 @@
    "status": "partial",
    "steps": {
     "engine_start": {
-     "duration_ms": 521,
+     "duration_ms": 519,
      "ok": true
     },
     "measure": {
-     "duration_ms": 1143,
+     "duration_ms": 1257,
      "ok": true
     },
     "open": {
-     "duration_ms": 369,
+     "duration_ms": 357,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 26,
+     "duration_ms": 36,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 883,
+     "duration_ms": 999,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 69,
+     "duration_ms": 89,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 19,
+     "duration_ms": 33,
      "ok": true
     }
    },
@@ -20153,7 +20224,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1869,
+   "duration_ms": 1969,
    "features": [
     "comments",
     "images",
@@ -20221,7 +20292,9 @@
     "word_count": 0
    },
    "package_before": {
-    "content_counts": {},
+    "content_counts": {
+     "comments": 1
+    },
     "element_counts": {
      "draw:frame": 1,
      "draw:image": 1,
@@ -20272,31 +20345,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 520,
+     "duration_ms": 519,
      "ok": true
     },
     "measure": {
-     "duration_ms": 337,
+     "duration_ms": 383,
      "ok": true
     },
     "open": {
-     "duration_ms": 270,
+     "duration_ms": 261,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 12,
+     "duration_ms": 11,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 296,
+     "duration_ms": 358,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 22,
+     "duration_ms": 20,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 192,
+     "duration_ms": 191,
      "ok": true
     }
    },
@@ -20309,7 +20382,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1673,
+   "duration_ms": 1637,
    "features": [
     "comments",
     "tables"
@@ -20376,31 +20449,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 521,
+     "duration_ms": 518,
      "ok": true
     },
     "measure": {
-     "duration_ms": 347,
+     "duration_ms": 368,
      "ok": true
     },
     "open": {
-     "duration_ms": 214,
+     "duration_ms": 172,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 10,
+     "duration_ms": 12,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 352,
+     "duration_ms": 343,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 17,
+     "duration_ms": 16,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 5,
+     "duration_ms": 6,
      "ok": true
     }
    },
@@ -20413,7 +20486,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1719,
+   "duration_ms": 1671,
    "features": [
     "comments",
     "images"
@@ -20480,15 +20553,15 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 522,
+     "duration_ms": 519,
      "ok": true
     },
     "measure": {
-     "duration_ms": 399,
+     "duration_ms": 368,
      "ok": true
     },
     "open": {
-     "duration_ms": 204,
+     "duration_ms": 212,
      "ok": true
     },
     "pdf_export": {
@@ -20496,7 +20569,7 @@
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 323,
+     "duration_ms": 324,
      "ok": true
     },
     "reopen": {
@@ -20504,7 +20577,7 @@
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 9,
+     "duration_ms": 5,
      "ok": true
     }
    },
@@ -20517,7 +20590,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1722,
+   "duration_ms": 1618,
    "features": [
     "lists",
     "ole"
@@ -20582,27 +20655,27 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 524,
+     "duration_ms": 521,
      "ok": true
     },
     "measure": {
-     "duration_ms": 374,
+     "duration_ms": 346,
      "ok": true
     },
     "open": {
-     "duration_ms": 218,
+     "duration_ms": 166,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 10,
+     "duration_ms": 11,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 354,
+     "duration_ms": 344,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 14,
+     "duration_ms": 16,
      "ok": true
     },
     "roundtrip_save": {
@@ -20619,7 +20692,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1818,
+   "duration_ms": 1726,
    "features": [
     "footnotes",
     "tracked-changes"
@@ -20692,27 +20765,27 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 519,
+     "duration_ms": 522,
      "ok": true
     },
     "measure": {
-     "duration_ms": 435,
+     "duration_ms": 421,
      "ok": true
     },
     "open": {
-     "duration_ms": 230,
+     "duration_ms": 208,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 12,
+     "duration_ms": 13,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 365,
+     "duration_ms": 316,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 17,
+     "duration_ms": 16,
      "ok": true
     },
     "roundtrip_save": {
@@ -20729,7 +20802,7 @@
    "app": "impress",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1368,
+   "duration_ms": 1421,
    "features": [
     "animations",
     "groups",
@@ -20872,31 +20945,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 522,
+     "duration_ms": 519,
      "ok": true
     },
     "measure": {
-     "duration_ms": 105,
+     "duration_ms": 101,
      "ok": true
     },
     "open": {
-     "duration_ms": 205,
+     "duration_ms": 259,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 12,
+     "duration_ms": 14,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 76,
+     "duration_ms": 89,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 59,
+     "duration_ms": 52,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 178,
+     "duration_ms": 171,
      "ok": true
     }
    },
@@ -21133,31 +21206,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 519,
+     "duration_ms": 521,
      "ok": true
     },
     "measure": {
-     "duration_ms": 401,
+     "duration_ms": 422,
      "ok": true
     },
     "open": {
-     "duration_ms": 396,
+     "duration_ms": 359,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 51,
+     "duration_ms": 60,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 364,
+     "duration_ms": 365,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 160,
+     "duration_ms": 152,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 25,
+     "duration_ms": 26,
      "ok": true
     }
    },
@@ -21170,7 +21243,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1869,
+   "duration_ms": 1777,
    "features": [
     "bookmarks",
     "custom-xml",
@@ -21299,31 +21372,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 521,
+     "duration_ms": 523,
      "ok": true
     },
     "measure": {
-     "duration_ms": 398,
+     "duration_ms": 385,
      "ok": true
     },
     "open": {
-     "duration_ms": 271,
+     "duration_ms": 275,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 15,
+     "duration_ms": 12,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 358,
+     "duration_ms": 250,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 30,
+     "duration_ms": 31,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 11,
+     "duration_ms": 12,
      "ok": true
     }
    },
@@ -21336,7 +21409,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 3273,
+   "duration_ms": 3373,
    "features": [
     "alternate-content",
     "bookmarks",
@@ -21543,31 +21616,31 @@
    "status": "partial",
    "steps": {
     "engine_start": {
-     "duration_ms": 521,
+     "duration_ms": 524,
      "ok": true
     },
     "measure": {
-     "duration_ms": 989,
+     "duration_ms": 1048,
      "ok": true
     },
     "open": {
-     "duration_ms": 304,
+     "duration_ms": 350,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 110,
+     "duration_ms": 94,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 965,
+     "duration_ms": 911,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 83,
+     "duration_ms": 98,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 30,
+     "duration_ms": 49,
      "ok": true
     }
    },
@@ -21577,16 +21650,16 @@
    "worker_exit": 0
   }
  ],
- "generated_at": "2026-11-24T21:28:57+00:00",
+ "generated_at": "2026-11-24T22:29:53+00:00",
  "label": "baseline",
  "platform": {
   "machine": "x86_64",
   "system": "Linux"
  },
- "run_id": "20261124T212654Z-a01b9301",
+ "run_id": "20261124T222749Z-7627aa7a",
  "schema_version": 1,
  "settings": {
-  "criteria_version": 3,
+  "criteria_version": 4,
   "jobs": 2,
   "timeout_s": 240.0
  },
@@ -21594,25 +21667,25 @@
   "by_app": {
    "impress": {
     "fail": 0,
-    "partial": 16,
-    "pass": 34,
-    "pass_rate": 0.68,
+    "partial": 20,
+    "pass": 30,
+    "pass_rate": 0.6,
     "total": 50
    },
    "writer": {
     "fail": 0,
-    "partial": 9,
-    "pass": 55,
-    "pass_rate": 0.8594,
+    "partial": 10,
+    "pass": 54,
+    "pass_rate": 0.8438,
     "total": 64
    }
   },
   "by_feature": {
    "alternate-content": {
     "fail": 0,
-    "partial": 9,
-    "pass": 14,
-    "pass_rate": 0.6087,
+    "partial": 10,
+    "pass": 13,
+    "pass_rate": 0.5652,
     "total": 23
    },
    "anchored-images": {
@@ -21624,16 +21697,16 @@
    },
    "animations": {
     "fail": 0,
-    "partial": 4,
-    "pass": 15,
-    "pass_rate": 0.7895,
+    "partial": 7,
+    "pass": 12,
+    "pass_rate": 0.6316,
     "total": 19
    },
    "bookmarks": {
     "fail": 0,
-    "partial": 8,
-    "pass": 18,
-    "pass_rate": 0.6923,
+    "partial": 9,
+    "pass": 17,
+    "pass_rate": 0.6538,
     "total": 26
    },
    "charts": {
@@ -21652,9 +21725,9 @@
    },
    "comments": {
     "fail": 0,
-    "partial": 2,
-    "pass": 11,
-    "pass_rate": 0.8462,
+    "partial": 3,
+    "pass": 10,
+    "pass_rate": 0.7692,
     "total": 13
    },
    "connectors": {
@@ -21666,9 +21739,9 @@
    },
    "content-controls": {
     "fail": 0,
-    "partial": 7,
-    "pass": 7,
-    "pass_rate": 0.5,
+    "partial": 8,
+    "pass": 6,
+    "pass_rate": 0.4286,
     "total": 14
    },
    "custom-xml": {
@@ -21694,9 +21767,9 @@
    },
    "fields": {
     "fail": 0,
-    "partial": 8,
-    "pass": 12,
-    "pass_rate": 0.6,
+    "partial": 9,
+    "pass": 11,
+    "pass_rate": 0.55,
     "total": 20
    },
    "first-page-header": {
@@ -21708,9 +21781,9 @@
    },
    "footnotes": {
     "fail": 0,
-    "partial": 0,
-    "pass": 11,
-    "pass_rate": 1.0,
+    "partial": 1,
+    "pass": 10,
+    "pass_rate": 0.9091,
     "total": 11
    },
    "groups": {
@@ -21722,9 +21795,9 @@
    },
    "headers-footers": {
     "fail": 0,
-    "partial": 6,
-    "pass": 13,
-    "pass_rate": 0.6842,
+    "partial": 7,
+    "pass": 12,
+    "pass_rate": 0.6316,
     "total": 19
    },
    "hidden-slides": {
@@ -21736,30 +21809,30 @@
    },
    "hyperlinks": {
     "fail": 0,
-    "partial": 6,
-    "pass": 19,
-    "pass_rate": 0.76,
+    "partial": 9,
+    "pass": 16,
+    "pass_rate": 0.64,
     "total": 25
    },
    "images": {
     "fail": 0,
-    "partial": 8,
-    "pass": 24,
-    "pass_rate": 0.75,
+    "partial": 10,
+    "pass": 22,
+    "pass_rate": 0.6875,
     "total": 32
    },
    "lists": {
     "fail": 0,
-    "partial": 4,
-    "pass": 19,
-    "pass_rate": 0.8261,
+    "partial": 5,
+    "pass": 18,
+    "pass_rate": 0.7826,
     "total": 23
    },
    "many-layouts": {
     "fail": 0,
-    "partial": 3,
-    "pass": 15,
-    "pass_rate": 0.8333,
+    "partial": 5,
+    "pass": 13,
+    "pass_rate": 0.7222,
     "total": 18
    },
    "masters-layouts": {
@@ -21771,16 +21844,16 @@
    },
    "math": {
     "fail": 0,
-    "partial": 1,
-    "pass": 4,
-    "pass_rate": 0.8,
+    "partial": 2,
+    "pass": 3,
+    "pass_rate": 0.6,
     "total": 5
    },
    "media": {
     "fail": 0,
-    "partial": 0,
-    "pass": 3,
-    "pass_rate": 1.0,
+    "partial": 2,
+    "pass": 1,
+    "pass_rate": 0.3333,
     "total": 3
    },
    "merged-cells": {
@@ -21813,9 +21886,9 @@
    },
    "notes": {
     "fail": 0,
-    "partial": 5,
-    "pass": 15,
-    "pass_rate": 0.75,
+    "partial": 6,
+    "pass": 14,
+    "pass_rate": 0.7,
     "total": 20
    },
    "ole": {
@@ -21841,16 +21914,16 @@
    },
    "proprietary-fonts": {
     "fail": 0,
-    "partial": 17,
-    "pass": 53,
-    "pass_rate": 0.7571,
+    "partial": 22,
+    "pass": 48,
+    "pass_rate": 0.6857,
     "total": 70
    },
    "sections": {
     "fail": 0,
-    "partial": 5,
-    "pass": 6,
-    "pass_rate": 0.5455,
+    "partial": 6,
+    "pass": 5,
+    "pass_rate": 0.4545,
     "total": 11
    },
    "shapes": {
@@ -21911,9 +21984,9 @@
    },
    "toc": {
     "fail": 0,
-    "partial": 4,
-    "pass": 10,
-    "pass_rate": 0.7143,
+    "partial": 5,
+    "pass": 9,
+    "pass_rate": 0.6429,
     "total": 14
    },
    "tracked-changes": {
@@ -21925,9 +21998,9 @@
    },
    "transitions": {
     "fail": 0,
-    "partial": 6,
-    "pass": 12,
-    "pass_rate": 0.6667,
+    "partial": 7,
+    "pass": 11,
+    "pass_rate": 0.6111,
     "total": 18
    },
    "unicode": {
@@ -21962,9 +22035,9 @@
    },
    "docx": {
     "fail": 0,
-    "partial": 7,
-    "pass": 24,
-    "pass_rate": 0.7742,
+    "partial": 8,
+    "pass": 23,
+    "pass_rate": 0.7419,
     "total": 31
    },
    "dotx": {
@@ -22018,9 +22091,9 @@
    },
    "pptx": {
     "fail": 0,
-    "partial": 9,
-    "pass": 18,
-    "pass_rate": 0.6667,
+    "partial": 13,
+    "pass": 14,
+    "pass_rate": 0.5185,
     "total": 27
    },
    "rtf": {
@@ -22039,11 +22112,18 @@
    }
   },
   "fail": 0,
-  "partial": 25,
-  "pass": 89,
-  "pass_rate": 0.7807,
+  "partial": 30,
+  "pass": 84,
+  "pass_rate": 0.7368,
   "reasons": {
+   "content-lost:formulas": 1,
    "content-lost:headers-with-text": 1,
+   "content-lost:tracked-changes": 1,
+   "content-shrank:animation_nodes": 3,
+   "content-shrank:draw_shapes": 1,
+   "content-shrank:hyperlink_portions": 4,
+   "content-shrank:paragraphs": 1,
+   "content-shrank:sections": 3,
    "critical-metric-changed:images": 3,
    "critical-metric-changed:indexes": 2,
    "critical-metric-changed:master_count": 2,
