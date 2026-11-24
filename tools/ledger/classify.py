@@ -136,19 +136,41 @@ NOTICES: Tuple[Signature, ...] = (
     Signature("Apache-2.0", ("licensed under the apache license, version 2.0",)),
     Signature("MPL-1.1", ("mozilla public license version 1.1",)),
     Signature("MPL-1.1", ("version: mpl 1.1",)),
-    Signature("LGPL-2.1", ("gnu lesser general public license", "version 2.1")),
-    Signature("LGPL-3.0", ("gnu lesser general public license", "version 3"),
-              ("version 2.1",)),
-    Signature("LGPL-2.0", ("gnu library general public license", "version 2")),
-    Signature("GPL-2.0", ("gnu general public license", "version 2"),
-              ("gnu lesser general public license", "gnu library general public license",
-               "version 2.1")),
-    Signature("GPL-3.0", ("gnu general public license", "version 3"),
-              ("gnu lesser general public license", "gnu affero general public license")),
     Signature("BSL-1.0", ("distributed under the boost software license, version 1.0",)),
     Signature("W3C", ("w3c ipr software notice",)),
     Signature("W3C", ("w3c software license",)),
 )
+
+# GNU notices are matched per sentence, not per file: one text often names several
+# GNU licences ("the library is LGPL, the tools are GPL"), and a file-wide rule
+# would let one of them hide the other.
+_GPL_NOTICE = re.compile(
+    r"(?<!lesser )(?<!library )(?<!affero )gnu general public license[^.]{0,200}?"
+    r"version (\d)(?!\.\d)")
+_LGPL_NOTICE = re.compile(
+    r"gnu (?:lesser|library) general public license[^.]{0,200}?version (\d(?:\.\d)?)")
+_AGPL_NOTICE = re.compile(r"gnu affero general public license[^.]{0,200}?version (\d)")
+_TAG_NOTICE = re.compile(r"\blicen[cs]e: (a?l?gpl)-(\d(?:\.\d)?)")
+_GNU_VERSIONS = {("gpl", "2"): "GPL-2.0", ("gpl", "3"): "GPL-3.0", ("lgpl", "2"): "LGPL-2.0",
+                 ("lgpl", "2.0"): "LGPL-2.0", ("lgpl", "2.1"): "LGPL-2.1",
+                 ("lgpl", "3"): "LGPL-3.0", ("agpl", "3"): "AGPL-3.0"}
+
+
+def gnu_notices(flat: str) -> List[Tuple[str, str]]:
+    """``(spdx, matched phrase)`` for every GNU licence notice in normalised text."""
+    found: List[Tuple[str, str]] = []
+    for family, pattern in (("gpl", _GPL_NOTICE), ("lgpl", _LGPL_NOTICE),
+                            ("agpl", _AGPL_NOTICE)):
+        for match in pattern.finditer(flat):
+            spdx = _GNU_VERSIONS.get((family, match.group(1)))
+            if spdx:
+                found.append((spdx, match.group(0)))
+    for match in _TAG_NOTICE.finditer(flat):
+        spdx = _GNU_VERSIONS.get((match.group(1), match.group(2)))
+        if spdx:
+            found.append((spdx, match.group(0)))
+    return found
+
 
 #: Statements (normalised) that a GNU licence applies in "or any later version" form.
 OR_LATER_PHRASES = ("or (at your option) any later version", "or any later version",
@@ -197,6 +219,10 @@ def detect(text: str, notices: bool = False) -> List[Detection]:
             continue
         found[signature.spdx] = Detection(signature.spdx,
                                           _evidence_line(text, signature.required[0]))
+    if notices:
+        for spdx, phrase in gnu_notices(flat):
+            if spdx not in found:
+                found[spdx] = Detection(spdx, _evidence_line(text, phrase))
     # A file that contains a specific licence text is not also "public domain".
     if len(found) > 1:
         found.pop("LicenseRef-public-domain", None)

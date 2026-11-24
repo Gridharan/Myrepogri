@@ -14,14 +14,14 @@
   },
   "ledger": {
    "by_verdict": {
-    "allow": 90,
-    "needs-review": 86,
+    "allow": 89,
+    "needs-review": 88,
     "reject": 0
    },
-   "rows": 176,
+   "rows": 177,
    "scanned_externals": 153,
-   "static_rows": 23,
-   "updated_at": "2026-11-24T21:23:21+00:00"
+   "static_rows": 24,
+   "updated_at": "2026-11-24T21:36:30+00:00"
   }
  }
 }

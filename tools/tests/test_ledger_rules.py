@@ -87,6 +87,22 @@ def test_notices_only_when_asked():
     assert classify.gnu_suffix("MIT", True) == "MIT"
 
 
+def test_gnu_notices_do_not_hide_each_other():
+    # regression: a file-wide rule dropped the GPL notice whenever LGPL was mentioned too
+    mixed = ("The library is under the GNU Lesser General Public License, version 2.1.\n"
+             "The command-line tools are under the GNU General Public License as published by\n"
+             "the Free Software Foundation; either version 2 of the License, or (at your\n"
+             "option) any later version.\n")
+    assert ids(mixed, notices=True) == ["GPL-2.0", "LGPL-2.1"]
+    assert ids("under the GNU Lesser General Public License version 3", notices=True) == ["LGPL-3.0"]
+    assert ids("GNU Library General Public License, version 2", notices=True) == ["LGPL-2.0"]
+    assert ids("GNU Affero General Public License, version 3", notices=True) == ["AGPL-3.0"]
+    assert ids("Files: *\nLicense: GPL-2\n\nFiles: lib/*\nLicense: LGPL-2.1+\n",
+               notices=True) == ["GPL-2.0", "LGPL-2.1"]
+    assert ids("GNU General Public License version 3", notices=True) == ["GPL-3.0"]
+    assert ids("This mentions the General Public License without a version.", notices=True) == []
+
+
 def test_spdx_tags_and_choice_wording():
     text = "// SPDX-License-Identifier: MIT OR Apache-2.0 */\n// SPDX-License-Identifier: Zlib\n"
     assert classify.spdx_tags(text) == ["MIT OR Apache-2.0", "Zlib"]

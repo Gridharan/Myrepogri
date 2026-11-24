@@ -8,7 +8,7 @@ The default base holds: upstream LibreOffice core at tag
 `libreoffice-26.8.3.1` is the newest stable release, the mirror matches
 the official repository, and the official build runs our 114-document
 seed corpus with 89 pass, 25 partial and 0 fail on structure. The licence
-ledger has 176 rows, of which 86 need the owner's decision before
+ledger has 177 rows, of which 88 need the owner's decision before
 anything can ship. Two things block Phase 1 and both are the owner's: a
 reachable Windows build machine, and rulings on the Microsoft runtime and
 Visual Studio edition.
@@ -18,7 +18,7 @@ Visual Studio edition.
 | Deliverable | Where |
 |---|---|
 | Base-choice decision record (proposed) | `docs/adr/0001-base-engine.md` |
-| Licence ledger v0 (176 rows) with policy and evidence | `compliance/` |
+| Licence ledger v0 (177 rows) with policy and evidence | `compliance/` |
 | Branding and trademark plan, policy quoted | `docs/branding-plan.md` |
 | Build-machine requirements quoted from the pinned tree | `docs/build-machine-requirements.md` |
 | Seed corpus: 14 self-authored, 4 derived, 96 upstream test files by reference | `corpus/` |
@@ -26,7 +26,7 @@ Visual Studio edition.
 | Parity matrix v0 | `docs/parity-matrix.md` |
 | Risk register | `docs/risk-register.md` |
 | Effort estimate | `docs/effort-estimate.md` |
-| Tooling with unit tests (149 tests) | `tools/` |
+| Tooling with unit tests (150 tests) | `tools/` |
 | Configuration reference | `docs/CONFIG.md` |
 
 ## 3. Evidence
@@ -39,10 +39,10 @@ the originals in `logs/` are not committed).
 | Tag → commit on the official repository and on the mirror; local checkout; release archive checksum; release build id | `python3 -m tools.pin.verify_pin --checkout <tree> --release-archive <file> --engine-home <dir>` | 5 of 5 checks passed, exit 0 | `verify-pin-20261124T212140Z-29646e5c.jsonl`, `compliance/evidence/upstream-pin.json` |
 | 153 upstream archives fetched and matched to the SHA-256 in `download.lst` | `python3 -m tools.ledger.fetch_externals --download-lst <tree>/download.lst --dest <dir>` | 153 downloaded, 0 failed, exit 0 | `fetch-externals-20261124T144144Z-926ff4b7.jsonl`, `compliance/evidence/externals-fetch-summary.json` |
 | Licence files copied out of all 153 archives | `python3 -m tools.ledger.extract_licences …` | 153 ok, exit 0 | `extract-licences-20261124T211530Z-321a48c5.jsonl` |
-| Ledger built | `python3 -m tools.ledger.build_ledger …` | 176 rows: 90 allow, 86 needs-review, 0 reject | `build-ledger-20261124T212312Z-ab74e7c0.jsonl` |
+| Ledger built | `python3 -m tools.ledger.build_ledger …` | 177 rows: 89 allow, 88 needs-review, 0 reject | `build-ledger-20261124T213621Z-4c5fd59a.jsonl` |
 | Ledger gate fails, as it must while rows are open | `python3 -m tools.ledger.check_ledger` | exit 8 | — |
 | Baseline fidelity run | `python3 -m tools.fidelity.run_fidelity --engine-home <dir> --upstream-tree <tree> --label baseline` | 114 files: 89 pass, 25 partial, 0 fail; pass rate 0.7807; exit 0 | `fidelity-20261124T212654Z-a01b9301.jsonl`, `reports/fidelity.json` |
-| Unit tests, including one engine integration test | `SUITE_ENGINE_HOME=<dir> python3 -m pytest tools/tests -q` | 149 passed | console output only (no log file kept) |
+| Unit tests, including one engine integration test | `SUITE_ENGINE_HOME=<dir> python3 -m pytest tools/tests -q` | 150 passed | console output only (no log file kept) |
 
 Not verified, stated as such:
 
@@ -77,13 +77,13 @@ Not verified, stated as such:
 
 ## 5. Ledger changes
 
-New in this phase (there was no ledger before): 176 rows.
+New in this phase (there was no ledger before): 177 rows.
 
 | Group | Rows | allow | needs-review |
 |---|---|---|---|
-| Upstream externals from `download.lst` | 153 | 84 | 69 |
+| Upstream externals from `download.lst` | 153 | 83 | 70 |
 | Upstream core, dictionaries, help, translations, icon theme | 5 | 1 | 4 |
-| Tools used in Phase 0 (interpreter, test framework, baseline engine) | 7 | 5 | 2 |
+| Tools used in Phase 0 (interpreter, test framework, baseline engine, git) | 8 | 5 | 3 |
 | Corpus inputs | 1 | 0 | 1 |
 | Planned tool chain for Phase 1 (not installed) | 10 | 0 | 10 |
 
@@ -102,10 +102,11 @@ owner must confirm.
   was kept only after its quotes were checked against the tree. The rest
   of the work was redone with deterministic scripts. Cost to the owner:
   several hours of blocked usage.
-- Three defects in my own tooling were caught by tests and fixed before
-  the numbers above were produced: a file-name rule that skipped
+- Four defects in my own tooling were caught and fixed before the
+  numbers above were produced: a file-name rule that skipped
   `COPYING.LIB`; GPL-3.0 texts recognised as LGPL-3.0; licence notices
-  wrapped across comment lines not recognised.
+  wrapped across comment lines not recognised; a GPL notice hidden when
+  the same text also named the LGPL. Each has a regression test.
 - The fidelity criteria were revised twice after trial runs (history in
   `docs/fidelity-method.md`).
 - An early status message said the release build had been downloaded
@@ -116,7 +117,7 @@ owner must confirm.
 
 See `docs/risk-register.md`. The five that decide the schedule: R1 (no
 Windows machine), R2 (Microsoft runtime vs. rule 3), R3 (Visual Studio
-edition), R4 (86 open ledger rows), R8 (trademark residue).
+edition), R4 (88 open ledger rows), R8 (trademark residue).
 
 ## 8. What is needed from the owner
 
