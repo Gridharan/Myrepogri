@@ -1,0 +1,41 @@
+{
+  "_comment": [
+    "Machine-readable form of legal rule 6 of the project brief. Edit only on the owner's instruction.",
+    "allow: licences that may be used without asking.",
+    "ask_first_prefixes: licence families that always need the owner's decision.",
+    "Any identifier that is in neither list also yields needs-review (it was not pre-approved).",
+    "obligations: working summaries for the ledger's obligations column. They are NOT legal advice",
+    "and must be confirmed against the licence text by a qualified reviewer before release."
+  ],
+  "allow": [
+    "MPL-2.0",
+    "LGPL-2.0-only", "LGPL-2.0-or-later", "LGPL-2.1-only", "LGPL-2.1-or-later",
+    "LGPL-3.0-only", "LGPL-3.0-or-later",
+    "Apache-2.0", "MIT", "BSD-2-Clause", "BSD-3-Clause", "ISC", "Zlib", "OFL-1.1", "CC0-1.0"
+  ],
+  "ask_first_prefixes": ["GPL-", "AGPL-"],
+  "obligations": {
+    "MPL-2.0": "keep notices; make source of every modified MPL file available under MPL-2.0 and tell recipients where; ship licence text",
+    "LGPL-2.0-only": "ship licence text; provide library source incl. modifications; let users replace/relink the library; keep notices",
+    "LGPL-2.0-or-later": "ship licence text; provide library source incl. modifications; let users replace/relink the library; keep notices",
+    "LGPL-2.1-only": "ship licence text; provide library source incl. modifications; let users replace/relink the library; keep notices",
+    "LGPL-2.1-or-later": "ship licence text; provide library source incl. modifications; let users replace/relink the library; keep notices",
+    "LGPL-3.0-only": "ship LGPL-3.0 and GPL-3.0 texts; provide library source incl. modifications; let users replace/relink the library; keep notices",
+    "LGPL-3.0-or-later": "ship LGPL-3.0 and GPL-3.0 texts; provide library source incl. modifications; let users replace/relink the library; keep notices",
+    "Apache-2.0": "ship licence text; keep notices; mark modified files; reproduce NOTICE file content if one exists",
+    "MIT": "keep copyright and permission notice",
+    "X11": "keep copyright and permission notice; do not use holder's name in advertising",
+    "BSD-2-Clause": "keep copyright notice, conditions and disclaimer in source and in documentation of binaries",
+    "BSD-3-Clause": "keep copyright notice, conditions and disclaimer in source and in documentation of binaries; no endorsement with holder names",
+    "BSD-4-Clause": "as BSD-3-Clause plus acknowledgement in advertising materials (ask first)",
+    "ISC": "keep copyright and permission notice",
+    "Zlib": "do not misrepresent origin; mark altered source versions; keep the notice in source",
+    "OFL-1.1": "ship copyright and licence with the font; do not sell the font by itself; no Reserved Font Name on modified versions; no endorsement",
+    "CC0-1.0": "none stated",
+    "BSL-1.0": "keep licence text with source; not required for binaries",
+    "GPL-2.0-only": "complete corresponding source of the combined work under GPL (ask first)",
+    "GPL-2.0-or-later": "complete corresponding source of the combined work under GPL (ask first)",
+    "GPL-3.0-only": "complete corresponding source of the combined work under GPL (ask first)",
+    "GPL-3.0-or-later": "complete corresponding source of the combined work under GPL (ask first)"
+  }
+}

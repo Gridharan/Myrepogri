@@ -1,0 +1,106 @@
+{
+ "FONT_ALEF": {
+  "category": "font-asset",
+  "summary": "font-asset; default Windows build: on; linkage: data; options: --without-fonts (quotes verified against the pinned tree: 5/5)"
+ },
+ "FONT_AMIRI": {
+  "category": "font-asset",
+  "summary": "font-asset; default Windows build: on; linkage: data; options: --without-fonts (quotes verified against the pinned tree: 5/5)"
+ },
+ "FONT_BACASIME_ANTIQUE": {
+  "category": "runtime-shipped-optional",
+  "summary": "runtime-shipped-optional; default Windows build: off; linkage: data; options: --with-docrepair-fonts, --without-fonts (quotes verified against the pinned tree: 5/5)"
+ },
+ "FONT_BELANOSIMA": {
+  "category": "runtime-shipped-optional",
+  "summary": "runtime-shipped-optional; default Windows build: off; linkage: data; options: --with-docrepair-fonts, --without-fonts (quotes verified against the pinned tree: 5/5)"
+ },
+ "FONT_CALADEA": {
+  "category": "font-asset",
+  "summary": "font-asset; default Windows build: on; linkage: data; options: --without-fonts (quotes verified against the pinned tree: 5/5)"
+ },
+ "FONT_CAPRASIMO": {
+  "category": "runtime-shipped-optional",
+  "summary": "runtime-shipped-optional; default Windows build: off; linkage: data; options: --with-docrepair-fonts, --without-fonts (quotes verified against the pinned tree: 5/5)"
+ },
+ "FONT_CARLITO": {
+  "category": "font-asset",
+  "summary": "font-asset; default Windows build: on; linkage: data; options: --without-fonts (quotes verified against the pinned tree: 5/5)"
+ },
+ "FONT_CULMUS": {
+  "category": "font-asset",
+  "summary": "font-asset; default Windows build: on; linkage: data; options: --without-fonts, --enable-mpl-subset (quotes verified against the pinned tree: 5/5)"
+ },
+ "FONT_DEJAVU": {
+  "category": "font-asset",
+  "summary": "font-asset; default Windows build: on; linkage: data; options: --without-fonts (quotes verified against the pinned tree: 5/5)"
+ },
+ "FONT_LIBERATION": {
+  "category": "font-asset",
+  "summary": "font-asset; default Windows build: on; linkage: data; options: --without-fonts (quotes verified against the pinned tree: 5/5)"
+ },
+ "FONT_LIBERATION_NARROW": {
+  "category": "font-asset",
+  "summary": "font-asset; default Windows build: on; linkage: data; options: --without-fonts (quotes verified against the pinned tree: 5/5)"
+ },
+ "FONT_LIBRE_HEBREW": {
+  "category": "font-asset",
+  "summary": "font-asset; default Windows build: on; linkage: data; options: --without-fonts (quotes verified against the pinned tree: 5/5)"
+ },
+ "FONT_LINLIBERTINEG": {
+  "category": "font-asset",
+  "summary": "font-asset; default Windows build: on; linkage: data; options: --without-fonts (quotes verified against the pinned tree: 5/5)"
+ },
+ "FONT_LUGRASIMO": {
+  "category": "runtime-shipped-optional",
+  "summary": "runtime-shipped-optional; default Windows build: off; linkage: data; options: --with-docrepair-fonts, --without-fonts (quotes verified against the pinned tree: 5/5)"
+ },
+ "FONT_LUMANOSIMO": {
+  "category": "runtime-shipped-optional",
+  "summary": "runtime-shipped-optional; default Windows build: off; linkage: data; options: --with-docrepair-fonts, --without-fonts (quotes verified against the pinned tree: 5/5)"
+ },
+ "FONT_LUNASIMA": {
+  "category": "runtime-shipped-optional",
+  "summary": "runtime-shipped-optional; default Windows build: off; linkage: data; options: --with-docrepair-fonts, --without-fonts (quotes verified against the pinned tree: 5/5)"
+ },
+ "FONT_NOTO_KUFI_ARABIC": {
+  "category": "font-asset",
+  "summary": "font-asset; default Windows build: on; linkage: data; options: --without-fonts (quotes verified against the pinned tree: 5/5)"
+ },
+ "FONT_NOTO_NASKH_ARABIC": {
+  "category": "font-asset",
+  "summary": "font-asset; default Windows build: on; linkage: data; options: --without-fonts (quotes verified against the pinned tree: 5/5)"
+ },
+ "FONT_NOTO_SANS": {
+  "category": "font-asset",
+  "summary": "font-asset; default Windows build: on; linkage: data; options: --without-fonts (quotes verified against the pinned tree: 5/5)"
+ },
+ "FONT_NOTO_SANS_ARABIC": {
+  "category": "font-asset",
+  "summary": "font-asset; default Windows build: on; linkage: data; options: --without-fonts (quotes verified against the pinned tree: 5/5)"
+ },
+ "FONT_NOTO_SANS_ARMENIAN": {
+  "category": "font-asset",
+  "summary": "font-asset; default Windows build: on; linkage: data; options: --without-fonts (quotes verified against the pinned tree: 5/5)"
+ },
+ "FONT_NOTO_SANS_GEORGIAN": {
+  "category": "font-asset",
+  "summary": "font-asset; default Windows build: on; linkage: data; options: --without-fonts (quotes verified against the pinned tree: 5/5)"
+ },
+ "FONT_NOTO_SANS_HEBREW": {
+  "category": "font-asset",
+  "summary": "font-asset; default Windows build: on; linkage: data; options: --without-fonts (quotes verified against the pinned tree: 5/5)"
+ },
+ "FONT_NOTO_SANS_LAO": {
+  "category": "font-asset",
+  "summary": "font-asset; default Windows build: on; linkage: data; options: --without-fonts (quotes verified against the pinned tree: 5/5)"
+ },
+ "FONT_NOTO_SANS_LISU": {
+  "category": "font-asset",
+  "summary": "font-asset; default Windows build: on; linkage: data; options: --without-fonts (quotes verified against the pinned tree: 5/5)"
+ },
+ "FONT_NOTO_SERIF": {
+  "category": "font-asset",
+  "summary": "font-asset; default Windows build: on; linkage: data; options: --without-fonts (quotes verified against the pinned tree: 5/5)"
+ }
+}

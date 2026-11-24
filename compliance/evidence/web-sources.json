@@ -1,0 +1,13 @@
+{
+ "_comment": "Upstream pages read on 2026-11-24. Only identifiers and hashes are stored here; the pages themselves are not copied into this repository.",
+ "sources": [
+  {"what": "TDF trademark policy (raw wiki text)", "url": "https://wiki.documentfoundation.org/index.php?title=TDF/Policies/Trademark_Policy&action=raw", "wiki_revision": 266041, "revision_date": "2020-05-14T09:07:04Z", "sha256": "84b71b872ca7725474ef35b2a583520b37b3051a85d64f01489060050f46b63e"},
+  {"what": "Development/BuildingOnWindows (raw wiki text)", "url": "https://wiki.documentfoundation.org/index.php?title=Development/BuildingOnWindows&action=raw", "wiki_revision": 888319, "revision_date": "2026-08-06T14:35:13Z", "sha256": "52a81acd5f132a429f98d297b0b6fe85aab11460b0c3c4102c5d869515c693cc"},
+  {"what": "ReleasePlan/26.8 (raw wiki text)", "url": "https://wiki.documentfoundation.org/index.php?title=ReleasePlan/26.8&action=raw", "wiki_revision": 896825, "revision_date": "2026-10-22T11:04:53Z", "sha256": "c8fa6dd024a63b7917d3ef3962656d24931562a7c0a47924b8c7ebb8c4c5b97b"},
+  {"what": "Collabora trademark policy (HTML)", "url": "https://www.collaboraonline.com/trademark-policy/", "sha256": "9175af2d2c64ca29df5929ebb91c2b93d4d39ed29744e66dd3c21763bbf67370"},
+  {"what": "Collabora Office product page (HTML)", "url": "https://www.collaboraonline.com/collabora-office/", "sha256": "4354cfdcf96eebb738cf814ec3a65f02c6c7289e20d6a52d50ca2d2e8272f818"},
+  {"what": "CollaboraOnline/online COPYING at tag coda-25.04.9.2-2", "url": "https://raw.githubusercontent.com/CollaboraOnline/online/coda-25.04.9.2-2/COPYING"},
+  {"what": "official stable release listing", "url": "https://download.documentfoundation.org/libreoffice/stable/", "observed": "25.8.7/ 26.2.7/ 26.8.2/ 26.8.3/"},
+  {"what": "official source listing for 26.8.3", "url": "https://download.documentfoundation.org/libreoffice/src/26.8.3/", "observed": "libreoffice-26.8.3.1.tar.xz and dictionaries/help/translations archives"}
+ ]
+}

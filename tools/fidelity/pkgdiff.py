@@ -364,6 +364,9 @@ def diff_inventories(before: Dict[str, object], after: Dict[str, object]) -> Dic
         "transitions_before": before["transitions"],
         "transitions_after": after["transitions"],
         "transitions_changed": before["transitions"] != after["transitions"],
+        # effect names present before and absent after ("(none)" = element without effect)
+        "transitions_lost": sorted(set(before["transitions"]) - set(after["transitions"])  # type: ignore[arg-type]
+                                   - {"(none)"}),
     }
 
 

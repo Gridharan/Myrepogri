@@ -3,10 +3,9 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 """Turn one probe result into a verdict: ``pass`` / ``partial`` / ``fail``.
 
-Rules (version 2, see docs/fidelity-method.md for the history: version 1
-judged some package parts by their mere presence and was replaced after
-the first trial run showed false alarms; the recorded baseline uses
-version 2):
+Rules (version 3; docs/fidelity-method.md has the history of versions 1
+and 2, which were replaced after trial runs showed false alarms and a
+missed loss; the recorded baseline uses version 3):
 
 ``fail``     the document did not open, the PDF export failed, the
              round-trip save failed, the saved copy did not reopen, the
@@ -14,8 +13,9 @@ version 2):
 ``partial``  everything ran, but the page/slide count changed, a
              *critical* model metric changed, a critical kind of package
              part disappeared completely, user content counted in the
-             package (comments, notes, header text ...) was lost, or the
-             PDF page count does not match the document.
+             package (comments, notes, header text ...) was lost, a slide
+             transition effect named in the file is gone after saving, or
+             the PDF page count does not match the document.
 ``pass``     none of the above.
 
 Non-critical differences are kept as information and never change the
@@ -50,7 +50,7 @@ FAIL_STEPS = (
     ("remeasure", "remeasure-failed"),
 )
 STATUSES = ("pass", "partial", "fail")
-CRITERIA_VERSION = 2
+CRITERIA_VERSION = 3
 
 
 def flatten(metrics: Dict[str, Any], prefix: str = "") -> Dict[str, Any]:
@@ -155,6 +155,8 @@ def classify(worker: Optional[Dict[str, Any]], package_diff: Optional[Dict[str, 
         partial.extend(f"part-kind-lost:{kind}"
                        for kind in package_diff.get("critical_part_kinds_lost", []))
         partial.extend(f"content-lost:{key}" for key in package_diff.get("content_lost", []))
+        partial.extend(f"transition-lost:{name}"
+                       for name in package_diff.get("transitions_lost", []))
         for kind in package_diff.get("part_kinds_lost", []):
             if kind not in package_diff.get("critical_part_kinds_lost", []):
                 info.append(f"part-kind-lost:{kind}")

@@ -4,7 +4,7 @@
   "manifest": "corpus/MANIFEST.csv",
   "manifest_sha256": "77d6f570ce9ed7b7c49a52462cd0029496b7e7083dcee7cead7cb829c2002d6e"
  },
- "duration_ms": 123805,
+ "duration_ms": 122801,
  "engine": {
   "buildid": "861effc5289d539f15c4c18d1ba8579ffd78728b",
   "version": "LibreOffice 26.8.3.1 861effc5289d539f15c4c18d1ba8579ffd78728b"
@@ -14,7 +14,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1972,
+   "duration_ms": 1921,
    "features": [
     "styles",
     "lists",
@@ -85,31 +85,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 521,
+     "duration_ms": 518,
      "ok": true
     },
     "measure": {
-     "duration_ms": 510,
+     "duration_ms": 466,
      "ok": true
     },
     "open": {
-     "duration_ms": 241,
+     "duration_ms": 194,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 19,
+     "duration_ms": 14,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 461,
+     "duration_ms": 483,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 21,
+     "duration_ms": 16,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 9,
+     "duration_ms": 14,
      "ok": true
     }
    },
@@ -122,7 +122,7 @@
    "app": "impress",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1720,
+   "duration_ms": 1719,
    "features": [
     "masters-layouts",
     "notes",
@@ -245,31 +245,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 519,
+     "duration_ms": 522,
      "ok": true
     },
     "measure": {
-     "duration_ms": 331,
+     "duration_ms": 308,
      "ok": true
     },
     "open": {
-     "duration_ms": 200,
+     "duration_ms": 185,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 15,
+     "duration_ms": 16,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 281,
+     "duration_ms": 314,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 30,
+     "duration_ms": 32,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 134,
+     "duration_ms": 112,
      "ok": true
     }
    },
@@ -282,7 +282,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1918,
+   "duration_ms": 1922,
    "features": [
     "headers-footers",
     "footnotes",
@@ -356,31 +356,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 518,
+     "duration_ms": 523,
      "ok": true
     },
     "measure": {
-     "duration_ms": 499,
+     "duration_ms": 496,
      "ok": true
     },
     "open": {
-     "duration_ms": 182,
+     "duration_ms": 207,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 17,
+     "duration_ms": 21,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 441,
+     "duration_ms": 438,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 16,
+     "duration_ms": 17,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 6,
+     "duration_ms": 7,
      "ok": true
     }
    },
@@ -393,7 +393,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1769,
+   "duration_ms": 1719,
    "features": [
     "tracked-changes",
     "comments"
@@ -464,15 +464,15 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 522,
+     "duration_ms": 518,
      "ok": true
     },
     "measure": {
-     "duration_ms": 425,
+     "duration_ms": 399,
      "ok": true
     },
     "open": {
-     "duration_ms": 205,
+     "duration_ms": 219,
      "ok": true
     },
     "pdf_export": {
@@ -480,11 +480,11 @@
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 352,
+     "duration_ms": 361,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 14,
+     "duration_ms": 13,
      "ok": true
     },
     "roundtrip_save": {
@@ -501,7 +501,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 2873,
+   "duration_ms": 2773,
    "features": [
     "plain-text"
    ],
@@ -563,27 +563,27 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 526,
+     "duration_ms": 519,
      "ok": true
     },
     "measure": {
-     "duration_ms": 1048,
+     "duration_ms": 977,
      "ok": true
     },
     "open": {
-     "duration_ms": 194,
+     "duration_ms": 175,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 20,
+     "duration_ms": 17,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 854,
+     "duration_ms": 845,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 27,
+     "duration_ms": 24,
      "ok": true
     },
     "roundtrip_save": {
@@ -600,7 +600,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 2121,
+   "duration_ms": 1970,
    "features": [
     "styles",
     "lists",
@@ -714,7 +714,8 @@
     "part_kinds_lost": [],
     "transitions_after": [],
     "transitions_before": [],
-    "transitions_changed": false
+    "transitions_changed": false,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "corpus/self/seed-basic.docx",
@@ -725,31 +726,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 518,
+     "duration_ms": 517,
      "ok": true
     },
     "measure": {
-     "duration_ms": 556,
+     "duration_ms": 478,
      "ok": true
     },
     "open": {
-     "duration_ms": 249,
+     "duration_ms": 229,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 14,
+     "duration_ms": 13,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 533,
+     "duration_ms": 504,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 35,
+     "duration_ms": 26,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 7,
+     "duration_ms": 8,
      "ok": true
     }
    },
@@ -762,7 +763,7 @@
    "app": "impress",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1420,
+   "duration_ms": 1418,
    "features": [
     "masters-layouts",
     "notes",
@@ -934,7 +935,8 @@
     "part_kinds_lost": [],
     "transitions_after": [],
     "transitions_before": [],
-    "transitions_changed": false
+    "transitions_changed": false,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "corpus/self/seed-basic.odp",
@@ -945,7 +947,7 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 518,
+     "duration_ms": 523,
      "ok": true
     },
     "measure": {
@@ -953,23 +955,23 @@
      "ok": true
     },
     "open": {
-     "duration_ms": 228,
+     "duration_ms": 194,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 15,
+     "duration_ms": 14,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 111,
+     "duration_ms": 101,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 51,
+     "duration_ms": 47,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 173,
+     "duration_ms": 159,
      "ok": true
     }
    },
@@ -982,7 +984,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1973,
+   "duration_ms": 2120,
    "features": [
     "styles",
     "lists",
@@ -1105,7 +1107,8 @@
     "part_kinds_lost": [],
     "transitions_after": [],
     "transitions_before": [],
-    "transitions_changed": false
+    "transitions_changed": false,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "corpus/self/seed-basic.odt",
@@ -1120,27 +1123,27 @@
      "ok": true
     },
     "measure": {
-     "duration_ms": 385,
+     "duration_ms": 419,
      "ok": true
     },
     "open": {
-     "duration_ms": 246,
+     "duration_ms": 261,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 11,
+     "duration_ms": 16,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 381,
+     "duration_ms": 406,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 18,
+     "duration_ms": 20,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 173,
+     "duration_ms": 207,
      "ok": true
     }
    },
@@ -1220,7 +1223,7 @@
      ]
     ]
    },
-   "duration_ms": 1823,
+   "duration_ms": 1722,
    "features": [
     "masters-layouts",
     "notes",
@@ -1428,7 +1431,8 @@
      "p:push",
      "p:wipe"
     ],
-    "transitions_changed": true
+    "transitions_changed": true,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "corpus/self/seed-basic.pptx",
@@ -1441,31 +1445,31 @@
    "status": "partial",
    "steps": {
     "engine_start": {
-     "duration_ms": 521,
+     "duration_ms": 525,
      "ok": true
     },
     "measure": {
-     "duration_ms": 324,
+     "duration_ms": 355,
      "ok": true
     },
     "open": {
-     "duration_ms": 286,
+     "duration_ms": 245,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 26,
+     "duration_ms": 18,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 277,
+     "duration_ms": 221,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 111,
+     "duration_ms": 97,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 38,
+     "duration_ms": 27,
      "ok": true
     }
    },
@@ -1478,7 +1482,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1870,
+   "duration_ms": 1820,
    "features": [
     "styles",
     "tables",
@@ -1549,27 +1553,27 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 521,
+     "duration_ms": 523,
      "ok": true
     },
     "measure": {
-     "duration_ms": 412,
+     "duration_ms": 427,
      "ok": true
     },
     "open": {
-     "duration_ms": 222,
+     "duration_ms": 197,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 15,
+     "duration_ms": 11,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 442,
+     "duration_ms": 420,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 29,
+     "duration_ms": 18,
      "ok": true
     },
     "roundtrip_save": {
@@ -1586,7 +1590,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1869,
+   "duration_ms": 1870,
    "features": [
     "proprietary-fonts"
    ],
@@ -1721,7 +1725,8 @@
     "part_kinds_lost": [],
     "transitions_after": [],
     "transitions_before": [],
-    "transitions_changed": false
+    "transitions_changed": false,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "corpus/self/seed-fonts.docx",
@@ -1732,31 +1737,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 527,
+     "duration_ms": 523,
      "ok": true
     },
     "measure": {
-     "duration_ms": 431,
+     "duration_ms": 440,
      "ok": true
     },
     "open": {
-     "duration_ms": 283,
+     "duration_ms": 220,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 20,
+     "duration_ms": 21,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 337,
+     "duration_ms": 399,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 32,
+     "duration_ms": 26,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 11,
+     "duration_ms": 7,
      "ok": true
     }
    },
@@ -1769,7 +1774,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1820,
+   "duration_ms": 1769,
    "features": [
     "images",
     "anchored-images"
@@ -1872,7 +1877,8 @@
     "part_kinds_lost": [],
     "transitions_after": [],
     "transitions_before": [],
-    "transitions_changed": false
+    "transitions_changed": false,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "corpus/self/seed-images.docx",
@@ -1887,27 +1893,27 @@
      "ok": true
     },
     "measure": {
-     "duration_ms": 384,
+     "duration_ms": 369,
      "ok": true
     },
     "open": {
-     "duration_ms": 281,
+     "duration_ms": 255,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 12,
+     "duration_ms": 9,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 337,
+     "duration_ms": 338,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 40,
+     "duration_ms": 41,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 8,
+     "duration_ms": 7,
      "ok": true
     }
    },
@@ -1920,7 +1926,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 2019,
+   "duration_ms": 1969,
    "features": [
     "headers-footers",
     "first-page-header",
@@ -2069,7 +2075,8 @@
     "part_kinds_lost": [],
     "transitions_after": [],
     "transitions_before": [],
-    "transitions_changed": false
+    "transitions_changed": false,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "corpus/self/seed-notes-headers.docx",
@@ -2080,31 +2087,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 518,
+     "duration_ms": 523,
      "ok": true
     },
     "measure": {
-     "duration_ms": 505,
+     "duration_ms": 516,
      "ok": true
     },
     "open": {
-     "duration_ms": 257,
+     "duration_ms": 248,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 25,
+     "duration_ms": 17,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 435,
+     "duration_ms": 396,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 36,
+     "duration_ms": 25,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 12,
+     "duration_ms": 9,
      "ok": true
     }
    },
@@ -2117,7 +2124,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1768,
+   "duration_ms": 1818,
    "features": [
     "tracked-changes",
     "comments"
@@ -2230,7 +2237,8 @@
     "part_kinds_lost": [],
     "transitions_after": [],
     "transitions_before": [],
-    "transitions_changed": false
+    "transitions_changed": false,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "corpus/self/seed-review.docx",
@@ -2241,31 +2249,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 519,
+     "duration_ms": 524,
      "ok": true
     },
     "measure": {
-     "duration_ms": 332,
+     "duration_ms": 411,
      "ok": true
     },
     "open": {
-     "duration_ms": 270,
+     "duration_ms": 229,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 13,
+     "duration_ms": 9,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 357,
+     "duration_ms": 380,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 30,
+     "duration_ms": 20,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 9,
+     "duration_ms": 6,
      "ok": true
     }
    },
@@ -2345,7 +2353,7 @@
      ]
     ]
    },
-   "duration_ms": 1517,
+   "duration_ms": 1469,
    "features": [
     "slideshow-file",
     "masters-layouts",
@@ -2550,7 +2558,8 @@
      "p:push",
      "p:wipe"
     ],
-    "transitions_changed": true
+    "transitions_changed": true,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "corpus/self/seed-show.ppsx",
@@ -2563,31 +2572,31 @@
    "status": "partial",
    "steps": {
     "engine_start": {
-     "duration_ms": 522,
+     "duration_ms": 521,
      "ok": true
     },
     "measure": {
-     "duration_ms": 259,
+     "duration_ms": 302,
      "ok": true
     },
     "open": {
-     "duration_ms": 223,
+     "duration_ms": 190,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 24,
+     "duration_ms": 19,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 200,
+     "duration_ms": 204,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 73,
+     "duration_ms": 61,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 51,
+     "duration_ms": 21,
      "ok": true
     }
    },
@@ -2600,7 +2609,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1918,
+   "duration_ms": 1869,
    "features": [
     "template",
     "styles",
@@ -2709,7 +2718,8 @@
     "part_kinds_lost": [],
     "transitions_after": [],
     "transitions_before": [],
-    "transitions_changed": false
+    "transitions_changed": false,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "corpus/self/seed-template.dotx",
@@ -2720,31 +2730,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 519,
+     "duration_ms": 518,
      "ok": true
     },
     "measure": {
-     "duration_ms": 475,
+     "duration_ms": 392,
      "ok": true
     },
     "open": {
-     "duration_ms": 186,
+     "duration_ms": 195,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 15,
+     "duration_ms": 14,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 466,
+     "duration_ms": 489,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 25,
+     "duration_ms": 31,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 9,
+     "duration_ms": 7,
      "ok": true
     }
    },
@@ -2824,7 +2834,7 @@
      ]
     ]
    },
-   "duration_ms": 1518,
+   "duration_ms": 1618,
    "features": [
     "template",
     "masters-layouts",
@@ -3029,7 +3039,8 @@
      "p:push",
      "p:wipe"
     ],
-    "transitions_changed": true
+    "transitions_changed": true,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "corpus/self/seed-template.potx",
@@ -3042,31 +3053,31 @@
    "status": "partial",
    "steps": {
     "engine_start": {
-     "duration_ms": 517,
+     "duration_ms": 518,
      "ok": true
     },
     "measure": {
-     "duration_ms": 291,
+     "duration_ms": 324,
      "ok": true
     },
     "open": {
-     "duration_ms": 197,
+     "duration_ms": 203,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 20,
+     "duration_ms": 18,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 226,
+     "duration_ms": 246,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 78,
+     "duration_ms": 80,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 24,
+     "duration_ms": 32,
      "ok": true
     }
    },
@@ -3079,7 +3090,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1622,
+   "duration_ms": 1669,
    "features": [
     "plain-text",
     "unicode"
@@ -3142,31 +3153,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 522,
+     "duration_ms": 518,
      "ok": true
     },
     "measure": {
-     "duration_ms": 332,
+     "duration_ms": 389,
      "ok": true
     },
     "open": {
-     "duration_ms": 192,
+     "duration_ms": 203,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 13,
+     "duration_ms": 17,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 362,
+     "duration_ms": 328,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 11,
+     "duration_ms": 12,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 3,
+     "duration_ms": 2,
      "ok": true
     }
    },
@@ -3184,7 +3195,7 @@
      2
     ]
    },
-   "duration_ms": 1976,
+   "duration_ms": 2023,
    "features": [
     "bookmarks",
     "content-controls",
@@ -3410,7 +3421,8 @@
     ],
     "transitions_after": [],
     "transitions_before": [],
-    "transitions_changed": false
+    "transitions_changed": false,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "sw/qa/extras/ooxmlexport/data/tdf151548_activeContentDemo.docm",
@@ -3423,23 +3435,23 @@
    "status": "partial",
    "steps": {
     "engine_start": {
-     "duration_ms": 518,
+     "duration_ms": 519,
      "ok": true
     },
     "measure": {
-     "duration_ms": 457,
+     "duration_ms": 435,
      "ok": true
     },
     "open": {
-     "duration_ms": 349,
+     "duration_ms": 346,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 16,
+     "duration_ms": 15,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 325,
+     "duration_ms": 344,
      "ok": true
     },
     "reopen": {
@@ -3447,7 +3459,7 @@
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 14,
+     "duration_ms": 15,
      "ok": true
     }
    },
@@ -3465,7 +3477,7 @@
      0
     ]
    },
-   "duration_ms": 1519,
+   "duration_ms": 1518,
    "features": [
     "many-layouts",
     "math",
@@ -3621,7 +3633,8 @@
      "(none)"
     ],
     "transitions_before": [],
-    "transitions_changed": true
+    "transitions_changed": true,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "oox/qa/unit/data/import-characters.pptx",
@@ -3634,31 +3647,31 @@
    "status": "partial",
    "steps": {
     "engine_start": {
-     "duration_ms": 518,
+     "duration_ms": 529,
      "ok": true
     },
     "measure": {
-     "duration_ms": 62,
+     "duration_ms": 52,
      "ok": true
     },
     "open": {
-     "duration_ms": 487,
+     "duration_ms": 403,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 21,
+     "duration_ms": 17,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 35,
+     "duration_ms": 42,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 185,
+     "duration_ms": 202,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 60,
+     "duration_ms": 49,
      "ok": true
     }
    },
@@ -3671,7 +3684,7 @@
    "app": "impress",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1569,
+   "duration_ms": 1470,
    "features": [
     "alternate-content",
     "many-layouts",
@@ -3811,7 +3824,8 @@
      "(none)"
     ],
     "transitions_before": [],
-    "transitions_changed": true
+    "transitions_changed": true,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "oox/qa/unit/data/import-mce.pptx",
@@ -3822,31 +3836,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 520,
+     "duration_ms": 521,
      "ok": true
     },
     "measure": {
-     "duration_ms": 58,
+     "duration_ms": 68,
      "ok": true
     },
     "open": {
-     "duration_ms": 423,
+     "duration_ms": 419,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 15,
+     "duration_ms": 14,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 73,
+     "duration_ms": 40,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 186,
+     "duration_ms": 163,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 66,
+     "duration_ms": 45,
      "ok": true
     }
    },
@@ -3859,7 +3873,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1970,
+   "duration_ms": 1919,
    "features": [
     "connectors",
     "groups",
@@ -3959,7 +3973,8 @@
     "part_kinds_lost": [],
     "transitions_after": [],
     "transitions_before": [],
-    "transitions_changed": false
+    "transitions_changed": false,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "oox/qa/unit/data/tdf141786_PolylineConnectorInGroup.odt",
@@ -3970,31 +3985,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 535,
+     "duration_ms": 521,
      "ok": true
     },
     "measure": {
-     "duration_ms": 330,
+     "duration_ms": 353,
      "ok": true
     },
     "open": {
-     "duration_ms": 329,
+     "duration_ms": 247,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 10,
+     "duration_ms": 11,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 342,
+     "duration_ms": 321,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 24,
+     "duration_ms": 23,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 183,
+     "duration_ms": 208,
      "ok": true
     }
    },
@@ -4007,7 +4022,7 @@
    "app": "impress",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1622,
+   "duration_ms": 1671,
    "features": [
     "connectors",
     "many-layouts",
@@ -4140,7 +4155,8 @@
      "(none)"
     ],
     "transitions_before": [],
-    "transitions_changed": true
+    "transitions_changed": true,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "oox/qa/unit/data/tdf165180_standardConnectorsECMA.potx",
@@ -4151,31 +4167,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 519,
+     "duration_ms": 517,
      "ok": true
     },
     "measure": {
-     "duration_ms": 151,
+     "duration_ms": 134,
      "ok": true
     },
     "open": {
-     "duration_ms": 332,
+     "duration_ms": 363,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 100,
+     "duration_ms": 104,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 102,
+     "duration_ms": 116,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 165,
+     "duration_ms": 160,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 47,
+     "duration_ms": 41,
      "ok": true
     }
    },
@@ -4188,7 +4204,7 @@
    "app": "impress",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1720,
+   "duration_ms": 1669,
    "features": [
     "connectors",
     "many-layouts",
@@ -4321,7 +4337,8 @@
      "(none)"
     ],
     "transitions_before": [],
-    "transitions_changed": true
+    "transitions_changed": true,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "oox/qa/unit/data/tdf165180_standardConnectorsISO29500.potx",
@@ -4332,27 +4349,27 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 519,
+     "duration_ms": 525,
      "ok": true
     },
     "measure": {
-     "duration_ms": 150,
+     "duration_ms": 145,
      "ok": true
     },
     "open": {
-     "duration_ms": 422,
+     "duration_ms": 360,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 113,
+     "duration_ms": 101,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 110,
+     "duration_ms": 108,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 153,
+     "duration_ms": 171,
      "ok": true
     },
     "roundtrip_save": {
@@ -4369,7 +4386,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 2122,
+   "duration_ms": 2119,
    "features": [
     "endnotes",
     "notes"
@@ -4434,31 +4451,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 521,
+     "duration_ms": 519,
      "ok": true
     },
     "measure": {
-     "duration_ms": 613,
+     "duration_ms": 603,
      "ok": true
     },
     "open": {
-     "duration_ms": 182,
+     "duration_ms": 180,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 15,
+     "duration_ms": 11,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 550,
+     "duration_ms": 576,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 17,
+     "duration_ms": 15,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 8,
+     "duration_ms": 6,
      "ok": true
     }
    },
@@ -4471,7 +4488,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1718,
+   "duration_ms": 1519,
    "features": [
     "lists",
     "tables"
@@ -4536,31 +4553,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 519,
+     "duration_ms": 518,
      "ok": true
     },
     "measure": {
-     "duration_ms": 358,
+     "duration_ms": 326,
      "ok": true
     },
     "open": {
-     "duration_ms": 252,
+     "duration_ms": 176,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 10,
+     "duration_ms": 9,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 321,
+     "duration_ms": 251,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 23,
+     "duration_ms": 12,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 6,
+     "duration_ms": 5,
      "ok": true
     }
    },
@@ -4573,7 +4590,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1568,
+   "duration_ms": 1524,
    "features": [
     "embedded-fonts",
     "proprietary-fonts"
@@ -4687,7 +4704,8 @@
     ],
     "transitions_after": [],
     "transitions_before": [],
-    "transitions_changed": false
+    "transitions_changed": false,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "sw/qa/writerfilter/dmapper/data/subsetted-embedded-font.docx",
@@ -4704,11 +4722,11 @@
      "ok": true
     },
     "measure": {
-     "duration_ms": 319,
+     "duration_ms": 259,
      "ok": true
     },
     "open": {
-     "duration_ms": 262,
+     "duration_ms": 238,
      "ok": true
     },
     "pdf_export": {
@@ -4716,15 +4734,15 @@
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 223,
+     "duration_ms": 256,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 27,
+     "duration_ms": 21,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 17,
+     "duration_ms": 13,
      "ok": true
     }
    },
@@ -4843,7 +4861,8 @@
     "part_kinds_lost": [],
     "transitions_after": [],
     "transitions_before": [],
-    "transitions_changed": false
+    "transitions_changed": false,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "sw/qa/writerfilter/dmapper/data/subsetted-full-embedded-font.docx",
@@ -4854,31 +4873,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 523,
+     "duration_ms": 520,
      "ok": true
     },
     "measure": {
-     "duration_ms": 320,
+     "duration_ms": 273,
      "ok": true
     },
     "open": {
-     "duration_ms": 235,
+     "duration_ms": 304,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 9,
+     "duration_ms": 39,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 288,
+     "duration_ms": 259,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 36,
+     "duration_ms": 30,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 26,
+     "duration_ms": 27,
      "ok": true
     }
    },
@@ -4891,7 +4910,7 @@
    "app": "impress",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1520,
+   "duration_ms": 1568,
    "features": [
     "embedded-fonts",
     "many-layouts",
@@ -5028,7 +5047,8 @@
      "(none)"
     ],
     "transitions_before": [],
-    "transitions_changed": true
+    "transitions_changed": true,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "sd/qa/unit/data/BoldonseFontEmbedded.pptx",
@@ -5043,27 +5063,27 @@
      "ok": true
     },
     "measure": {
-     "duration_ms": 50,
+     "duration_ms": 56,
      "ok": true
     },
     "open": {
-     "duration_ms": 458,
+     "duration_ms": 444,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 10,
+     "duration_ms": 14,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 39,
+     "duration_ms": 32,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 149,
+     "duration_ms": 241,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 52,
+     "duration_ms": 67,
      "ok": true
     }
    },
@@ -5076,7 +5096,7 @@
    "app": "impress",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1468,
+   "duration_ms": 1522,
    "features": [
     "groups",
     "images",
@@ -5217,7 +5237,8 @@
     "part_kinds_lost": [],
     "transitions_after": [],
     "transitions_before": [],
-    "transitions_changed": false
+    "transitions_changed": false,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "sd/qa/unit/data/odp/tdf119223.odp",
@@ -5232,27 +5253,27 @@
      "ok": true
     },
     "measure": {
-     "duration_ms": 135,
+     "duration_ms": 112,
      "ok": true
     },
     "open": {
-     "duration_ms": 242,
+     "duration_ms": 287,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 16,
+     "duration_ms": 15,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 90,
+     "duration_ms": 82,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 57,
+     "duration_ms": 61,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 211,
+     "duration_ms": 212,
      "ok": true
     }
    },
@@ -5265,7 +5286,7 @@
    "app": "impress",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1318,
+   "duration_ms": 1268,
    "features": [
     "hyperlinks",
     "notes",
@@ -5399,7 +5420,8 @@
     "part_kinds_lost": [],
     "transitions_after": [],
     "transitions_before": [],
-    "transitions_changed": false
+    "transitions_changed": false,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "sd/qa/unit/data/odp/tdf148966-withoutflag.odp",
@@ -5410,19 +5432,19 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 523,
+     "duration_ms": 521,
      "ok": true
     },
     "measure": {
-     "duration_ms": 62,
+     "duration_ms": 58,
      "ok": true
     },
     "open": {
-     "duration_ms": 219,
+     "duration_ms": 238,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 13,
+     "duration_ms": 12,
      "ok": true
     },
     "remeasure": {
@@ -5430,11 +5452,11 @@
      "ok": true
     },
     "reopen": {
-     "duration_ms": 48,
+     "duration_ms": 50,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 154,
+     "duration_ms": 145,
      "ok": true
     }
    },
@@ -5447,7 +5469,7 @@
    "app": "impress",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1468,
+   "duration_ms": 1417,
    "features": [
     "animations",
     "images",
@@ -5588,7 +5610,8 @@
     "part_kinds_lost": [],
     "transitions_after": [],
     "transitions_before": [],
-    "transitions_changed": false
+    "transitions_changed": false,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "sd/qa/unit/data/odp/tdf154754.odp",
@@ -5603,27 +5626,27 @@
      "ok": true
     },
     "measure": {
-     "duration_ms": 94,
+     "duration_ms": 77,
      "ok": true
     },
     "open": {
-     "duration_ms": 302,
+     "duration_ms": 270,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 16,
+     "duration_ms": 15,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 54,
+     "duration_ms": 60,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 78,
+     "duration_ms": 67,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 202,
+     "duration_ms": 204,
      "ok": true
     }
    },
@@ -5636,7 +5659,7 @@
    "app": "impress",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1568,
+   "duration_ms": 1621,
    "features": [
     "lists",
     "multi-master",
@@ -5794,7 +5817,8 @@
     "part_kinds_lost": [],
     "transitions_after": [],
     "transitions_before": [],
-    "transitions_changed": false
+    "transitions_changed": false,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "sd/qa/unit/data/odp/tdf96708.odp",
@@ -5805,15 +5829,15 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 521,
+     "duration_ms": 516,
      "ok": true
     },
     "measure": {
-     "duration_ms": 141,
+     "duration_ms": 161,
      "ok": true
     },
     "open": {
-     "duration_ms": 201,
+     "duration_ms": 223,
      "ok": true
     },
     "pdf_export": {
@@ -5821,15 +5845,15 @@
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 128,
+     "duration_ms": 126,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 73,
+     "duration_ms": 74,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 224,
+     "duration_ms": 256,
      "ok": true
     }
    },
@@ -5842,7 +5866,7 @@
    "app": "impress",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 2071,
+   "duration_ms": 2069,
    "features": [
     "animations",
     "many-layouts",
@@ -5983,7 +6007,8 @@
      "(none)"
     ],
     "transitions_before": [],
-    "transitions_changed": true
+    "transitions_changed": true,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "sd/qa/unit/data/ppsx/tdf114443-6.ppsx",
@@ -5994,31 +6019,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 521,
+     "duration_ms": 517,
      "ok": true
     },
     "measure": {
-     "duration_ms": 78,
+     "duration_ms": 62,
      "ok": true
     },
     "open": {
-     "duration_ms": 245,
+     "duration_ms": 242,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 16,
+     "duration_ms": 15,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 53,
+     "duration_ms": 46,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 571,
+     "duration_ms": 606,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 349,
+     "duration_ms": 405,
      "ok": true
     }
    },
@@ -6050,7 +6075,7 @@
      ]
     ]
    },
-   "duration_ms": 2222,
+   "duration_ms": 1970,
    "features": [],
    "fonts": [
     "Arial"
@@ -6139,7 +6164,7 @@
      "ok": true
     },
     "measure": {
-     "duration_ms": 539,
+     "duration_ms": 499,
      "ok": true
     },
     "open": {
@@ -6147,19 +6172,19 @@
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 18,
+     "duration_ms": 19,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 550,
+     "duration_ms": 428,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 33,
+     "duration_ms": 25,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 195,
+     "duration_ms": 182,
      "ok": true
     }
    },
@@ -6286,31 +6311,31 @@
    "status": "partial",
    "steps": {
     "engine_start": {
-     "duration_ms": 522,
+     "duration_ms": 521,
      "ok": true
     },
     "measure": {
-     "duration_ms": 57,
+     "duration_ms": 59,
      "ok": true
     },
     "open": {
-     "duration_ms": 157,
+     "duration_ms": 158,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 17,
+     "duration_ms": 18,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 49,
+     "duration_ms": 41,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 23,
+     "duration_ms": 24,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 133,
+     "duration_ms": 109,
      "ok": true
     }
    },
@@ -6342,7 +6367,7 @@
      ]
     ]
    },
-   "duration_ms": 1220,
+   "duration_ms": 1218,
    "features": [],
    "fonts": [
     "Times New Roman"
@@ -6427,15 +6452,15 @@
    "status": "partial",
    "steps": {
     "engine_start": {
-     "duration_ms": 519,
+     "duration_ms": 520,
      "ok": true
     },
     "measure": {
-     "duration_ms": 58,
+     "duration_ms": 52,
      "ok": true
     },
     "open": {
-     "duration_ms": 166,
+     "duration_ms": 169,
      "ok": true
     },
     "pdf_export": {
@@ -6443,15 +6468,15 @@
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 33,
+     "duration_ms": 28,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 18,
+     "duration_ms": 17,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 168,
+     "duration_ms": 154,
      "ok": true
     }
    },
@@ -6464,7 +6489,7 @@
    "app": "impress",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1167,
+   "duration_ms": 1218,
    "features": [
     "lists"
    ],
@@ -6549,31 +6574,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 519,
+     "duration_ms": 521,
      "ok": true
     },
     "measure": {
-     "duration_ms": 49,
+     "duration_ms": 63,
      "ok": true
     },
     "open": {
-     "duration_ms": 157,
+     "duration_ms": 160,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 13,
+     "duration_ms": 16,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 33,
+     "duration_ms": 31,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 26,
+     "duration_ms": 23,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 177,
+     "duration_ms": 207,
      "ok": true
     }
    },
@@ -6586,7 +6611,7 @@
    "app": "impress",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1669,
+   "duration_ms": 1468,
    "features": [],
    "fonts": [
     "Arial"
@@ -6704,31 +6729,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 524,
+     "duration_ms": 526,
      "ok": true
     },
     "measure": {
-     "duration_ms": 297,
+     "duration_ms": 210,
      "ok": true
     },
     "open": {
-     "duration_ms": 192,
+     "duration_ms": 140,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 19,
+     "duration_ms": 30,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 221,
+     "duration_ms": 192,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 23,
+     "duration_ms": 28,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 155,
+     "duration_ms": 176,
      "ok": true
     }
    },
@@ -6760,7 +6785,7 @@
      ]
     ]
    },
-   "duration_ms": 1624,
+   "duration_ms": 1468,
    "features": [],
    "fonts": [
     "Arial",
@@ -6852,31 +6877,31 @@
    "status": "partial",
    "steps": {
     "engine_start": {
-     "duration_ms": 521,
+     "duration_ms": 516,
      "ok": true
     },
     "measure": {
-     "duration_ms": 203,
+     "duration_ms": 164,
      "ok": true
     },
     "open": {
-     "duration_ms": 210,
+     "duration_ms": 163,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 41,
+     "duration_ms": 36,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 167,
+     "duration_ms": 140,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 28,
+     "duration_ms": 24,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 226,
+     "duration_ms": 174,
      "ok": true
     }
    },
@@ -6908,7 +6933,7 @@
      ]
     ]
    },
-   "duration_ms": 1218,
+   "duration_ms": 1167,
    "features": [],
    "fonts": [
     "Arial"
@@ -6990,7 +7015,7 @@
    "status": "partial",
    "steps": {
     "engine_start": {
-     "duration_ms": 523,
+     "duration_ms": 518,
      "ok": true
     },
     "measure": {
@@ -6998,23 +7023,23 @@
      "ok": true
     },
     "open": {
-     "duration_ms": 147,
+     "duration_ms": 142,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 15,
+     "duration_ms": 11,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 52,
+     "duration_ms": 51,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 22,
+     "duration_ms": 21,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 214,
+     "duration_ms": 169,
      "ok": true
     }
    },
@@ -7027,7 +7052,7 @@
    "app": "impress",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1218,
+   "duration_ms": 1070,
    "features": [],
    "fonts": [
     "Arial"
@@ -7106,15 +7131,15 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 519,
+     "duration_ms": 517,
      "ok": true
     },
     "measure": {
-     "duration_ms": 83,
+     "duration_ms": 58,
      "ok": true
     },
     "open": {
-     "duration_ms": 147,
+     "duration_ms": 123,
      "ok": true
     },
     "pdf_export": {
@@ -7122,15 +7147,15 @@
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 40,
+     "duration_ms": 36,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 24,
+     "duration_ms": 26,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 147,
+     "duration_ms": 139,
      "ok": true
     }
    },
@@ -7143,7 +7168,7 @@
    "app": "impress",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1521,
+   "duration_ms": 1419,
    "features": [
     "animations",
     "hyperlinks",
@@ -7299,7 +7324,8 @@
      "(none)"
     ],
     "transitions_before": [],
-    "transitions_changed": true
+    "transitions_changed": true,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "sd/qa/unit/data/pptm/macro.pptm",
@@ -7314,11 +7340,11 @@
      "ok": true
     },
     "measure": {
-     "duration_ms": 62,
+     "duration_ms": 63,
      "ok": true
     },
     "open": {
-     "duration_ms": 381,
+     "duration_ms": 361,
      "ok": true
     },
     "pdf_export": {
@@ -7326,15 +7352,15 @@
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 50,
+     "duration_ms": 46,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 244,
+     "duration_ms": 199,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 42,
+     "duration_ms": 38,
      "ok": true
     }
    },
@@ -7347,7 +7373,7 @@
    "app": "impress",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1519,
+   "duration_ms": 1571,
    "features": [
     "animations",
     "hyperlinks",
@@ -7510,7 +7536,8 @@
      "(none)"
     ],
     "transitions_before": [],
-    "transitions_changed": true
+    "transitions_changed": true,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "sd/qa/unit/data/pptx/bnc591147.pptx",
@@ -7525,27 +7552,27 @@
      "ok": true
     },
     "measure": {
-     "duration_ms": 94,
+     "duration_ms": 97,
      "ok": true
     },
     "open": {
-     "duration_ms": 391,
+     "duration_ms": 393,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 37,
+     "duration_ms": 36,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 60,
+     "duration_ms": 68,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 174,
+     "duration_ms": 186,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 53,
+     "duration_ms": 50,
      "ok": true
     }
    },
@@ -7558,7 +7585,7 @@
    "app": "impress",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 966,
+   "duration_ms": 1067,
    "features": [
     "charts",
     "ole",
@@ -7724,7 +7751,8 @@
      "(none)"
     ],
     "transitions_before": [],
-    "transitions_changed": true
+    "transitions_changed": true,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "sd/qa/unit/data/pptx/chart_pt_color_bg1.pptx",
@@ -7737,31 +7765,31 @@
    "status": "partial",
    "steps": {
     "engine_start": {
-     "duration_ms": 517,
+     "duration_ms": 518,
      "ok": true
     },
     "measure": {
-     "duration_ms": 45,
+     "duration_ms": 68,
      "ok": true
     },
     "open": {
-     "duration_ms": 188,
+     "duration_ms": 203,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 13,
+     "duration_ms": 12,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 28,
+     "duration_ms": 33,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 31,
+     "duration_ms": 37,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 15,
+     "duration_ms": 17,
      "ok": true
     }
    },
@@ -7774,7 +7802,7 @@
    "app": "impress",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1017,
+   "duration_ms": 1067,
    "features": [
     "custom-xml",
     "embedded-fonts",
@@ -7940,7 +7968,8 @@
      "(none)"
     ],
     "transitions_before": [],
-    "transitions_changed": true
+    "transitions_changed": true,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "sd/qa/unit/data/pptx/multiplelayoutfooter.pptx",
@@ -7953,15 +7982,15 @@
    "status": "partial",
    "steps": {
     "engine_start": {
-     "duration_ms": 519,
+     "duration_ms": 523,
      "ok": true
     },
     "measure": {
-     "duration_ms": 38,
+     "duration_ms": 41,
      "ok": true
     },
     "open": {
-     "duration_ms": 188,
+     "duration_ms": 203,
      "ok": true
     },
     "pdf_export": {
@@ -7969,11 +7998,11 @@
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 34,
+     "duration_ms": 32,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 32,
+     "duration_ms": 29,
      "ok": true
     },
     "roundtrip_save": {
@@ -7990,7 +8019,7 @@
    "app": "impress",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1117,
+   "duration_ms": 1067,
    "features": [
     "animations",
     "hyperlinks",
@@ -8151,7 +8180,8 @@
      "(none)"
     ],
     "transitions_before": [],
-    "transitions_changed": true
+    "transitions_changed": true,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "sd/qa/unit/data/pptx/narration-non-media-shape.pptx",
@@ -8162,31 +8192,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 519,
+     "duration_ms": 522,
      "ok": true
     },
     "measure": {
-     "duration_ms": 79,
+     "duration_ms": 80,
      "ok": true
     },
     "open": {
-     "duration_ms": 197,
+     "duration_ms": 212,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 14,
+     "duration_ms": 12,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 54,
+     "duration_ms": 44,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 36,
+     "duration_ms": 31,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 13,
+     "duration_ms": 17,
      "ok": true
     }
    },
@@ -8199,7 +8229,7 @@
    "app": "impress",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1469,
+   "duration_ms": 1418,
    "features": [
     "alternate-content",
     "animations",
@@ -8337,7 +8367,8 @@
      "(none)",
      "(none)"
     ],
-    "transitions_changed": false
+    "transitions_changed": false,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "sd/qa/unit/data/pptx/narration.pptx",
@@ -8348,31 +8379,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 520,
+     "duration_ms": 521,
      "ok": true
     },
     "measure": {
-     "duration_ms": 62,
+     "duration_ms": 55,
      "ok": true
     },
     "open": {
-     "duration_ms": 383,
+     "duration_ms": 385,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 26,
+     "duration_ms": 19,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 43,
+     "duration_ms": 34,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 164,
+     "duration_ms": 154,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 53,
+     "duration_ms": 46,
      "ok": true
     }
    },
@@ -8385,7 +8416,7 @@
    "app": "impress",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1020,
+   "duration_ms": 917,
    "features": [
     "comments",
     "proprietary-fonts"
@@ -8523,7 +8554,8 @@
      "(none)"
     ],
     "transitions_before": [],
-    "transitions_changed": true
+    "transitions_changed": true,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "sd/qa/unit/data/pptx/pass/tdf173266.pptx",
@@ -8534,27 +8566,27 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 520,
+     "duration_ms": 519,
      "ok": true
     },
     "measure": {
-     "duration_ms": 40,
+     "duration_ms": 33,
      "ok": true
     },
     "open": {
-     "duration_ms": 175,
+     "duration_ms": 160,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 10,
+     "duration_ms": 9,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 25,
+     "duration_ms": 19,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 26,
+     "duration_ms": 23,
      "ok": true
     },
     "roundtrip_save": {
@@ -8576,7 +8608,7 @@
      19
     ]
    },
-   "duration_ms": 6835,
+   "duration_ms": 6532,
    "features": [
     "alternate-content",
     "groups",
@@ -8879,7 +8911,8 @@
      "(none)",
      "(none)"
     ],
-    "transitions_changed": false
+    "transitions_changed": false,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "sd/qa/unit/data/pptx/slide-section-test.pptx",
@@ -8892,31 +8925,31 @@
    "status": "partial",
    "steps": {
     "engine_start": {
-     "duration_ms": 523,
+     "duration_ms": 517,
      "ok": true
     },
     "measure": {
-     "duration_ms": 2234,
+     "duration_ms": 2263,
      "ok": true
     },
     "open": {
-     "duration_ms": 819,
+     "duration_ms": 660,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 57,
+     "duration_ms": 47,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 2219,
+     "duration_ms": 2088,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 527,
+     "duration_ms": 535,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 197,
+     "duration_ms": 162,
      "ok": true
     }
    },
@@ -8934,7 +8967,7 @@
      4
     ]
    },
-   "duration_ms": 3422,
+   "duration_ms": 3322,
    "features": [
     "groups",
     "hyperlinks",
@@ -9161,7 +9194,8 @@
      "(none)"
     ],
     "transitions_before": [],
-    "transitions_changed": true
+    "transitions_changed": true,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "sd/qa/unit/data/pptx/slide-sections.pptx",
@@ -9174,15 +9208,15 @@
    "status": "partial",
    "steps": {
     "engine_start": {
-     "duration_ms": 521,
+     "duration_ms": 522,
      "ok": true
     },
     "measure": {
-     "duration_ms": 993,
+     "duration_ms": 955,
      "ok": true
     },
     "open": {
-     "duration_ms": 422,
+     "duration_ms": 395,
      "ok": true
     },
     "pdf_export": {
@@ -9190,15 +9224,15 @@
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 904,
+     "duration_ms": 912,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 233,
+     "duration_ms": 175,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 84,
+     "duration_ms": 81,
      "ok": true
     }
    },
@@ -9211,7 +9245,7 @@
    "app": "impress",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1318,
+   "duration_ms": 1168,
    "features": [
     "proprietary-fonts",
     "smartart"
@@ -9351,7 +9385,8 @@
      "(none)"
     ],
     "transitions_before": [],
-    "transitions_changed": true
+    "transitions_changed": true,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "sd/qa/unit/data/pptx/smartart-composite-infer-right.pptx",
@@ -9362,31 +9397,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 525,
+     "duration_ms": 519,
      "ok": true
     },
     "measure": {
-     "duration_ms": 118,
+     "duration_ms": 105,
      "ok": true
     },
     "open": {
-     "duration_ms": 289,
+     "duration_ms": 206,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 18,
+     "duration_ms": 14,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 79,
+     "duration_ms": 78,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 43,
+     "duration_ms": 36,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 21,
+     "duration_ms": 15,
      "ok": true
     }
    },
@@ -9399,7 +9434,7 @@
    "app": "impress",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1119,
+   "duration_ms": 1019,
    "features": [
     "alternate-content",
     "custom-xml",
@@ -9583,7 +9618,8 @@
      "p:fade",
      "p:fade"
     ],
-    "transitions_changed": false
+    "transitions_changed": false,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "sd/qa/unit/data/pptx/tablescale.pptx",
@@ -9594,31 +9630,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 519,
+     "duration_ms": 516,
      "ok": true
     },
     "measure": {
-     "duration_ms": 67,
+     "duration_ms": 61,
      "ok": true
     },
     "open": {
-     "duration_ms": 202,
+     "duration_ms": 188,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 13,
+     "duration_ms": 16,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 44,
+     "duration_ms": 41,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 36,
+     "duration_ms": 33,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 14,
+     "duration_ms": 13,
      "ok": true
     }
    },
@@ -9631,7 +9667,7 @@
    "app": "impress",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 2224,
+   "duration_ms": 2171,
    "features": [
     "alternate-content",
     "animations",
@@ -9823,7 +9859,8 @@
      "(none)"
     ],
     "transitions_before": [],
-    "transitions_changed": true
+    "transitions_changed": true,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "sd/qa/unit/data/pptx/tdf103477.pptx",
@@ -9834,31 +9871,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 522,
+     "duration_ms": 517,
      "ok": true
     },
     "measure": {
-     "duration_ms": 264,
+     "duration_ms": 235,
      "ok": true
     },
     "open": {
-     "duration_ms": 513,
+     "duration_ms": 508,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 21,
+     "duration_ms": 15,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 207,
+     "duration_ms": 188,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 359,
+     "duration_ms": 382,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 79,
+     "duration_ms": 109,
      "ok": true
     }
    },
@@ -9871,7 +9908,7 @@
    "app": "impress",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 2222,
+   "duration_ms": 2172,
    "features": [
     "animations",
     "groups",
@@ -10098,7 +10135,8 @@
      "(none)"
     ],
     "transitions_before": [],
-    "transitions_changed": true
+    "transitions_changed": true,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "sd/qa/unit/data/pptx/tdf104788.pptx",
@@ -10109,31 +10147,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 520,
+     "duration_ms": 522,
      "ok": true
     },
     "measure": {
-     "duration_ms": 344,
+     "duration_ms": 386,
      "ok": true
     },
     "open": {
-     "duration_ms": 471,
+     "duration_ms": 450,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 26,
+     "duration_ms": 28,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 362,
+     "duration_ms": 290,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 195,
+     "duration_ms": 197,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 59,
+     "duration_ms": 68,
      "ok": true
     }
    },
@@ -10146,7 +10184,7 @@
    "app": "impress",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1572,
+   "duration_ms": 1520,
    "features": [
     "alternate-content",
     "animations",
@@ -10313,7 +10351,8 @@
      "(none)",
      "(none)"
     ],
-    "transitions_changed": false
+    "transitions_changed": false,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "sd/qa/unit/data/pptx/tdf113163.pptx",
@@ -10328,27 +10367,27 @@
      "ok": true
     },
     "measure": {
-     "duration_ms": 45,
+     "duration_ms": 49,
      "ok": true
     },
     "open": {
-     "duration_ms": 416,
+     "duration_ms": 418,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 58,
+     "duration_ms": 56,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 37,
+     "duration_ms": 29,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 192,
+     "duration_ms": 161,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 104,
+     "duration_ms": 71,
      "ok": true
     }
    },
@@ -10361,7 +10400,7 @@
    "app": "impress",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1073,
+   "duration_ms": 1018,
    "features": [
     "proprietary-fonts",
     "tables"
@@ -10499,7 +10538,8 @@
      "(none)"
     ],
     "transitions_before": [],
-    "transitions_changed": true
+    "transitions_changed": true,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "sd/qa/unit/data/pptx/tdf119015.pptx",
@@ -10510,31 +10550,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 527,
+     "duration_ms": 522,
      "ok": true
     },
     "measure": {
-     "duration_ms": 51,
+     "duration_ms": 40,
      "ok": true
     },
     "open": {
-     "duration_ms": 194,
+     "duration_ms": 244,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 12,
+     "duration_ms": 11,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 31,
+     "duration_ms": 18,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 43,
+     "duration_ms": 26,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 12,
+     "duration_ms": 11,
      "ok": true
     }
    },
@@ -10547,7 +10587,7 @@
    "app": "impress",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1117,
+   "duration_ms": 1017,
    "features": [
     "alternate-content",
     "animations",
@@ -10722,7 +10762,8 @@
      "p:fade",
      "p:fade"
     ],
-    "transitions_changed": false
+    "transitions_changed": false,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "sd/qa/unit/data/pptx/tdf140714.pptx",
@@ -10733,31 +10774,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 521,
+     "duration_ms": 519,
      "ok": true
     },
     "measure": {
-     "duration_ms": 51,
+     "duration_ms": 47,
      "ok": true
     },
     "open": {
-     "duration_ms": 273,
+     "duration_ms": 191,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 23,
-     "ok": true
-    },
-    "remeasure": {
-     "duration_ms": 27,
-     "ok": true
-    },
-    "reopen": {
      "duration_ms": 30,
      "ok": true
     },
+    "remeasure": {
+     "duration_ms": 26,
+     "ok": true
+    },
+    "reopen": {
+     "duration_ms": 25,
+     "ok": true
+    },
     "roundtrip_save": {
-     "duration_ms": 14,
+     "duration_ms": 11,
      "ok": true
     }
    },
@@ -10770,7 +10811,7 @@
    "app": "impress",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 2223,
+   "duration_ms": 2170,
    "features": [
     "animations",
     "connectors",
@@ -10938,7 +10979,8 @@
      "(none)"
     ],
     "transitions_before": [],
-    "transitions_changed": true
+    "transitions_changed": true,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "sd/qa/unit/data/pptx/tdf141058-1.pptx",
@@ -10949,31 +10991,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 525,
+     "duration_ms": 518,
      "ok": true
     },
     "measure": {
-     "duration_ms": 376,
+     "duration_ms": 312,
      "ok": true
     },
     "open": {
-     "duration_ms": 544,
+     "duration_ms": 457,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 53,
+     "duration_ms": 52,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 275,
+     "duration_ms": 349,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 187,
+     "duration_ms": 185,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 46,
+     "duration_ms": 54,
      "ok": true
     }
    },
@@ -10986,7 +11028,7 @@
    "app": "impress",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1217,
+   "duration_ms": 1268,
    "features": [
     "connectors",
     "custom-xml",
@@ -11148,7 +11190,8 @@
      "p:fade",
      "p:fade"
     ],
-    "transitions_changed": false
+    "transitions_changed": false,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "sd/qa/unit/data/pptx/tdf146223.pptx",
@@ -11159,31 +11202,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 520,
+     "duration_ms": 519,
      "ok": true
     },
     "measure": {
-     "duration_ms": 109,
+     "duration_ms": 121,
      "ok": true
     },
     "open": {
-     "duration_ms": 235,
+     "duration_ms": 323,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 13,
+     "duration_ms": 12,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 81,
+     "duration_ms": 91,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 49,
+     "duration_ms": 47,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 18,
+     "duration_ms": 16,
      "ok": true
     }
    },
@@ -11196,7 +11239,7 @@
    "app": "impress",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1718,
+   "duration_ms": 1675,
    "features": [
     "alternate-content",
     "custom-xml",
@@ -11369,42 +11412,47 @@
      "morph",
      "p:fade"
     ],
-    "transitions_changed": true
+    "transitions_changed": true,
+    "transitions_lost": [
+     "morph"
+    ]
    },
    "package_error": "",
    "path": "sd/qa/unit/data/pptx/tdf149588_transparentSolidFill.pptx",
    "pdf_pages": 1,
-   "reasons": [],
+   "reasons": [
+    "transition-lost:morph"
+   ],
    "sha256": "d5a9b9da840042d8fa3dcdaf18ecbe8fe3f348bff67438c7c6ca3d07e43fea35",
    "source": "upstream-test-file",
-   "status": "pass",
+   "status": "partial",
    "steps": {
     "engine_start": {
      "duration_ms": 520,
      "ok": true
     },
     "measure": {
-     "duration_ms": 140,
+     "duration_ms": 154,
      "ok": true
     },
     "open": {
-     "duration_ms": 439,
+     "duration_ms": 387,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 15,
+     "duration_ms": 11,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 143,
+     "duration_ms": 134,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 203,
+     "duration_ms": 192,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 58,
+     "duration_ms": 47,
      "ok": true
     }
    },
@@ -11417,7 +11465,7 @@
    "app": "impress",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 3075,
+   "duration_ms": 3187,
    "features": [
     "alternate-content",
     "groups",
@@ -11612,7 +11660,8 @@
      "p:fade",
      "p:fade"
     ],
-    "transitions_changed": false
+    "transitions_changed": false,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "sd/qa/unit/data/pptx/tdf150770.pptx",
@@ -11623,31 +11672,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 520,
+     "duration_ms": 521,
      "ok": true
     },
     "measure": {
-     "duration_ms": 666,
+     "duration_ms": 617,
      "ok": true
     },
     "open": {
-     "duration_ms": 432,
+     "duration_ms": 465,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 364,
+     "duration_ms": 416,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 592,
+     "duration_ms": 649,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 188,
+     "duration_ms": 204,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 99,
+     "duration_ms": 71,
      "ok": true
     }
    },
@@ -11660,7 +11709,7 @@
    "app": "impress",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 2424,
+   "duration_ms": 2325,
    "features": [
     "alternate-content",
     "connectors",
@@ -11798,7 +11847,8 @@
      "(none)",
      "(none)"
     ],
-    "transitions_changed": false
+    "transitions_changed": false,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "sd/qa/unit/data/pptx/tdf152606.pptx",
@@ -11809,11 +11859,11 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 521,
+     "duration_ms": 519,
      "ok": true
     },
     "measure": {
-     "duration_ms": 139,
+     "duration_ms": 147,
      "ok": true
     },
     "open": {
@@ -11821,19 +11871,19 @@
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 125,
+     "duration_ms": 130,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 93,
+     "duration_ms": 96,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 630,
+     "duration_ms": 611,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 324,
+     "duration_ms": 231,
      "ok": true
     }
    },
@@ -11846,7 +11896,7 @@
    "app": "impress",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1168,
+   "duration_ms": 1017,
    "features": [
     "alternate-content",
     "images",
@@ -11998,42 +12048,49 @@
      "flythrough",
      "p:fade"
     ],
-    "transitions_changed": true
+    "transitions_changed": true,
+    "transitions_lost": [
+     "flythrough",
+     "p:fade"
+    ]
    },
    "package_error": "",
    "path": "sd/qa/unit/data/pptx/tdf156808.pptx",
    "pdf_pages": 1,
-   "reasons": [],
+   "reasons": [
+    "transition-lost:flythrough",
+    "transition-lost:p:fade"
+   ],
    "sha256": "0d57c775c27505280c33a81f712dab5fc63109bb87cfe1ec4a4b8c4569e9a871",
    "source": "upstream-test-file",
-   "status": "pass",
+   "status": "partial",
    "steps": {
     "engine_start": {
-     "duration_ms": 518,
+     "duration_ms": 517,
      "ok": true
     },
     "measure": {
-     "duration_ms": 69,
+     "duration_ms": 50,
      "ok": true
     },
     "open": {
-     "duration_ms": 204,
+     "duration_ms": 202,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 72,
+     "duration_ms": 52,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 38,
+     "duration_ms": 20,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 34,
+     "duration_ms": 28,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 16,
+     "duration_ms": 11,
      "ok": true
     }
    },
@@ -12046,7 +12103,7 @@
    "app": "impress",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1821,
+   "duration_ms": 1724,
    "features": [
     "alternate-content",
     "animations",
@@ -12285,7 +12342,8 @@
      "(none)"
     ],
     "transitions_before": [],
-    "transitions_changed": true
+    "transitions_changed": true,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "sd/qa/unit/data/pptx/tdf169781.pptx",
@@ -12298,31 +12356,31 @@
    "status": "partial",
    "steps": {
     "engine_start": {
-     "duration_ms": 525,
+     "duration_ms": 516,
      "ok": true
     },
     "measure": {
-     "duration_ms": 111,
+     "duration_ms": 135,
      "ok": true
     },
     "open": {
-     "duration_ms": 403,
+     "duration_ms": 345,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 266,
+     "duration_ms": 239,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 89,
+     "duration_ms": 95,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 104,
+     "duration_ms": 100,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 91,
+     "duration_ms": 94,
      "ok": true
     }
    },
@@ -12503,7 +12561,8 @@
     "transitions_before": [
      "(none)"
     ],
-    "transitions_changed": true
+    "transitions_changed": true,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "sd/qa/unit/data/pptx/tdf91060.pptx",
@@ -12514,31 +12573,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 518,
+     "duration_ms": 519,
      "ok": true
     },
     "measure": {
-     "duration_ms": 109,
+     "duration_ms": 102,
      "ok": true
     },
     "open": {
-     "duration_ms": 243,
+     "duration_ms": 258,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 23,
+     "duration_ms": 11,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 73,
+     "duration_ms": 78,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 55,
+     "duration_ms": 39,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 24,
+     "duration_ms": 18,
      "ok": true
     }
    },
@@ -12551,7 +12610,7 @@
    "app": "impress",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1518,
+   "duration_ms": 1418,
    "features": [
     "animations",
     "multi-slide",
@@ -12705,7 +12764,8 @@
     "part_kinds_lost": [],
     "transitions_after": [],
     "transitions_before": [],
-    "transitions_changed": false
+    "transitions_changed": false,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "sd/qa/unit/tiledrendering/data/PresentationInfoTest.odp",
@@ -12716,31 +12776,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 527,
+     "duration_ms": 519,
      "ok": true
     },
     "measure": {
-     "duration_ms": 153,
+     "duration_ms": 120,
      "ok": true
     },
     "open": {
-     "duration_ms": 238,
+     "duration_ms": 202,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 15,
+     "duration_ms": 12,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 110,
+     "duration_ms": 140,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 57,
+     "duration_ms": 58,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 137,
+     "duration_ms": 160,
      "ok": true
     }
    },
@@ -12753,7 +12813,7 @@
    "app": "impress",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1369,
+   "duration_ms": 1318,
    "features": [
     "many-layouts",
     "proprietary-fonts"
@@ -12895,7 +12955,8 @@
      "(none)"
     ],
     "transitions_before": [],
-    "transitions_changed": true
+    "transitions_changed": true,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "sd/qa/unit/tiledrendering/data/test.ppsx",
@@ -12906,31 +12967,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 522,
+     "duration_ms": 517,
      "ok": true
     },
     "measure": {
-     "duration_ms": 60,
+     "duration_ms": 71,
      "ok": true
     },
     "open": {
-     "duration_ms": 336,
+     "duration_ms": 305,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 13,
+     "duration_ms": 16,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 40,
+     "duration_ms": 39,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 145,
+     "duration_ms": 156,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 41,
+     "duration_ms": 49,
      "ok": true
     }
    },
@@ -12948,7 +13009,7 @@
      2
     ]
    },
-   "duration_ms": 2221,
+   "duration_ms": 2027,
    "features": [
     "bookmarks",
     "content-controls",
@@ -13162,7 +13223,8 @@
     ],
     "transitions_after": [],
     "transitions_before": [],
-    "transitions_changed": false
+    "transitions_changed": false,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "sw/qa/core/data/docm/testModernVBADelete.docm",
@@ -13179,27 +13241,27 @@
      "ok": true
     },
     "measure": {
-     "duration_ms": 492,
+     "duration_ms": 448,
      "ok": true
     },
     "open": {
-     "duration_ms": 364,
+     "duration_ms": 298,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 15,
+     "duration_ms": 10,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 416,
+     "duration_ms": 413,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 78,
+     "duration_ms": 77,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 62,
+     "duration_ms": 52,
      "ok": true
     }
    },
@@ -13212,7 +13274,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1919,
+   "duration_ms": 1721,
    "features": [
     "proprietary-fonts",
     "tables",
@@ -13334,7 +13396,8 @@
     "part_kinds_lost": [],
     "transitions_after": [],
     "transitions_before": [],
-    "transitions_changed": false
+    "transitions_changed": false,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "sw/qa/core/data/docm/testTables.docm",
@@ -13349,23 +13412,23 @@
      "ok": true
     },
     "measure": {
-     "duration_ms": 405,
+     "duration_ms": 358,
      "ok": true
     },
     "open": {
-     "duration_ms": 304,
+     "duration_ms": 254,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 10,
+     "duration_ms": 6,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 351,
+     "duration_ms": 338,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 54,
+     "duration_ms": 39,
      "ok": true
     },
     "roundtrip_save": {
@@ -13382,7 +13445,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1669,
+   "duration_ms": 1618,
    "features": [
     "endnotes",
     "footnotes"
@@ -13447,27 +13510,27 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 520,
+     "duration_ms": 517,
      "ok": true
     },
     "measure": {
-     "duration_ms": 389,
+     "duration_ms": 347,
      "ok": true
     },
     "open": {
-     "duration_ms": 200,
+     "duration_ms": 194,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 10,
+     "duration_ms": 9,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 338,
+     "duration_ms": 300,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 11,
+     "duration_ms": 13,
      "ok": true
     },
     "roundtrip_save": {
@@ -13484,7 +13547,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 3878,
+   "duration_ms": 3623,
    "features": [
     "alternate-content",
     "bookmarks",
@@ -13708,7 +13771,8 @@
     "part_kinds_lost": [],
     "transitions_after": [],
     "transitions_before": [],
-    "transitions_changed": false
+    "transitions_changed": false,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "sw/qa/extras/docbookexport/data/tdf91095.docx",
@@ -13719,31 +13783,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 520,
+     "duration_ms": 519,
      "ok": true
     },
     "measure": {
-     "duration_ms": 1322,
+     "duration_ms": 1212,
      "ok": true
     },
     "open": {
-     "duration_ms": 337,
+     "duration_ms": 393,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 40,
+     "duration_ms": 41,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 1133,
+     "duration_ms": 1042,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 86,
+     "duration_ms": 92,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 24,
+     "duration_ms": 23,
      "ok": true
     }
    },
@@ -13756,7 +13820,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1818,
+   "duration_ms": 1868,
    "features": [
     "images",
     "ole"
@@ -13825,27 +13889,27 @@
      "ok": true
     },
     "measure": {
-     "duration_ms": 371,
+     "duration_ms": 375,
      "ok": true
     },
     "open": {
-     "duration_ms": 264,
+     "duration_ms": 342,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 78,
+     "duration_ms": 60,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 320,
+     "duration_ms": 284,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 50,
+     "duration_ms": 47,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 18,
+     "duration_ms": 15,
      "ok": true
     }
    },
@@ -13858,7 +13922,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 5281,
+   "duration_ms": 4776,
    "features": [
     "alternate-content",
     "bookmarks",
@@ -14065,7 +14129,8 @@
     ],
     "transitions_after": [],
     "transitions_before": [],
-    "transitions_changed": false
+    "transitions_changed": false,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "sw/qa/extras/layout/data/tdf164905.docx",
@@ -14076,15 +14141,15 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 523,
+     "duration_ms": 520,
      "ok": true
     },
     "measure": {
-     "duration_ms": 2186,
+     "duration_ms": 1959,
      "ok": true
     },
     "open": {
-     "duration_ms": 328,
+     "duration_ms": 294,
      "ok": true
     },
     "pdf_export": {
@@ -14092,11 +14157,11 @@
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 1857,
+     "duration_ms": 1637,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 70,
+     "duration_ms": 67,
      "ok": true
     },
     "roundtrip_save": {
@@ -14113,7 +14178,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 2169,
+   "duration_ms": 1868,
    "features": [
     "bookmarks",
     "charts",
@@ -14230,7 +14295,8 @@
     "part_kinds_lost": [],
     "transitions_after": [],
     "transitions_before": [],
-    "transitions_changed": false
+    "transitions_changed": false,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "sw/qa/extras/odfexport/data/tdf134987.docx",
@@ -14241,31 +14307,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 529,
+     "duration_ms": 517,
      "ok": true
     },
     "measure": {
-     "duration_ms": 430,
+     "duration_ms": 334,
      "ok": true
     },
     "open": {
-     "duration_ms": 392,
+     "duration_ms": 334,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 37,
+     "duration_ms": 30,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 383,
+     "duration_ms": 331,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 113,
+     "duration_ms": 90,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 39,
+     "duration_ms": 26,
      "ok": true
     }
    },
@@ -14278,7 +14344,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 2524,
+   "duration_ms": 2319,
    "features": [
     "bookmarks",
     "comments",
@@ -14390,7 +14456,8 @@
     "part_kinds_lost": [],
     "transitions_after": [],
     "transitions_before": [],
-    "transitions_changed": false
+    "transitions_changed": false,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "sw/qa/extras/odfexport/data/whitespace.odt",
@@ -14401,31 +14468,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 524,
+     "duration_ms": 519,
      "ok": true
     },
     "measure": {
-     "duration_ms": 613,
+     "duration_ms": 587,
      "ok": true
     },
     "open": {
-     "duration_ms": 279,
+     "duration_ms": 247,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 10,
+     "duration_ms": 12,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 625,
+     "duration_ms": 510,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 19,
+     "duration_ms": 25,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 187,
+     "duration_ms": 192,
      "ok": true
     }
    },
@@ -14438,7 +14505,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1821,
+   "duration_ms": 1623,
    "features": [
     "comments",
     "custom-xml",
@@ -14552,7 +14619,8 @@
     "part_kinds_lost": [],
     "transitions_after": [],
     "transitions_before": [],
-    "transitions_changed": false
+    "transitions_changed": false,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "sw/qa/extras/ooxmlexport/data/fdo38244.docx",
@@ -14563,23 +14631,23 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 522,
+     "duration_ms": 520,
      "ok": true
     },
     "measure": {
-     "duration_ms": 426,
+     "duration_ms": 337,
      "ok": true
     },
     "open": {
-     "duration_ms": 280,
+     "duration_ms": 243,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 11,
+     "duration_ms": 8,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 329,
+     "duration_ms": 270,
      "ok": true
     },
     "reopen": {
@@ -14587,7 +14655,7 @@
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 11,
+     "duration_ms": 6,
      "ok": true
     }
    },
@@ -14600,7 +14668,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 2425,
+   "duration_ms": 2173,
    "features": [
     "bookmarks",
     "charts",
@@ -14738,7 +14806,8 @@
     "part_kinds_lost": [],
     "transitions_after": [],
     "transitions_before": [],
-    "transitions_changed": false
+    "transitions_changed": false,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "sw/qa/extras/ooxmlexport/data/fdo76098.docx",
@@ -14749,27 +14818,27 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 519,
-     "ok": true
-    },
-    "measure": {
-     "duration_ms": 629,
-     "ok": true
-    },
-    "open": {
-     "duration_ms": 457,
-     "ok": true
-    },
-    "pdf_export": {
-     "duration_ms": 31,
-     "ok": true
-    },
-    "remeasure": {
      "duration_ms": 515,
      "ok": true
     },
+    "measure": {
+     "duration_ms": 569,
+     "ok": true
+    },
+    "open": {
+     "duration_ms": 326,
+     "ok": true
+    },
+    "pdf_export": {
+     "duration_ms": 34,
+     "ok": true
+    },
+    "remeasure": {
+     "duration_ms": 456,
+     "ok": true
+    },
     "reopen": {
-     "duration_ms": 62,
+     "duration_ms": 64,
      "ok": true
     },
     "roundtrip_save": {
@@ -14786,7 +14855,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 2522,
+   "duration_ms": 2319,
    "features": [
     "alternate-content",
     "bookmarks",
@@ -14966,7 +15035,8 @@
     ],
     "transitions_after": [],
     "transitions_before": [],
-    "transitions_changed": false
+    "transitions_changed": false,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "sw/qa/extras/ooxmlexport/data/FDO76312.docx",
@@ -14981,11 +15051,11 @@
      "ok": true
     },
     "measure": {
-     "duration_ms": 908,
+     "duration_ms": 817,
      "ok": true
     },
     "open": {
-     "duration_ms": 313,
+     "duration_ms": 271,
      "ok": true
     },
     "pdf_export": {
@@ -14993,15 +15063,15 @@
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 421,
+     "duration_ms": 371,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 63,
+     "duration_ms": 64,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 19,
+     "duration_ms": 13,
      "ok": true
     }
    },
@@ -15014,7 +15084,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 7082,
+   "duration_ms": 7483,
    "features": [
     "alternate-content",
     "bookmarks",
@@ -15187,7 +15257,8 @@
     ],
     "transitions_after": [],
     "transitions_before": [],
-    "transitions_changed": false
+    "transitions_changed": false,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "sw/qa/extras/ooxmlexport/data/fdo78420.docx",
@@ -15202,27 +15273,27 @@
      "ok": true
     },
     "measure": {
-     "duration_ms": 2127,
+     "duration_ms": 2009,
      "ok": true
     },
     "open": {
-     "duration_ms": 394,
+     "duration_ms": 547,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 1499,
+     "duration_ms": 1618,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 1876,
+     "duration_ms": 2227,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 124,
+     "duration_ms": 122,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 35,
+     "duration_ms": 42,
      "ok": true
     }
    },
@@ -15235,7 +15306,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 5680,
+   "duration_ms": 6031,
    "features": [
     "groups",
     "hyperlinks",
@@ -15413,7 +15484,8 @@
     "part_kinds_lost": [],
     "transitions_after": [],
     "transitions_before": [],
-    "transitions_changed": false
+    "transitions_changed": false,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "sw/qa/extras/ooxmlexport/data/ooo96040-2.odt",
@@ -15424,31 +15496,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 518,
+     "duration_ms": 517,
      "ok": true
     },
     "measure": {
-     "duration_ms": 1901,
+     "duration_ms": 1868,
      "ok": true
     },
     "open": {
-     "duration_ms": 403,
+     "duration_ms": 371,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 198,
+     "duration_ms": 203,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 1883,
+     "duration_ms": 2278,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 149,
+     "duration_ms": 101,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 424,
+     "duration_ms": 398,
      "ok": true
     }
    },
@@ -15461,7 +15533,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1618,
+   "duration_ms": 1771,
    "features": [
     "bookmarks",
     "proprietary-fonts"
@@ -15566,7 +15638,8 @@
     "part_kinds_lost": [],
     "transitions_after": [],
     "transitions_before": [],
-    "transitions_changed": false
+    "transitions_changed": false,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "sw/qa/extras/ooxmlexport/data/sample.dotx",
@@ -15577,31 +15650,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 521,
+     "duration_ms": 524,
      "ok": true
     },
     "measure": {
-     "duration_ms": 280,
+     "duration_ms": 355,
      "ok": true
     },
     "open": {
-     "duration_ms": 269,
+     "duration_ms": 202,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 8,
+     "duration_ms": 11,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 295,
+     "duration_ms": 384,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 18,
+     "duration_ms": 28,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 34,
+     "duration_ms": 9,
      "ok": true
     }
    },
@@ -15614,7 +15687,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1818,
+   "duration_ms": 2471,
    "features": [
     "charts",
     "headers-footers",
@@ -15772,7 +15845,8 @@
     ],
     "transitions_after": [],
     "transitions_before": [],
-    "transitions_changed": false
+    "transitions_changed": false,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "sw/qa/extras/ooxmlexport/data/strict.docx",
@@ -15783,31 +15857,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 518,
+     "duration_ms": 776,
      "ok": true
     },
     "measure": {
-     "duration_ms": 352,
+     "duration_ms": 477,
      "ok": true
     },
     "open": {
-     "duration_ms": 319,
+     "duration_ms": 418,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 21,
+     "duration_ms": 27,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 278,
+     "duration_ms": 335,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 92,
+     "duration_ms": 149,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 23,
+     "duration_ms": 31,
      "ok": true
     }
    },
@@ -15820,7 +15894,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1718,
+   "duration_ms": 1822,
    "features": [
     "proprietary-fonts",
     "smartart"
@@ -15921,7 +15995,8 @@
     "part_kinds_lost": [],
     "transitions_after": [],
     "transitions_before": [],
-    "transitions_changed": false
+    "transitions_changed": false,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "sw/qa/extras/ooxmlexport/data/strict-smartart.docx",
@@ -15932,31 +16007,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 519,
+     "duration_ms": 529,
      "ok": true
     },
     "measure": {
-     "duration_ms": 340,
+     "duration_ms": 338,
      "ok": true
     },
     "open": {
-     "duration_ms": 292,
+     "duration_ms": 304,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 13,
+     "duration_ms": 8,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 264,
+     "duration_ms": 376,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 52,
+     "duration_ms": 43,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 23,
+     "duration_ms": 10,
      "ok": true
     }
    },
@@ -15978,7 +16053,7 @@
      20
     ]
    },
-   "duration_ms": 5479,
+   "duration_ms": 5884,
    "features": [
     "alternate-content",
     "bookmarks",
@@ -16221,7 +16296,8 @@
     "part_kinds_lost": [],
     "transitions_after": [],
     "transitions_before": [],
-    "transitions_changed": false
+    "transitions_changed": false,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "sw/qa/extras/ooxmlexport/data/tdf102466.docx",
@@ -16235,31 +16311,31 @@
    "status": "partial",
    "steps": {
     "engine_start": {
-     "duration_ms": 519,
+     "duration_ms": 521,
      "ok": true
     },
     "measure": {
-     "duration_ms": 2034,
+     "duration_ms": 2246,
      "ok": true
     },
     "open": {
-     "duration_ms": 405,
+     "duration_ms": 379,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 60,
+     "duration_ms": 59,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 2035,
+     "duration_ms": 2140,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 150,
+     "duration_ms": 165,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 35,
+     "duration_ms": 30,
      "ok": true
     }
    },
@@ -16272,7 +16348,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1719,
+   "duration_ms": 1768,
    "features": [
     "endnotes",
     "footnotes",
@@ -16386,7 +16462,8 @@
     "part_kinds_lost": [],
     "transitions_after": [],
     "transitions_before": [],
-    "transitions_changed": false
+    "transitions_changed": false,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "sw/qa/extras/ooxmlexport/data/tdf121784.docx",
@@ -16397,27 +16474,27 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 519,
+     "duration_ms": 520,
      "ok": true
     },
     "measure": {
-     "duration_ms": 379,
+     "duration_ms": 413,
      "ok": true
     },
     "open": {
-     "duration_ms": 256,
+     "duration_ms": 253,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 8,
+     "duration_ms": 10,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 337,
+     "duration_ms": 327,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 21,
+     "duration_ms": 19,
      "ok": true
     },
     "roundtrip_save": {
@@ -16439,7 +16516,7 @@
      18
     ]
    },
-   "duration_ms": 2273,
+   "duration_ms": 2570,
    "features": [
     "bookmarks",
     "content-controls",
@@ -16652,7 +16729,8 @@
     ],
     "transitions_after": [],
     "transitions_before": [],
-    "transitions_changed": false
+    "transitions_changed": false,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "sw/qa/extras/ooxmlexport/data/tdf123705.docx",
@@ -16665,15 +16743,15 @@
    "status": "partial",
    "steps": {
     "engine_start": {
-     "duration_ms": 518,
+     "duration_ms": 533,
      "ok": true
     },
     "measure": {
-     "duration_ms": 506,
+     "duration_ms": 518,
      "ok": true
     },
     "open": {
-     "duration_ms": 345,
+     "duration_ms": 407,
      "ok": true
     },
     "pdf_export": {
@@ -16681,11 +16759,11 @@
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 440,
+     "duration_ms": 528,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 176,
+     "duration_ms": 184,
      "ok": true
     },
     "roundtrip_save": {
@@ -16702,7 +16780,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 2121,
+   "duration_ms": 2275,
    "features": [
     "bookmarks",
     "content-controls",
@@ -16894,7 +16972,8 @@
     ],
     "transitions_after": [],
     "transitions_before": [],
-    "transitions_changed": false
+    "transitions_changed": false,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "sw/qa/extras/ooxmlexport/data/tdf124637_sectionMargin.docx",
@@ -16905,15 +16984,15 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 519,
+     "duration_ms": 523,
      "ok": true
     },
     "measure": {
-     "duration_ms": 534,
+     "duration_ms": 631,
      "ok": true
     },
     "open": {
-     "duration_ms": 246,
+     "duration_ms": 250,
      "ok": true
     },
     "pdf_export": {
@@ -16921,15 +17000,15 @@
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 514,
+     "duration_ms": 580,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 47,
+     "duration_ms": 57,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 9,
+     "duration_ms": 11,
      "ok": true
     }
    },
@@ -16942,7 +17021,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 8540,
+   "duration_ms": 8790,
    "features": [
     "bookmarks",
     "footnotes",
@@ -17122,7 +17201,8 @@
     ],
     "transitions_after": [],
     "transitions_before": [],
-    "transitions_changed": false
+    "transitions_changed": false,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "sw/qa/extras/ooxmlexport/data/tdf146955.odt",
@@ -17133,31 +17213,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 517,
+     "duration_ms": 519,
      "ok": true
     },
     "measure": {
-     "duration_ms": 2704,
+     "duration_ms": 2823,
      "ok": true
     },
     "open": {
-     "duration_ms": 511,
+     "duration_ms": 564,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 692,
+     "duration_ms": 829,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 2892,
+     "duration_ms": 2864,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 136,
+     "duration_ms": 138,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 460,
+     "duration_ms": 439,
      "ok": true
     }
    },
@@ -17177,7 +17257,7 @@
      {}
     ]
    },
-   "duration_ms": 3422,
+   "duration_ms": 3480,
    "features": [
     "alternate-content",
     "bookmarks",
@@ -17419,7 +17499,8 @@
     ],
     "transitions_after": [],
     "transitions_before": [],
-    "transitions_changed": false
+    "transitions_changed": false,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "sw/qa/extras/ooxmlexport/data/tdf154478.docx",
@@ -17432,31 +17513,31 @@
    "status": "partial",
    "steps": {
     "engine_start": {
-     "duration_ms": 518,
+     "duration_ms": 519,
      "ok": true
     },
     "measure": {
-     "duration_ms": 1330,
+     "duration_ms": 1248,
      "ok": true
     },
     "open": {
-     "duration_ms": 411,
+     "duration_ms": 450,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 23,
+     "duration_ms": 32,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 850,
+     "duration_ms": 908,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 59,
+     "duration_ms": 80,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 20,
+     "duration_ms": 21,
      "ok": true
     }
    },
@@ -17476,7 +17557,7 @@
      {}
     ]
    },
-   "duration_ms": 3746,
+   "duration_ms": 3735,
    "features": [
     "alternate-content",
     "bookmarks",
@@ -17718,7 +17799,8 @@
     ],
     "transitions_after": [],
     "transitions_before": [],
-    "transitions_changed": false
+    "transitions_changed": false,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "sw/qa/extras/ooxmlexport/data/tdf154481.docx",
@@ -17731,31 +17813,31 @@
    "status": "partial",
    "steps": {
     "engine_start": {
-     "duration_ms": 521,
+     "duration_ms": 520,
      "ok": true
     },
     "measure": {
-     "duration_ms": 1431,
+     "duration_ms": 1427,
      "ok": true
     },
     "open": {
-     "duration_ms": 457,
+     "duration_ms": 415,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 27,
+     "duration_ms": 23,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 979,
+     "duration_ms": 997,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 76,
+     "duration_ms": 66,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 23,
+     "duration_ms": 24,
      "ok": true
     }
    },
@@ -17768,7 +17850,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 4479,
+   "duration_ms": 4632,
    "features": [
     "bookmarks",
     "content-controls",
@@ -18020,7 +18102,8 @@
     ],
     "transitions_after": [],
     "transitions_before": [],
-    "transitions_changed": false
+    "transitions_changed": false,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "sw/qa/extras/ooxmlexport/data/tdf170602_exportContext.docx",
@@ -18031,31 +18114,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 520,
+     "duration_ms": 521,
      "ok": true
     },
     "measure": {
-     "duration_ms": 1653,
+     "duration_ms": 1789,
      "ok": true
     },
     "open": {
-     "duration_ms": 301,
+     "duration_ms": 326,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 51,
+     "duration_ms": 40,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 1556,
+     "duration_ms": 1604,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 88,
+     "duration_ms": 98,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 21,
+     "duration_ms": 19,
      "ok": true
     }
    },
@@ -18068,7 +18151,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1870,
+   "duration_ms": 2019,
    "features": [
     "multi-master",
     "proprietary-fonts"
@@ -18157,7 +18240,8 @@
     "part_kinds_lost": [],
     "transitions_after": [],
     "transitions_before": [],
-    "transitions_changed": false
+    "transitions_changed": false,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "sw/qa/extras/ooxmlexport/data/tdf171025_pageAfter.docx",
@@ -18168,31 +18252,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 518,
+     "duration_ms": 522,
      "ok": true
     },
     "measure": {
-     "duration_ms": 355,
+     "duration_ms": 410,
      "ok": true
     },
     "open": {
-     "duration_ms": 240,
+     "duration_ms": 269,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 9,
+     "duration_ms": 10,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 289,
+     "duration_ms": 331,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 22,
+     "duration_ms": 29,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 204,
+     "duration_ms": 192,
      "ok": true
     }
    },
@@ -18205,7 +18289,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 4580,
+   "duration_ms": 4579,
    "features": [
     "alternate-content",
     "bookmarks",
@@ -18465,7 +18549,8 @@
     ],
     "transitions_after": [],
     "transitions_before": [],
-    "transitions_changed": false
+    "transitions_changed": false,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "sw/qa/extras/ooxmlexport/data/wDateValueFormat.docx",
@@ -18476,31 +18561,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 520,
+     "duration_ms": 522,
      "ok": true
     },
     "measure": {
-     "duration_ms": 1395,
+     "duration_ms": 1335,
      "ok": true
     },
     "open": {
-     "duration_ms": 641,
+     "duration_ms": 668,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 135,
+     "duration_ms": 153,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 1167,
+     "duration_ms": 1146,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 301,
+     "duration_ms": 291,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 86,
+     "duration_ms": 64,
      "ok": true
     }
    },
@@ -18513,7 +18598,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1621,
+   "duration_ms": 1570,
    "features": [
     "ole",
     "proprietary-fonts"
@@ -18623,7 +18708,8 @@
     "part_kinds_lost": [],
     "transitions_after": [],
     "transitions_before": [],
-    "transitions_changed": false
+    "transitions_changed": false,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "sw/qa/extras/ooxmlimport/data/n777345.docx",
@@ -18634,31 +18720,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 522,
+     "duration_ms": 519,
      "ok": true
     },
     "measure": {
-     "duration_ms": 324,
+     "duration_ms": 333,
      "ok": true
     },
     "open": {
-     "duration_ms": 224,
+     "duration_ms": 227,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 6,
+     "duration_ms": 13,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 293,
+     "duration_ms": 262,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 18,
+     "duration_ms": 19,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 7,
+     "duration_ms": 6,
      "ok": true
     }
    },
@@ -18671,7 +18757,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1522,
+   "duration_ms": 1577,
    "features": [
     "images",
     "ole"
@@ -18734,27 +18820,27 @@
      "ok": true
     },
     "measure": {
-     "duration_ms": 286,
+     "duration_ms": 277,
      "ok": true
     },
     "open": {
-     "duration_ms": 175,
+     "duration_ms": 201,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 11,
+     "duration_ms": 9,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 249,
+     "duration_ms": 290,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 34,
+     "duration_ms": 39,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 41,
+     "duration_ms": 42,
      "ok": true
     }
    },
@@ -18767,7 +18853,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1621,
+   "duration_ms": 1518,
    "features": [
     "lists"
    ],
@@ -18829,23 +18915,23 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 521,
+     "duration_ms": 519,
      "ok": true
     },
     "measure": {
-     "duration_ms": 332,
+     "duration_ms": 275,
      "ok": true
     },
     "open": {
-     "duration_ms": 192,
+     "duration_ms": 168,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 10,
+     "duration_ms": 11,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 318,
+     "duration_ms": 277,
      "ok": true
     },
     "reopen": {
@@ -18853,7 +18939,7 @@
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 8,
+     "duration_ms": 40,
      "ok": true
     }
    },
@@ -18866,7 +18952,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1518,
+   "duration_ms": 1619,
    "features": [
     "math"
    ],
@@ -18924,15 +19010,15 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 520,
+     "duration_ms": 522,
      "ok": true
     },
     "measure": {
-     "duration_ms": 284,
+     "duration_ms": 374,
      "ok": true
     },
     "open": {
-     "duration_ms": 186,
+     "duration_ms": 185,
      "ok": true
     },
     "pdf_export": {
@@ -18940,15 +19026,15 @@
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 267,
+     "duration_ms": 260,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 22,
+     "duration_ms": 21,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 39,
+     "duration_ms": 12,
      "ok": true
     }
    },
@@ -18961,7 +19047,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1567,
+   "duration_ms": 1617,
    "features": [
     "toc"
    ],
@@ -19025,31 +19111,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 517,
+     "duration_ms": 519,
      "ok": true
     },
     "measure": {
-     "duration_ms": 347,
+     "duration_ms": 370,
      "ok": true
     },
     "open": {
-     "duration_ms": 173,
+     "duration_ms": 206,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 11,
+     "duration_ms": 9,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 296,
+     "duration_ms": 269,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 20,
+     "duration_ms": 15,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 11,
+     "duration_ms": 8,
      "ok": true
     }
    },
@@ -19062,7 +19148,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1518,
+   "duration_ms": 1517,
    "features": [
     "groups",
     "textboxes"
@@ -19130,15 +19216,15 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 517,
+     "duration_ms": 516,
      "ok": true
     },
     "measure": {
-     "duration_ms": 281,
+     "duration_ms": 265,
      "ok": true
     },
     "open": {
-     "duration_ms": 231,
+     "duration_ms": 172,
      "ok": true
     },
     "pdf_export": {
@@ -19146,15 +19232,15 @@
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 216,
+     "duration_ms": 285,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 17,
+     "duration_ms": 18,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 41,
+     "duration_ms": 10,
      "ok": true
     }
    },
@@ -19167,7 +19253,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1621,
+   "duration_ms": 1670,
    "features": [
     "groups",
     "textboxes"
@@ -19235,27 +19321,27 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 519,
+     "duration_ms": 520,
      "ok": true
     },
     "measure": {
-     "duration_ms": 319,
+     "duration_ms": 343,
      "ok": true
     },
     "open": {
-     "duration_ms": 172,
+     "duration_ms": 215,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 8,
+     "duration_ms": 11,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 333,
+     "duration_ms": 336,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 21,
+     "duration_ms": 18,
      "ok": true
     },
     "roundtrip_save": {
@@ -19272,7 +19358,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1919,
+   "duration_ms": 1971,
    "features": [
     "multi-master",
     "signature",
@@ -19377,7 +19463,8 @@
     ],
     "transitions_after": [],
     "transitions_before": [],
-    "transitions_changed": false
+    "transitions_changed": false,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "sw/qa/extras/tiledrendering/data/signed-doc.odt",
@@ -19392,15 +19479,15 @@
      "ok": true
     },
     "measure": {
-     "duration_ms": 347,
+     "duration_ms": 354,
      "ok": true
     },
     "open": {
-     "duration_ms": 289,
+     "duration_ms": 312,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 7,
+     "duration_ms": 9,
      "ok": true
     },
     "remeasure": {
@@ -19408,11 +19495,11 @@
      "ok": true
     },
     "reopen": {
-     "duration_ms": 22,
+     "duration_ms": 20,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 229,
+     "duration_ms": 196,
      "ok": true
     }
    },
@@ -19425,7 +19512,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1570,
+   "duration_ms": 1619,
    "features": [
     "bookmarks",
     "proprietary-fonts"
@@ -19530,7 +19617,8 @@
     "part_kinds_lost": [],
     "transitions_after": [],
     "transitions_before": [],
-    "transitions_changed": false
+    "transitions_changed": false,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "sw/qa/extras/uiwriter/data/autotext-empty.dotx",
@@ -19541,15 +19629,15 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 519,
+     "duration_ms": 522,
      "ok": true
     },
     "measure": {
-     "duration_ms": 316,
+     "duration_ms": 345,
      "ok": true
     },
     "open": {
-     "duration_ms": 197,
+     "duration_ms": 207,
      "ok": true
     },
     "pdf_export": {
@@ -19557,15 +19645,15 @@
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 261,
+     "duration_ms": 293,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 20,
+     "duration_ms": 22,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 8,
+     "duration_ms": 7,
      "ok": true
     }
    },
@@ -19578,7 +19666,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 2022,
+   "duration_ms": 1970,
    "features": [
     "bookmarks",
     "multi-master",
@@ -19694,7 +19782,8 @@
     "part_kinds_lost": [],
     "transitions_after": [],
     "transitions_before": [],
-    "transitions_changed": false
+    "transitions_changed": false,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "sw/qa/extras/uiwriter/data/tdf132596.docx",
@@ -19709,11 +19798,11 @@
      "ok": true
     },
     "measure": {
-     "duration_ms": 376,
+     "duration_ms": 336,
      "ok": true
     },
     "open": {
-     "duration_ms": 289,
+     "duration_ms": 287,
      "ok": true
     },
     "pdf_export": {
@@ -19721,15 +19810,15 @@
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 344,
+     "duration_ms": 358,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 23,
+     "duration_ms": 26,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 209,
+     "duration_ms": 172,
      "ok": true
     }
    },
@@ -19747,7 +19836,7 @@
      4
     ]
    },
-   "duration_ms": 3422,
+   "duration_ms": 3425,
    "features": [
     "alternate-content",
     "bookmarks",
@@ -20012,7 +20101,8 @@
     ],
     "transitions_after": [],
     "transitions_before": [],
-    "transitions_changed": false
+    "transitions_changed": false,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "sw/qa/extras/uiwriter/data/tdf157131.docx",
@@ -20026,31 +20116,31 @@
    "status": "partial",
    "steps": {
     "engine_start": {
-     "duration_ms": 522,
+     "duration_ms": 521,
      "ok": true
     },
     "measure": {
-     "duration_ms": 1245,
+     "duration_ms": 1143,
      "ok": true
     },
     "open": {
-     "duration_ms": 321,
+     "duration_ms": 369,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 27,
+     "duration_ms": 26,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 916,
+     "duration_ms": 883,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 77,
+     "duration_ms": 69,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 23,
+     "duration_ms": 19,
      "ok": true
     }
    },
@@ -20063,7 +20153,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1868,
+   "duration_ms": 1869,
    "features": [
     "comments",
     "images",
@@ -20170,7 +20260,8 @@
     "part_kinds_lost": [],
     "transitions_after": [],
     "transitions_before": [],
-    "transitions_changed": false
+    "transitions_changed": false,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "sw/qa/extras/unowriter/data/image-comment-at-char.odt",
@@ -20181,31 +20272,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 518,
+     "duration_ms": 520,
      "ok": true
     },
     "measure": {
-     "duration_ms": 349,
+     "duration_ms": 337,
      "ok": true
     },
     "open": {
-     "duration_ms": 231,
+     "duration_ms": 270,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 13,
+     "duration_ms": 12,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 328,
+     "duration_ms": 296,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 21,
+     "duration_ms": 22,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 202,
+     "duration_ms": 192,
      "ok": true
     }
    },
@@ -20218,7 +20309,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1671,
+   "duration_ms": 1673,
    "features": [
     "comments",
     "tables"
@@ -20285,31 +20376,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 519,
+     "duration_ms": 521,
      "ok": true
     },
     "measure": {
-     "duration_ms": 331,
-     "ok": true
-    },
-    "open": {
-     "duration_ms": 189,
-     "ok": true
-    },
-    "pdf_export": {
-     "duration_ms": 11,
-     "ok": true
-    },
-    "remeasure": {
      "duration_ms": 347,
      "ok": true
     },
+    "open": {
+     "duration_ms": 214,
+     "ok": true
+    },
+    "pdf_export": {
+     "duration_ms": 10,
+     "ok": true
+    },
+    "remeasure": {
+     "duration_ms": 352,
+     "ok": true
+    },
     "reopen": {
-     "duration_ms": 15,
+     "duration_ms": 17,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 6,
+     "duration_ms": 5,
      "ok": true
     }
    },
@@ -20322,7 +20413,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1618,
+   "duration_ms": 1719,
    "features": [
     "comments",
     "images"
@@ -20389,15 +20480,15 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 518,
+     "duration_ms": 522,
      "ok": true
     },
     "measure": {
-     "duration_ms": 365,
+     "duration_ms": 399,
      "ok": true
     },
     "open": {
-     "duration_ms": 205,
+     "duration_ms": 204,
      "ok": true
     },
     "pdf_export": {
@@ -20405,15 +20496,15 @@
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 276,
+     "duration_ms": 323,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 17,
+     "duration_ms": 14,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 6,
+     "duration_ms": 9,
      "ok": true
     }
    },
@@ -20426,7 +20517,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1719,
+   "duration_ms": 1722,
    "features": [
     "lists",
     "ole"
@@ -20491,27 +20582,27 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 523,
+     "duration_ms": 524,
      "ok": true
     },
     "measure": {
-     "duration_ms": 386,
+     "duration_ms": 374,
      "ok": true
     },
     "open": {
-     "duration_ms": 199,
+     "duration_ms": 218,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 13,
+     "duration_ms": 10,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 341,
+     "duration_ms": 354,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 15,
+     "duration_ms": 14,
      "ok": true
     },
     "roundtrip_save": {
@@ -20528,7 +20619,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1668,
+   "duration_ms": 1818,
    "features": [
     "footnotes",
     "tracked-changes"
@@ -20601,31 +20692,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 521,
+     "duration_ms": 519,
      "ok": true
     },
     "measure": {
-     "duration_ms": 420,
+     "duration_ms": 435,
      "ok": true
     },
     "open": {
-     "duration_ms": 189,
+     "duration_ms": 230,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 11,
+     "duration_ms": 12,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 293,
+     "duration_ms": 365,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 15,
+     "duration_ms": 17,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 6,
+     "duration_ms": 7,
      "ok": true
     }
    },
@@ -20638,7 +20729,7 @@
    "app": "impress",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 1317,
+   "duration_ms": 1368,
    "features": [
     "animations",
     "groups",
@@ -20769,7 +20860,8 @@
     "part_kinds_lost": [],
     "transitions_after": [],
     "transitions_before": [],
-    "transitions_changed": false
+    "transitions_changed": false,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "sd/qa/unit/tiledrendering/data/SlideRenderingTest_Animated_Groups.odp",
@@ -20780,31 +20872,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 518,
+     "duration_ms": 522,
      "ok": true
     },
     "measure": {
-     "duration_ms": 89,
+     "duration_ms": 105,
      "ok": true
     },
     "open": {
-     "duration_ms": 212,
+     "duration_ms": 205,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 10,
+     "duration_ms": 12,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 84,
+     "duration_ms": 76,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 49,
+     "duration_ms": 59,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 179,
+     "duration_ms": 178,
      "ok": true
     }
    },
@@ -20817,7 +20909,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 2323,
+   "duration_ms": 2371,
    "features": [
     "alternate-content",
     "bookmarks",
@@ -21029,7 +21121,8 @@
     ],
     "transitions_after": [],
     "transitions_before": [],
-    "transitions_changed": false
+    "transitions_changed": false,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "sw/qa/extras/ooxmlexport/data/test_segfault_while_save.docx",
@@ -21048,23 +21141,23 @@
      "ok": true
     },
     "open": {
-     "duration_ms": 431,
+     "duration_ms": 396,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 53,
+     "duration_ms": 51,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 397,
+     "duration_ms": 364,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 146,
+     "duration_ms": 160,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 33,
+     "duration_ms": 25,
      "ok": true
     }
    },
@@ -21194,7 +21287,8 @@
     "part_kinds_lost": [],
     "transitions_after": [],
     "transitions_before": [],
-    "transitions_changed": false
+    "transitions_changed": false,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "sw/qa/writerfilter/filter/data/inline-endnote-and-footnote.docx",
@@ -21205,31 +21299,31 @@
    "status": "pass",
    "steps": {
     "engine_start": {
-     "duration_ms": 520,
+     "duration_ms": 521,
      "ok": true
     },
     "measure": {
-     "duration_ms": 389,
+     "duration_ms": 398,
      "ok": true
     },
     "open": {
-     "duration_ms": 309,
+     "duration_ms": 271,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 11,
+     "duration_ms": 15,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 325,
+     "duration_ms": 358,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 25,
+     "duration_ms": 30,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 10,
+     "duration_ms": 11,
      "ok": true
     }
    },
@@ -21242,7 +21336,7 @@
    "app": "writer",
    "cached": false,
    "critical_diffs": {},
-   "duration_ms": 3476,
+   "duration_ms": 3273,
    "features": [
     "alternate-content",
     "bookmarks",
@@ -21435,7 +21529,8 @@
     ],
     "transitions_after": [],
     "transitions_before": [],
-    "transitions_changed": false
+    "transitions_changed": false,
+    "transitions_lost": []
    },
    "package_error": "",
    "path": "sw/qa/extras/ooxmlexport/data/tdf167527_title_letters_cut_from_below.docx",
@@ -21448,31 +21543,31 @@
    "status": "partial",
    "steps": {
     "engine_start": {
-     "duration_ms": 520,
+     "duration_ms": 521,
      "ok": true
     },
     "measure": {
-     "duration_ms": 1093,
+     "duration_ms": 989,
      "ok": true
     },
     "open": {
-     "duration_ms": 378,
+     "duration_ms": 304,
      "ok": true
     },
     "pdf_export": {
-     "duration_ms": 111,
+     "duration_ms": 110,
      "ok": true
     },
     "remeasure": {
-     "duration_ms": 1039,
+     "duration_ms": 965,
      "ok": true
     },
     "reopen": {
-     "duration_ms": 97,
+     "duration_ms": 83,
      "ok": true
     },
     "roundtrip_save": {
-     "duration_ms": 36,
+     "duration_ms": 30,
      "ok": true
     }
    },
@@ -21482,16 +21577,16 @@
    "worker_exit": 0
   }
  ],
- "generated_at": "2026-11-24T21:10:09+00:00",
+ "generated_at": "2026-11-24T21:28:57+00:00",
  "label": "baseline",
  "platform": {
   "machine": "x86_64",
   "system": "Linux"
  },
- "run_id": "20261124T210805Z-25bc9901",
+ "run_id": "20261124T212654Z-a01b9301",
  "schema_version": 1,
  "settings": {
-  "criteria_version": 2,
+  "criteria_version": 3,
   "jobs": 2,
   "timeout_s": 240.0
  },
@@ -21499,9 +21594,9 @@
   "by_app": {
    "impress": {
     "fail": 0,
-    "partial": 14,
-    "pass": 36,
-    "pass_rate": 0.72,
+    "partial": 16,
+    "pass": 34,
+    "pass_rate": 0.68,
     "total": 50
    },
    "writer": {
@@ -21515,9 +21610,9 @@
   "by_feature": {
    "alternate-content": {
     "fail": 0,
-    "partial": 7,
-    "pass": 16,
-    "pass_rate": 0.6957,
+    "partial": 9,
+    "pass": 14,
+    "pass_rate": 0.6087,
     "total": 23
    },
    "anchored-images": {
@@ -21578,9 +21673,9 @@
    },
    "custom-xml": {
     "fail": 0,
-    "partial": 9,
-    "pass": 12,
-    "pass_rate": 0.5714,
+    "partial": 10,
+    "pass": 11,
+    "pass_rate": 0.5238,
     "total": 21
    },
    "embedded-fonts": {
@@ -21620,9 +21715,9 @@
    },
    "groups": {
     "fail": 0,
-    "partial": 2,
-    "pass": 12,
-    "pass_rate": 0.8571,
+    "partial": 3,
+    "pass": 11,
+    "pass_rate": 0.7857,
     "total": 14
    },
    "headers-footers": {
@@ -21648,9 +21743,9 @@
    },
    "images": {
     "fail": 0,
-    "partial": 7,
-    "pass": 25,
-    "pass_rate": 0.7812,
+    "partial": 8,
+    "pass": 24,
+    "pass_rate": 0.75,
     "total": 32
    },
    "lists": {
@@ -21662,9 +21757,9 @@
    },
    "many-layouts": {
     "fail": 0,
-    "partial": 2,
-    "pass": 16,
-    "pass_rate": 0.8889,
+    "partial": 3,
+    "pass": 15,
+    "pass_rate": 0.8333,
     "total": 18
    },
    "masters-layouts": {
@@ -21711,9 +21806,9 @@
    },
    "newer-transitions": {
     "fail": 0,
-    "partial": 0,
-    "pass": 2,
-    "pass_rate": 1.0,
+    "partial": 2,
+    "pass": 0,
+    "pass_rate": 0.0,
     "total": 2
    },
    "notes": {
@@ -21746,9 +21841,9 @@
    },
    "proprietary-fonts": {
     "fail": 0,
-    "partial": 15,
-    "pass": 55,
-    "pass_rate": 0.7857,
+    "partial": 17,
+    "pass": 53,
+    "pass_rate": 0.7571,
     "total": 70
    },
    "sections": {
@@ -21830,9 +21925,9 @@
    },
    "transitions": {
     "fail": 0,
-    "partial": 4,
-    "pass": 14,
-    "pass_rate": 0.7778,
+    "partial": 6,
+    "pass": 12,
+    "pass_rate": 0.6667,
     "total": 18
    },
    "unicode": {
@@ -21923,9 +22018,9 @@
    },
    "pptx": {
     "fail": 0,
-    "partial": 7,
-    "pass": 20,
-    "pass_rate": 0.7407,
+    "partial": 9,
+    "pass": 18,
+    "pass_rate": 0.6667,
     "total": 27
    },
    "rtf": {
@@ -21944,9 +22039,9 @@
    }
   },
   "fail": 0,
-  "partial": 23,
-  "pass": 91,
-  "pass_rate": 0.7982,
+  "partial": 25,
+  "pass": 89,
+  "pass_rate": 0.7807,
   "reasons": {
    "content-lost:headers-with-text": 1,
    "critical-metric-changed:images": 3,
@@ -21959,7 +22054,10 @@
    "part-kind-lost:chart": 1,
    "part-kind-lost:embedded-font": 2,
    "part-kind-lost:embedding": 1,
-   "part-kind-lost:media": 1
+   "part-kind-lost:media": 1,
+   "transition-lost:flythrough": 1,
+   "transition-lost:morph": 1,
+   "transition-lost:p:fade": 1
   },
   "total": 114
  }

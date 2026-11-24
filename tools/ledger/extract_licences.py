@@ -64,7 +64,7 @@ LICENCE_PATTERNS = (
     "licen[cs]e*", "*licen[cs]e*", "copying*", "*copying", "copyright*", "*copyright",
     "notice*", "unlicense*", "patents*", "legal*", "ofl*", "authors*", "third*party*",
     "ftl.txt", "gpl*", "lgpl*", "mpl*", "apache*", "bsd*", "mit*", "cc0*", "cc-by*",
-    "eula*", "fontlog*", "credits*", "trademark*", "license.terms",
+    "eula*", "fontlog*", "credits*", "trademark*", "license.terms", "*_lic.*",
 )
 # Directories whose direct children are always treated as licence files.
 LICENCE_DIRS = ("licenses", "licences", "license", "licence", "legal", "copyright")

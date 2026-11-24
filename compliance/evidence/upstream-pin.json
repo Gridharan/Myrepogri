@@ -1,0 +1,60 @@
+{
+ "all_passed": true,
+ "checks": [
+  {
+   "attempts": 1,
+   "check": "official-tag",
+   "command": "git ls-remote --tags https://gerrit.libreoffice.org/core refs/tags/libreoffice-26.8.3.1*",
+   "commit": "861effc5289d539f15c4c18d1ba8579ffd78728b",
+   "passed": true,
+   "repository": "https://gerrit.libreoffice.org/core"
+  },
+  {
+   "attempts": 1,
+   "check": "mirror-tag",
+   "command": "git ls-remote --tags https://github.com/LibreOffice/core refs/tags/libreoffice-26.8.3.1*",
+   "commit": "861effc5289d539f15c4c18d1ba8579ffd78728b",
+   "passed": true,
+   "repository": "https://github.com/LibreOffice/core"
+  },
+  {
+   "check": "checkout-head",
+   "command": "git -C /home/user/work/upstream/core rev-parse HEAD",
+   "head": "861effc5289d539f15c4c18d1ba8579ffd78728b",
+   "passed": true
+  },
+  {
+   "actual": "e7cd3538e85818ff9dd9bb65386769fde927011242aace5a144989f4000dcabf",
+   "check": "release-archive-sha256",
+   "file": "LibreOffice_26.8.3_Linux_x86-64_deb.tar.gz",
+   "passed": true,
+   "pinned": "e7cd3538e85818ff9dd9bb65386769fde927011242aace5a144989f4000dcabf",
+   "published_by_origin": "e7cd3538e85818ff9dd9bb65386769fde927011242aace5a144989f4000dcabf",
+   "published_url": "https://download.documentfoundation.org/libreoffice/stable/26.8.3/deb/x86_64/LibreOffice_26.8.3_Linux_x86-64_deb.tar.gz.sha256"
+  },
+  {
+   "buildid": "861effc5289d539f15c4c18d1ba8579ffd78728b",
+   "check": "release-buildid",
+   "file": "/home/user/work/lo-official/root/opt/libreoffice26.8/program/versionrc",
+   "passed": true
+  }
+ ],
+ "pin": {
+  "base": "LibreOffice core",
+  "commit": "861effc5289d539f15c4c18d1ba8579ffd78728b",
+  "mirror_repository": "https://github.com/LibreOffice/core",
+  "official_repository": "https://gerrit.libreoffice.org/core",
+  "product_version_scheme": "<upstream version>-<our patch level>, e.g. 26.8.3.1-0",
+  "release": {
+   "file": "LibreOffice_26.8.3_Linux_x86-64_deb.tar.gz",
+   "purpose": "official upstream build used for the baseline fidelity run (test tool, not redistributed)",
+   "sha256": "e7cd3538e85818ff9dd9bb65386769fde927011242aace5a144989f4000dcabf",
+   "sha256_url": "https://download.documentfoundation.org/libreoffice/stable/26.8.3/deb/x86_64/LibreOffice_26.8.3_Linux_x86-64_deb.tar.gz.sha256",
+   "url": "https://download.documentfoundation.org/libreoffice/stable/26.8.3/deb/x86_64/LibreOffice_26.8.3_Linux_x86-64_deb.tar.gz"
+  },
+  "release_version": "26.8.3",
+  "tag": "libreoffice-26.8.3.1"
+ },
+ "run_id": "20261124T212140Z-29646e5c",
+ "verified_at": "2026-11-24T21:21:48+00:00"
+}
